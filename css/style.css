@@ -1,0 +1,43 @@
+#about {
+  background-image: url("img/portlaptop.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: 'Raleway';
+  position: relative; }
+
+.contact-section {
+  height: 25rem; }
+
+.copyright {
+  font-size: 0.75rem; }
+
+footer {
+  color: white;
+  background-image: url("imag/Dania.jpg");
+  font-size: 1.5rem; }
+
+.footer-link {
+  color: white;
+  transition: all 0.5s ease; }
+
+.footer-link:hover {
+  border: 2px solid white;
+  opacity: 0.7; }
+
+.greeting {
+  position: relative;
+  transition: all 0.5s ease;
+  color: white;
+  text-shadow: 2px 2px #888; }
+
+.greeting:hover {
+  transform: perspective(500px) translateZ(50px);
+  color: #55476d;
+  padding-bottom: 40px; }
+
+iframe {
+  height: 35rem; }
