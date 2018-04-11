@@ -1,5 +1,144 @@
+.blue {
+  background-color: #5ad2f4; }
+
+.teal {
+  background-color: #62bec1; }
+
+.green {
+  background-color: #647a67; }
+
+.purple {
+  background-color: #31004a; }
+
+.lt-purple {
+  background-color: #55476d; }
+
+.med-green {
+  background-color: #575; }
+
+.light-green {
+  background-color: #869889; }
+
+.lighter-purple {
+  background-color: #aba9b5; }
+
+.neutral-brown {
+  background-color: #5e5a5e; }
+
+.pink-purple {
+  background-color: #66436f; }
+
+.light-taupe {
+  background-color: #7e756d; }
+
+.lt-teal {
+  background-color: #b0dee0; }
+
+.text-medium {
+  color: #575; }
+
+a.nav-link {
+  width: 16rem;
+  font-size: 1.5rem;
+  padding: 20px 50px;
+  transition: background-color ease 0.5s;
+  font-family: 'Raleway', sans-serif;
+  color: #62bec1; }
+
+a.nav-link:Hover {
+  color: white;
+  border: none; }
+
+a.blue-nav:hover {
+  background-color: #5ad2f4; }
+
+a.teal-nav:hover {
+  background-color: #62bec1; }
+
+a.pink-purple-nav:hover {
+  background-color: #869889; }
+
+a.purple-nav:hover {
+  background-color: #55476d; }
+
+.text-darker {
+  color: #514f59; }
+
+.white {
+  color: white; }
+
+.navbar-toggler-icon {
+  color: white; }
+
+h1 {
+  font-size: 4rem; }
+
+img.christine {
+  height: 20rem;
+  width: auto; }
+
+.is-active {
+  box-shadow: 0 20px 5px -10px rgba(0, 0, 0, 0.4);
+  transform: translateY(10px); }
+
+.about h5 {
+  line-height: 225%; }
+
+.heading {
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+
+.container-fluid {
+  margin: 0;
+  padding: 0; }
+
+.text-content {
+  padding: 0 20rem; }
+
+.devicon-javascript-plain, .devicon-jquery-plain, .devicon-git-plain, .devicon-bitbucket-plain, .devicon-grunt-plain, .devicon-bootstrap-plain, .devicon-visualstudio-plain, .devicon-sass-original, .devicon-vuejs-plain {
+  font-size: 3rem;
+  color: white; }
+
+.icon {
+  margin: 35px;
+  transition: transform 0.5s ease-out; }
+
+.diamond {
+  width: 8rem;
+  height: 8rem;
+  border: 1px solid #efefef;
+  margin: 50px;
+  box-shadow: -5px -5px 5px #888;
+  transition: transform 0.3s ease-out; }
+
+.diamond:hover {
+  transform: perspective(600px) translate3d(0, 0, 200px) rotate(360deg); }
+
+.blue-texture-bg {
+  background-color: #5ad2f4;
+  background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+  font-family: 'Raleway', sans-serif;
+  font-size: 110%;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  line-height: 225%; }
+
+.teal-texture-bg {
+  background-color: #62bec1;
+  background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png"); }
+
+hr {
+  width: 25%;
+  padding-bottom: 1rem;
+  height: 12px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5); }
+
+.text-box p {
+  border: 1px solid black; }
+
 #about {
-  background-image: url("img/portlaptop.jpg");
+  background-image: url("../img/portlaptop.jpg");
   background-position: center;
   background-size: 100% 100%;
   padding: 0;
@@ -17,7 +156,7 @@ body {
 
 footer {
   color: white;
-  background-image: url("imag/Dania.jpg");
+  background-image: url("../img/Dania.jpg");
   font-size: 1.5rem; }
 
 .footer-link {
