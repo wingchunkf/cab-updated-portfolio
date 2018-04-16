@@ -43,7 +43,7 @@ body {
 
 a.nav-link {
   width: 16rem;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   padding: 20px 50px;
   transition: background-color ease 0.5s;
   font-family: 'Raleway', sans-serif;
@@ -90,7 +90,8 @@ img.christine {
 
 .heading {
   padding-top: 4rem;
-  padding-bottom: 4rem; }
+  padding-bottom: 4rem;
+  color: #7e756d; }
 
 .container-fluid {
   margin: 0;
@@ -99,7 +100,7 @@ img.christine {
 .text-content {
   padding: 0 20rem; }
 
-.devicon-javascript-plain, .devicon-jquery-plain, .devicon-git-plain, .devicon-bitbucket-plain, .devicon-grunt-plain, .devicon-bootstrap-plain, .devicon-visualstudio-plain, .devicon-sass-original, .devicon-vuejs-plain {
+.devicon-javascript-plain, .devicon-jquery-plain, .devicon-git-plain, .devicon-bitbucket-plain, .devicon-gulp-plain, .devicon-bootstrap-plain, .devicon-visualstudio-plain, .devicon-sass-original, .devicon-vuejs-plain {
   font-size: 3rem;
   color: white; }
 
@@ -152,16 +153,41 @@ hr {
   height: 25rem; }
 
 .copyright {
-  font-size: 0.75rem; }
+  font-size: 1rem;
+  color: white; }
 
-footer {
+ul {
+  list-style-type: none; }
+
+.social-media, .footer-nav {
   color: white;
-  background-image: url("../img/Dania.jpg");
-  font-size: 1.5rem; }
+  transition: transform .2s; }
+
+.social-media, .footer-nav {
+  transition: transform .2s; }
+
+.social-media:hover {
+  transform: scale(1.5); }
+
+a {
+  color: #7e756d; }
+
+a:hover {
+  color: black; }
+
+i.nav {
+  padding-right: 10px; }
+
+.footer-bg {
+  background-color: #647a67;
+  background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+  font-size: 110%;
+  line-height: 225%; }
 
 .footer-link {
   color: white;
-  transition: all 0.5s ease; }
+  transition: all 0.5s ease;
+  font-sizes: 120%; }
 
 .greeting {
   position: relative;
@@ -182,10 +208,26 @@ iframe {
   display: none; }
 
 .left-chevron-castle, .left-chevron-premier {
+  color: #5ad2f4;
   display: none; }
 
 .btn-group-lg > .btn, .btn-lg {
-  border-radius: 0 !important; }
+  border-radius: 0 !important;
+  background-color: #5ad2f4;
+  color: white; }
+
+.btn-group-lg:hover > .btn:hover, .btn-lg:hover {
+  background-color: #bdedfa;
+  color: #7e756d; }
 
 .project-text {
-  line-height: 2.5; }
+  line-height: 2.5;
+  transition: all 5s ease; }
+
+.circle {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: #887eb9;
+  display: inline-block;
+  margin-right: 30px; }

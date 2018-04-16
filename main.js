@@ -1,8 +1,6 @@
 // when user clicks the button, the iframe and button  will be removed and replaced with a text-filled div
 
 // step 1 - assign variables to button and iframes
-// step 2 - add eventlistener to buttons
-//step 3 - write function for removing iframe and showing informational div on click
 
 var premierDiv = document.querySelector('.premier-section');
 var castleDiv = document.querySelector('.castle-section');
@@ -13,6 +11,7 @@ var castleDetails = document.querySelector('.castle-details');
 var premierChevron = document.querySelector('.left-chevron-premier');
 var castleChevron = document.querySelector('.left-chevron-castle');
 
+// step 2 - add eventlistener to buttons which will remove iframe and display project details
 
 premierButton.addEventListener("click", function() {
     premierButton.style.visibility = "hidden";
@@ -42,4 +41,3 @@ castleChevron.addEventListener("click", function() {
 
 
 
-// castleButton.style.visibility = "hidden";
