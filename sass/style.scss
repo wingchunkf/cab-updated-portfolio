@@ -268,6 +268,11 @@ i.nav {
     padding-bottom: 40px;
 }
 
+h3.project-title {
+    box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2);
+    padding: 2rem 0;
+}
+
 iframe {
     height: 35rem;
     border: none;  
@@ -275,6 +280,11 @@ iframe {
 
 .castle-details, .premier-details {
     display: none;
+}
+
+img.sw-section {
+    height: 35rem;
+    width: 42rem;
 }
 
 .left-chevron-castle, .left-chevron-premier {
