@@ -100,13 +100,27 @@ img.christine {
 .text-content {
   padding: 0 20rem; }
 
-.devicon-javascript-plain, .devicon-jquery-plain, .devicon-git-plain, .devicon-bitbucket-plain, .devicon-gulp-plain, .devicon-bootstrap-plain, .devicon-visualstudio-plain, .devicon-sass-original, .devicon-vuejs-plain {
+.devicon-javascript-plain,
+.devicon-jquery-plain,
+.devicon-git-plain,
+.devicon-bitbucket-plain,
+.devicon-gulp-plain,
+.devicon-bootstrap-plain,
+.devicon-visualstudio-plain,
+.devicon-sass-original,
+.devicon-vuejs-plain {
   font-size: 3rem;
   color: white; }
 
 .icon {
   margin: 35px;
-  transition: transform 0.5s ease-out; }
+  transition: transform 0.5s ease-out 0.5s;
+  -webkit-transition: -webkit-transform 0.5s ease 0.5s;
+  transition: -webkit-transform 0.5s ease 0.5s;
+  -moz-transition: transform 0.5s ease 0.5s;
+  -o-transition: transform 0.5s ease 0.5s;
+  transition: transform 0.5s ease 0.5s;
+  transition: transform 0.5s ease 0.5s; }
 
 .diamond {
   width: 8rem;
@@ -114,10 +128,12 @@ img.christine {
   border: 1px solid #efefef;
   margin: 50px;
   box-shadow: -5px -5px 5px #888;
-  transition: transform 0.3s ease-out; }
+  transition: transform 0.3s;
+  -moz-transition: transform 0.3s; }
 
 .diamond:hover {
-  transform: perspective(600px) translate3d(0, 0, 200px) rotate(360deg); }
+  transform: perspective(600px) translate3d(0, 0, 200px) rotate(360deg);
+  -moz-transform: perspective(600px) translate3d(0, 0, 200px) rotate(360deg); }
 
 .blue-texture-bg {
   background-color: #5ad2f4;
@@ -126,7 +142,10 @@ img.christine {
   font-size: 110%;
   padding-top: 4rem;
   padding-bottom: 3rem;
-  line-height: 225%; }
+  padding-left: 6rem;
+  padding-right: 6rem;
+  line-height: 225%;
+  box-shadow: -5px -5px 5px #888; }
 
 .teal-texture-bg {
   background-color: #62bec1;
@@ -159,11 +178,13 @@ hr {
 ul {
   list-style-type: none; }
 
-.social-media, .footer-nav {
+.social-media,
+.footer-nav {
   color: white;
   transition: transform .2s; }
 
-.social-media, .footer-nav {
+.social-media,
+.footer-nav {
   transition: transform .2s; }
 
 .social-media:hover {
@@ -182,7 +203,8 @@ i.nav {
   background-color: #647a67;
   background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
   font-size: 110%;
-  line-height: 225%; }
+  line-height: 225%;
+  width: 100%; }
 
 .footer-link {
   color: white;
@@ -191,11 +213,14 @@ i.nav {
 
 .greeting {
   position: relative;
-  transition: all 0.5s ease;
+  transition: 0.5s;
+  -moz-transition: 0.5s ease-in-out 0.2s;
   color: white;
   text-shadow: 2px 2px #888; }
 
 .greeting:hover {
+  transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
   transform: perspective(500px) translateZ(50px);
   color: #55476d;
   padding-bottom: 40px; }
@@ -204,19 +229,23 @@ iframe {
   height: 35rem;
   border: none; }
 
-.castle-details, .premier-details {
+.castle-details,
+.premier-details {
   display: none; }
 
-.left-chevron-castle, .left-chevron-premier {
+.left-chevron-castle,
+.left-chevron-premier {
   color: #5ad2f4;
   display: none; }
 
-.btn-group-lg > .btn, .btn-lg {
+.btn-group-lg > .btn,
+.btn-lg {
   border-radius: 0 !important;
   background-color: #5ad2f4;
   color: white; }
 
-.btn-group-lg:hover > .btn:hover, .btn-lg:hover {
+.btn-group-lg:hover > .btn:hover,
+.btn-lg:hover {
   background-color: #bdedfa;
   color: #7e756d; }
 
@@ -231,3 +260,7 @@ iframe {
   background-color: #887eb9;
   display: inline-block;
   margin-right: 30px; }
+
+.white-hr {
+  color: white;
+  box-shadow: none; }
