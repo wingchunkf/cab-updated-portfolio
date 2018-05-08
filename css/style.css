@@ -163,9 +163,6 @@ ul {
   color: white;
   transition: transform .2s; }
 
-.social-media, .footer-nav {
-  transition: transform .2s; }
-
 .social-media:hover {
   transform: scale(1.5); }
 
