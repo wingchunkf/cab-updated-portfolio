@@ -49,7 +49,7 @@ a.nav-link {
   font-family: 'Raleway', sans-serif;
   color: #62bec1; }
 
-a.nav-link:Hover {
+a.nav-link:hover {
   color: white;
   border: none; }
 
@@ -100,13 +100,14 @@ img.christine {
 .text-content {
   padding: 0 20rem; }
 
-.devicon-javascript-plain, .devicon-jquery-plain, .devicon-git-plain, .devicon-bitbucket-plain, .devicon-gulp-plain, .devicon-bootstrap-plain, .devicon-visualstudio-plain, .devicon-sass-original, .devicon-vuejs-plain {
+.devicon-javascript-plain, .devicon-jquery-plain, .devicon-git-plain, .devicon-bitbucket-plain, .devicon-gulp-plain, .devicon-bootstrap-plain, .devicon-visualstudio-plain, .devicon-sass-original, .devicon-slack-plain {
   font-size: 3rem;
   color: white; }
 
 .icon {
   margin: 35px;
-  transition: transform 0.5s ease-out; }
+  transition: transform 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out; }
 
 .diamond {
   width: 8rem;
@@ -114,10 +115,12 @@ img.christine {
   border: 1px solid #efefef;
   margin: 50px;
   box-shadow: -5px -5px 5px #888;
-  transition: transform 0.3s ease-out; }
+  transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out; }
 
 .diamond:hover {
-  transform: perspective(600px) translate3d(0, 0, 200px) rotate(360deg); }
+  transform: perspective(600px) translate3d(0, 0, 200px) rotate(360deg) scale(1);
+  -moz-transform: perspective(600px) translate3d(0, 0, 200px) rotate(360deg) scale(1); }
 
 .blue-texture-bg {
   background-color: #5ad2f4;
@@ -154,6 +157,7 @@ hr {
 
 .copyright {
   font-size: 1rem;
+  background: #aba9b5;
   color: white; }
 
 ul {
@@ -163,14 +167,11 @@ ul {
   color: white;
   transition: transform .2s; }
 
-.social-media:hover {
-  transform: scale(1.5); }
-
 a {
   color: #7e756d; }
 
 a:hover {
-  color: black; }
+  color: #869889; }
 
 i.nav {
   padding-right: 10px; }
@@ -181,10 +182,24 @@ i.nav {
   font-size: 110%;
   line-height: 225%; }
 
-.footer-link {
+.footer-bg h2, .footer-bg a {
+  color: white; }
+
+footer li {
   color: white;
-  transition: all 0.5s ease;
-  font-sizes: 120%; }
+  text-decoration: none; }
+
+footer li:hover {
+  opacity: 0.6;
+  transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transition: all 0.4s ease; }
+
+.footer-link a {
+  color: #887eb9; }
+
+a:-webkit-any-link {
+  text-decoration: none; }
 
 .greeting {
   position: relative;
@@ -229,10 +244,13 @@ img.sw-section {
   line-height: 2.5;
   transition: all 5s ease; }
 
-.circle {
+.circle, .circle-footer {
   border-radius: 50%;
   width: 15px;
   height: 15px;
   background-color: #887eb9;
   display: inline-block;
   margin-right: 30px; }
+
+.circle-footer {
+  background-color: white; }
