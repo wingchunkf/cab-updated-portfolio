@@ -208,6 +208,8 @@ i.nav {
 h3.project-title {
   box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2);
   padding: 2rem 0;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
   text-align: center; }
 
 .project-div {
