@@ -1,32 +1,234 @@
+body {
+  font-family: 'Raleway';
+  position: relative; }
+
+.blue {
+  background-color: #5ad2f4; }
+
+.teal {
+  background-color: #62bec1; }
+
+.green {
+  background-color: #647a67; }
+
+.purple {
+  background-color: #31004a; }
+
+.lt-purple {
+  background-color: #55476d; }
+
+.med-green {
+  background-color: #575; }
+
+.light-green {
+  background-color: #869889; }
+
+.lighter-purple {
+  background-color: #aba9b5; }
+
+.neutral-brown {
+  background-color: #5e5a5e; }
+
+.pink-purple {
+  background-color: #66436f; }
+
+.light-taupe {
+  background-color: #7e756d; }
+
+.lt-teal {
+  background-color: #b0dee0; }
+
+.text-medium {
+  color: #575; }
+
+a.nav-link {
+  width: 16rem;
+  font-size: 1.4rem;
+  padding: 20px 50px;
+  transition: background-color ease 0.5s;
+  font-family: 'Raleway', sans-serif;
+  color: #62bec1; }
+
+a.nav-link:hover {
+  color: white;
+  border: none; }
+
+a.blue-nav:hover {
+  background-color: #5ad2f4; }
+
+a.teal-nav:hover {
+  background-color: #62bec1; }
+
+a.pink-purple-nav:hover {
+  background-color: #869889; }
+
+a.purple-nav:hover {
+  background-color: #55476d; }
+
+.text-darker {
+  color: #514f59; }
+
+.white {
+  color: white; }
+
+.navbar-toggler-icon {
+  color: white; }
+
+h1 {
+  font-size: 4rem; }
+
+img.christine {
+  height: 20rem;
+  width: auto; }
+
+.is-active {
+  box-shadow: 0 20px 5px -10px rgba(0, 0, 0, 0.4);
+  transform: translateY(10px); }
+
+.about h5 {
+  line-height: 225%; }
+
+.vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.heading {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  color: #7e756d; }
+
+.container-fluid {
+  margin: 0;
+  padding: 0; }
+
+.text-content {
+  padding: 0 20rem; }
+
+.devicon-javascript-plain, .devicon-jquery-plain, .devicon-git-plain, .devicon-bitbucket-plain, .devicon-gulp-plain, .devicon-bootstrap-plain, .devicon-visualstudio-plain, .devicon-sass-original, .devicon-slack-plain {
+  font-size: 3rem;
+  color: white; }
+
+.icon {
+  margin: 35px;
+  transition: transform 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out; }
+
+.diamond {
+  width: 8rem;
+  height: 8rem;
+  border: 1px solid #efefef;
+  margin: 50px;
+  box-shadow: -5px -5px 5px #888;
+  transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out; }
+
+.diamond:hover {
+  transform: perspective(600px) translate3d(0, 0, 200px) rotate(360deg) scale(1);
+  -moz-transform: perspective(600px) translate3d(0, 0, 200px) rotate(360deg) scale(1); }
+
+.blue-texture-bg {
+  background-color: #5ad2f4;
+  background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+  font-family: 'Raleway', sans-serif;
+  font-size: 110%;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  line-height: 225%; }
+
+.teal-texture-bg {
+  background-color: #62bec1;
+  background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png"); }
+
+hr {
+  width: 25%;
+  padding-bottom: 1rem;
+  height: 12px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5); }
+
+.text-box p {
+  border: 1px solid black; }
+
 #about {
-  background-image: url("img/portlaptop.jpg");
+  background-image: url("../img/portlaptop.jpg");
   background-position: center;
   background-size: 100% 100%;
   padding: 0;
   margin: 0; }
 
-body {
-  font-family: 'Raleway';
-  position: relative; }
-
 .contact-section {
   height: 25rem; }
 
 .copyright {
-  font-size: 0.75rem; }
+  font-size: 1rem;
+  background: #aba9b5;
+  color: white; }
 
-footer {
+ul {
+  list-style-type: none; }
+
+.social-media, .footer-nav {
   color: white;
-  background-image: url("imag/Dania.jpg");
-  font-size: 1.5rem; }
+  transition: transform .2s; }
 
-.footer-link {
+.social-media, .footer-nav {
+  transition: transform .2s; }
+
+.social-media:hover {
+  transform: scale(1.5); }
+
+.zoom {
+  transition: transform 0.2s; }
+
+.zoom:hover {
+  transform: scale(1.12); }
+
+.skew-left {
+  transition: transform 0.2s; }
+
+.skew-left:hover {
+  transform: perspective(50px) translateZ(10px);
+  -ms-transform: skewX(35deg);
+  /* IE 9 */
+  -webkit-transform: skewX(35deg);
+  /* Safari */
+  transform: skewX(35deg); }
+
+.skew-right {
+  transition: transform 0.2s; }
+
+.skew-right:hover {
+  transform: perspective(50px) translateZ(10px);
+  -ms-transform: skewX(-35deg);
+  /* IE 9 */
+  -webkit-transform: skewX(-35deg);
+  /* Safari */
+  transform: skewX(-35deg);
+  /* Standard syntax */ }
+
+a {
+  color: #7e756d; }
+
+a:hover {
+  color: #869889; }
+
+i.nav {
+  padding-right: 10px; }
+
+.footer-bg {
+  background-color: #647a67;
+  background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+  font-size: 110%;
+  line-height: 225%; }
+
+.footer-bg h2, .footer-bg a {
+  color: white; }
+
+footer li {
   color: white;
-  transition: all 0.5s ease; }
-
-.footer-link:hover {
-  border: 2px solid white;
-  opacity: 0.7; }
+  transition: all 0.5s ease;
+  font-size: 120%; }
 
 .greeting {
   position: relative;
@@ -39,5 +241,79 @@ footer {
   color: #55476d;
   padding-bottom: 40px; }
 
-iframe {
-  height: 35rem; }
+h3.project-title {
+  box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2);
+  padding: 2rem 0;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  text-align: center; }
+
+.heading.premier-site {
+  color: #62bec1;
+  box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2); }
+
+.heading.castle-site {
+  color: #62bec1; }
+
+.sw-app {
+  background: #55476d;
+  color: white; }
+
+.star-wars {
+  background: white; }
+
+.project-div {
+  height: 26rem;
+  box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2); }
+
+img.sw-section {
+  height: 35rem;
+  width: 42rem; }
+
+.left-chevron-castle, .left-chevron-premier {
+  color: #5ad2f4;
+  display: none; }
+
+.btn-group-lg > .btn, .btn-lg {
+  border-radius: 0 !important;
+  background-color: #5ad2f4;
+  color: white; }
+
+.btn-group-lg:hover > .btn:hover, .btn-lg:hover {
+  background-color: #bdedfa;
+  color: #7e756d; }
+
+.project-text {
+  line-height: 2.75;
+  font-size: 105%; }
+
+.demo:hover {
+  background: #62bec1; }
+
+.demo-link {
+  text-decoration: none !important;
+  color: #62bec1;
+  border: 1px solid #62bec1; }
+
+.demo-link:hover {
+  color: white;
+  background-color: #62bec1; }
+
+.circle, .circle-footer {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: #887eb9;
+  display: inline-block;
+  margin-right: 30px; }
+
+.fade-in {
+  opacity: 0; }
+
+.slide-left {
+  margin-left: -1300px;
+  max-width: 100%; }
+
+.slide-right {
+  margin-right: -100px;
+  max-width: 100%; }
