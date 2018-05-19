@@ -174,6 +174,35 @@ ul {
 .social-media:hover {
   transform: scale(1.5); }
 
+.zoom {
+  transition: transform 0.2s; }
+
+.zoom:hover {
+  transform: scale(1.12); }
+
+.skew-left {
+  transition: transform 0.2s; }
+
+.skew-left:hover {
+  transform: perspective(50px) translateZ(10px);
+  -ms-transform: skewX(35deg);
+  /* IE 9 */
+  -webkit-transform: skewX(35deg);
+  /* Safari */
+  transform: skewX(35deg); }
+
+.skew-right {
+  transition: transform 0.2s; }
+
+.skew-right:hover {
+  transform: perspective(50px) translateZ(10px);
+  -ms-transform: skewX(-35deg);
+  /* IE 9 */
+  -webkit-transform: skewX(-35deg);
+  /* Safari */
+  transform: skewX(-35deg);
+  /* Standard syntax */ }
+
 a {
   color: #7e756d; }
 
@@ -212,13 +241,23 @@ h3.project-title {
   margin-bottom: 4rem;
   text-align: center; }
 
+.heading.premier-site {
+  color: #62bec1;
+  box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2); }
+
+.heading.castle-site {
+  color: #62bec1; }
+
+.sw-app {
+  background: #55476d;
+  color: white; }
+
+.star-wars {
+  background: white; }
+
 .project-div {
   height: 26rem;
   box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2); }
-
-.premier-title {
-  box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2);
-  color: #708090; }
 
 .left-chevron-castle, .left-chevron-premier {
   color: #5ad2f4;
@@ -236,6 +275,18 @@ h3.project-title {
 .project-text {
   line-height: 2.75;
   font-size: 105%; }
+
+.demo:hover {
+  background: #62bec1; }
+
+.demo-link {
+  text-decoration: none !important;
+  color: #62bec1;
+  border: 1px solid #62bec1; }
+
+.demo-link:hover {
+  color: white;
+  background-color: #62bec1; }
 
 .circle {
   border-radius: 50%;
