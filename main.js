@@ -1,7 +1,3 @@
-// when user clicks the button, the iframe and button  will be removed and replaced with a text-filled div
-
-// step 1 - assign variables to button and iframes
-
 var premierDiv = document.querySelector('.premier-section');
 var castleDiv = document.querySelector('.castle-section');
 var premierButton = document.querySelector('.premier');
@@ -11,35 +7,58 @@ var castleDetails = document.querySelector('.castle-details');
 var premierChevron = document.querySelector('.left-chevron-premier');
 var castleChevron = document.querySelector('.left-chevron-castle');
 
-// step 2 - add eventlistener to buttons which will remove iframe and display project details
+// script that fades in elements on scroll
 
-premierButton.addEventListener("click", function() {
-    premierButton.style.visibility = "hidden";
-    premierDetails.style.display = "block"; 
-    premierChevron.style.display = "block";
+$(document).ready(function () {
+    $(window).scroll(function () {
+        $('.fade-in').each(function (i) {
+
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            if (bottom_of_window > bottom_of_element) {
+                $(this).animate({
+                    'opacity': '1'
+                }, 1200);
+            }
+
+        });
+    });
 });
 
-premierChevron.addEventListener('click', function() {
-    premierChevron.style.display = "none";
-    premierDetails.style.display = "none";
-    premierButton.style.visibility = "visible";
-})
+// script that slides in project title from left on scroll
 
-castleButton.addEventListener("click", function() {
-    castleButton.style.visibility = "hidden";
-    castleDetails.style.display = "block";
-    castleChevron.style.display = "block";
+$(document).ready(function () {
+    $(window).scroll(function () {
+        $('.slide-left').each(function (i) {
+
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            if (bottom_of_window > bottom_of_element) {
+                $(this).animate({
+                    'margin-left': '0px'
+                }, 1000);
+            }
+
+        });
+    });
 });
 
-castleChevron.addEventListener("click", function() {
-    castleChevron.style.display = "none";
-    castleDetails.style.display = "none";
-    castleButton.style.visibility = "visible";
+// script that slides in items from right on scroll
+
+$(document).ready(function () {
+    $(window).scroll(function () {
+        $('.fade-in-heading').each(function (i) {
+
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            if (bottom_of_window > bottom_of_element) {
+                $(this).animate({
+                    'opacity': '1'
+                }, 1000);            
+            }
+        });
+    });
 });
-
-
-
-
-
-
-
