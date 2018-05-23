@@ -49,18 +49,16 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $(window).scroll(function () {
-        $('.slide-right').each(function (i) {
+        $('.fade-in-heading').each(function (i) {
 
             var bottom_of_element = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
 
             if (bottom_of_window > bottom_of_element) {
                 $(this).animate({
-                    'margin-right': '50%'
-                }, 1000);
-                console.log('slide right sucks')
+                    'opacity': '1'
+                }, 1000);            
             }
-
         });
     });
 });
