@@ -208,11 +208,7 @@ hr {
 }
 
 ul {
-<<<<<<< HEAD
     list-style-type: none;   
-=======
-    list-style-type: none;  
->>>>>>> develop
 }
 
 .social-media, .footer-nav {
@@ -220,7 +216,6 @@ ul {
     transition: transform .2s;
 }
 
-<<<<<<< HEAD
 .social-media, .footer-nav {
     transition: transform .2s;
 }
@@ -259,8 +254,6 @@ ul {
     transform: skewX(-35deg); /* Standard syntax */
 }
 
-=======
->>>>>>> develop
 a {
     color:  #7e756d;
 }
@@ -282,35 +275,10 @@ i.nav {
 
 .footer-bg h2, .footer-bg a {
     color: white;
-<<<<<<< HEAD
     transition: all 0.5s ease;
     font-size: 120%;
 }
 
-=======
-}
-
-footer li {
-    color: white;
-    text-decoration: none;
-}
-
-footer li:hover {
-    opacity: 0.6;
-    transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    transition: all 0.4s ease;
-}
-
-.footer-link a {
-    color:#887eb9;
-}
-
-a:-webkit-any-link {
-    text-decoration: none;
-}
-
->>>>>>> develop
 .greeting {
     position: relative;
     transition: all 0.5s ease;
@@ -327,15 +295,26 @@ a:-webkit-any-link {
 h3.project-title {
     box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2);
     padding: 2rem 0;
-<<<<<<< HEAD
     margin-top: 6rem;
     margin-bottom: 4rem;
     text-align: center;
 }
 
-.heading.premier-site {
+.heading.premier-site, .work-info {
     color: #62bec1;
     box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2);
+}
+
+.work-info {
+    box-shadow: none;
+    text-align: center;
+    color:  #62bec1;
+    font-style: italic;
+    line-height: 175%;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .heading.castle-site {    
@@ -349,13 +328,6 @@ h3.project-title {
 
 .star-wars {
     background: white;
-=======
-}
-
-iframe {
-    height: 35rem;
-    border: none;  
->>>>>>> develop
 }
 
 .project-div {
@@ -370,21 +342,13 @@ img.sw-section {
 
 .left-chevron-castle, .left-chevron-premier {
     color: #5ad2f4;
-<<<<<<< HEAD
     display: none; 
-=======
-    display: none;
->>>>>>> develop
 }
 
 .btn-group-lg > .btn, .btn-lg {
     border-radius: 0 !important;
     background-color: #5ad2f4;
-<<<<<<< HEAD
     color: white;     
-=======
-    color: white;
->>>>>>> develop
 }
 
 .btn-group-lg:hover > .btn:hover, .btn-lg:hover {
@@ -393,7 +357,6 @@ img.sw-section {
 }
 
 .project-text {   
-<<<<<<< HEAD
     line-height: 2.75;
     font-size: 105%;
 }
@@ -411,10 +374,6 @@ img.sw-section {
 .demo-link:hover {
     color: white;
     background-color: #62bec1;
-=======
-    line-height: 2.5;
-    transition: all 5s ease;   
->>>>>>> develop
 }
 
 .circle, .circle-footer {
@@ -424,7 +383,6 @@ img.sw-section {
     background-color: #887eb9;
     display: inline-block;
     margin-right: 30px;   	
-<<<<<<< HEAD
 }
 
 .fade-in{
@@ -456,10 +414,4 @@ img.sw-section {
 
 
 
-=======
-}
 
-.circle-footer {
-    background-color: white;    
-}
->>>>>>> develop
