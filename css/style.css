@@ -98,6 +98,9 @@ img.christine {
   padding-bottom: 4rem;
   color: #7e756d; }
 
+.more-tools {
+  opacity: 0; }
+
 .container-fluid {
   margin: 0;
   padding: 0; }
@@ -223,9 +226,6 @@ i.nav {
   line-height: 225%; }
 
 .footer-bg h2, .footer-bg a {
-  color: white; }
-
-footer li {
   color: white;
   transition: all 0.5s ease;
   font-size: 120%; }
