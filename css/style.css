@@ -42,16 +42,18 @@ body {
   color: #575; }
 
 a.nav-link {
-  width: 16rem;
-  font-size: 1.4rem;
-  padding: 20px 50px;
-  transition: background-color ease 0.5s;
+  width: 10.5rem;
+  font-size: 1.25rem;
+  transition: all ease 0.5s;
   font-family: 'Raleway', sans-serif;
-  color: #62bec1; }
+  color: #887eb9; }
 
 a.nav-link:hover {
   color: white;
-  border: none; }
+  border: none;
+  border-radius: 80%;
+  transform: scale(1.1);
+  background-color: #514f59; }
 
 a.blue-nav:hover {
   background-color: #5ad2f4; }
@@ -97,6 +99,9 @@ img.christine {
   padding-top: 4rem;
   padding-bottom: 4rem;
   color: #7e756d; }
+
+.more-tools {
+  opacity: 0; }
 
 .container-fluid {
   margin: 0;
@@ -223,9 +228,6 @@ i.nav {
   line-height: 225%; }
 
 .footer-bg h2, .footer-bg a {
-  color: white; }
-
-footer li {
   color: white;
   transition: all 0.5s ease;
   font-size: 120%; }
@@ -246,11 +248,22 @@ h3.project-title {
   padding: 2rem 0;
   margin-top: 6rem;
   margin-bottom: 4rem;
-  text-align: center; }
+  text-align: center;
+  font-size: 150%; }
 
-.heading.premier-site {
+.heading.premier-site, .work-info {
   color: #62bec1;
   box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2); }
+
+.work-info {
+  box-shadow: none;
+  text-align: center;
+  color: #62bec1;
+  font-style: italic;
+  line-height: 175%; }
+
+.bold {
+  font-weight: bold; }
 
 .heading.castle-site {
   color: #62bec1; }
