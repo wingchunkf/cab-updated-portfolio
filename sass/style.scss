@@ -56,17 +56,19 @@ body {
 }
 
 a.nav-link {
-    width: 16rem;
-    font-size: 1.4rem;
-    padding: 20px 50px;
-    transition: background-color ease 0.5s;
+    width: 10.5rem;
+    font-size: 1.25rem;    
+    transition: all ease 0.5s;
     font-family: 'Raleway', sans-serif;
-    color: #62bec1;
+    color:   #887eb9;    
 }
 
 a.nav-link:hover {
     color: white;
     border: none;
+    border-radius: 80%;
+    transform: scale(1.1);
+    background-color: #514f59;   
 }
 
 a.blue-nav:hover {
@@ -302,6 +304,7 @@ h3.project-title {
     margin-top: 6rem;
     margin-bottom: 4rem;
     text-align: center;
+    font-size: 150%;
 }
 
 .heading.premier-site, .work-info {
@@ -401,7 +404,6 @@ img.sw-section {
 .slide-right {
     margin-right: -100px;
     max-width: 100%;
-<<<<<<< HEAD
 }
 
 
@@ -419,6 +421,3 @@ img.sw-section {
 
 
 
-=======
-}
->>>>>>> work-history
