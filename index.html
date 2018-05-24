@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:300i,400" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	    crossorigin="anonymous">
@@ -11,15 +12,16 @@
 	    crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preload" href="img/portlaptop.jpg" as="image">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<title>Portfolio</title>
 </head>
 
 <body>
-	<div id="about">
-	<div class="container-fluid" id="header">
-		<!-- <div class="col"> -->
+	<div id="header-wrapper">
+		<div class="container-fluid" id="header">
+			<!-- <div class="col"> -->
 			<div class="row d-flex justify-content-center mt-2">
 				<nav class="navbar navbar-expand-lg d-none d-lg-block d-xl-block">
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -27,34 +29,38 @@
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav mr-auto text-center">
-							<!-- <li class="nav-item active">
+						<ul class="navbar-nav mr-auto text-center" id="desktop-navbar">
+							<li class="nav-item active">
 								<a class="border-0" href="#header">
 									<span class="sr-only">(current)</span>
 								</a>
-							</li> -->
+							</li>
 							<li class="nav-item text-center">
-								<a class="nav-link purple-nav py-4 mx-lg-1" href="#">
+								<a class="nav-link py-4 mx-lg-1" href="#">
 									<i class="fas fa-home nav" data-fa-transform="left-4"></i>Home</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link purple-nav py-4 mx-lg-1" href="#about">
+								<a class="nav-link py-4 mx-lg-1" href="#about">
 									<i class="fas fa-user nav" data-fa-transform="left-4"></i>About</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link purple-nav py-4 mx-2" href="#toolbox">
+									<a class="nav-link py-4 mx-lg-1" href="#experience">
+										<i class="fas fa-laptop nav" data-fa-transform="left-4"></i>Experience</a>
+								</li>
+							<li class="nav-item">
+								<a class="nav-link py-4 mx-2" href="#">
 									<i class="fas fa-code-branch nav" data-fa-transform="left-4"></i>Work</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link purple-nav py-4 mx-2" href="#">
+								<a class="nav-link py-4 mx-2" href="#toolbox">
 									<i class="fas fa-wrench nav" data-fa-transform="left-4"></i>Toolbox</a>
 							</li>
 							<li class="nav-item">
-									<a class="nav-link purple-nav py-4 mx-2" href="#">
-											<i class="fas fa-book nav" data-fa-transform="left-4"></i>Learning</a>
-								</li>
+								<a class="nav-link py-4 mx-2" href="#">
+									<i class="fas fa-book nav" data-fa-transform="left-4"></i>Learning</a>
+							</li>
 							<li class="nav-item">
-								<a class="nav-link purple-nav py-4 mx-2" href="#">
+								<a class="nav-link py-4 mx-2" href="#contact">
 									<i class="far fa-envelope nav" data-fa-transform="left-4"></i>Contact</a>
 							</li>
 						</ul>
@@ -66,14 +72,13 @@
 		<div class="container-fluid mobile-navigation d-lg-none">
 			<div class="row justify-content-around">
 				<ul class="mobile-nav-list text-center w-100 px-5">
-					<li class="item blue py-4 pr-5">
-						<a href="#header.html" class="mobile-link">Home</li>
-					<li class="item teal py-4 pr-5">
-						<a href="#about" class="mobile-link"></a>About</li>
-					<li class="item pink-purple py-4 pr-5">Work</li>
-					<li class="item lt-purple py-4 pr-5">Toolbox</li>
+					<li class="item blue py-4 pr-5"><a href="#header">Home</a></li>							
+					<li class="item teal py-4 pr-5"><a href="#about">About</a></li>
+					<li class="item teal py-4 pr-5"><a href="#experience">Experience</a></li>
+					<li class="item pink-purple py-4 pr-5"><a href="#work">Work</a></li>
+					<li class="item lt-purple py-4 pr-5"><a href="#toolbox">Toolbox</a></li>
 					<li class="item lt-purple py-4 pr-5">Learning</li>
-					<li class="item purple py-4 pr-5">Contact</li>
+					<li class="item purple py-4 pr-5"><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -83,7 +88,7 @@
 
 				<img src="img/portlaptopbw.jpg">
 				<!-- <div class="col-lg col-md-12"> -->
-					<!-- <img src="img/christineupdated.jpg" class="img-fluid christine float-right" alt="woman smiling"> -->
+				<!-- <img src="img/christineupdated.jpg" class="img-fluid christine float-right" alt="woman smiling"> -->
 				<!-- </div> -->
 				<div class="col-lg col-md-12">
 					<h1 class="mt-5 pt-5 text-center text-darker greeting">Hi, I'm Christine.</h1>
@@ -92,168 +97,177 @@
 		</div>
 	</div>
 
-		<!-- Tools section -->
-		<div class="tools-section" id="toolbox">
-			<h2 class="heading text-center pb-2">Toolbox</h2>
-			<div class="circle-border text-center pb-5">
-				<div class="circle mt-3"></div>
-				<div class="circle"></div>
-				<div class="circle"></div>
-				<div class="circle"></div>
-				<div class="circle"></div>
-				<div class="circle"></div>
-				<div class="circle"></div>
-			</div>
-			<!-- Hover-responsive brand icons -->
-			<section class="container">
-				<div class="row ml-5 d-flex justify-content-center">
-					<div class="col-lg-4 col-xs-12">
-						<div class="diamond lt-purple">
-							<div class="text-center icon">
-								<i class="devicon-javascript-plain"></i>
-							</div>
-
-							<div>
-								<p class="tool-name pt-2">JavaScript</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-xs-12">
-						<div class="diamond teal">
-							<div class="text-center icon">
-								<i class="devicon-sass-original"></i>
-							</div>
-
-							<div>
-								<p class="tool-name pt-2">Sass</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-xs-12">
-						<div class="diamond border neutral-brown">
-							<div class="text-center icon">
-								<i class="devicon-slack-plain"></i>
-							</div>
-
-							<div>
-								<p class="tool-name pt-2">Slack</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row ml-5 d-flex justify-content-center">
-					<div class="col-lg-4 col-xs-12">
-						<div class="diamond blue">
-							<div class="text-center icon">
-								<i class="devicon-jquery-plain"></i>
-							</div>
-
-							<div>
-								<p class="tool-name pt-2">jQuery</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-xs-12">
-						<div class="diamond light-green">
-							<div class="text-center icon">
-								<i class="devicon-git-plain"></i>
-							</div>
-
-							<div>
-								<p class="tool-name pt-2">Git</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-xs-12">
-						<div class="diamond pink-purple">
-							<div class="text-center icon">
-								<i class="devicon-bitbucket-plain"></i>
-							</div>
-
-							<div>
-								<p class="tool-name pt-2">Bitbucket</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row ml-5 d-flex justify-content-center">
-					<div class="col-lg-4 col-xs-12 ">
-						<div class="diamond lighter-purple ">
-							<div class="text-center icon ">
-								<i class="devicon-gulp-plain"></i>
-							</div>
-
-							<div>
-								<p class="tool-name pt-2 ">Gulp</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-xs-12 ">
-						<div class="diamond light-taupe ">
-							<div class="text-center icon ">
-								<i class="devicon-bootstrap-plain "></i>
-							</div>
-
-							<div>
-								<p class="tool-name pt-2 ">Bootstrap 4.0</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-xs-12 ">
-						<div class="diamond lt-teal ">
-							<div class="text-center icon ">
-								<i class="devicon-visualstudio-plain "></i>
-							</div>
-
-							<div>
-								<p class="tool-name pt-2 ">Visual Studio</p>
-							</div>
-						</div>
-					</div>
-				</div>
+	<!-- Tools section -->
+	<div class="tools-section" id="toolbox">
+		<h2 class="heading text-center pb-2">Toolbox</h2>
+		<div class="circle-border text-center pb-5">
+			<div class="circle mt-3"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
 		</div>
+		<!-- Hover-responsive brand icons -->
+		<section class="spinning-tools">
 
-		<div class="additional-tools">
-			<div class="row text-center">
-				<div class="col">
-					<h3 class="heading more-tools fade-in">Oops, almost forgot a few...</h3>
-					<div class="row heading d-flex justify-content-center pt-2 slide-left">
-					
-					<div class="col-lg-1">
-					<h4>APIs</h4>
-					</div>
-				
-					<div class="col-lg-1">
-							<h4>Bash</h4>
-							</div>
-							<div class="col-lg-1">
-								<h4>RWD</h4>
-							</div>
-							<div class="col-lg-1">
-								<h4>JSON</h4>
-							</div>
-							<div class="col-lg-1">
-								<h4>XAMPP</h4>
-							</div>
-							<div class="col-lg-1">
-								<h4>SEO</h4>
-							</div>
+	
+			<div class="row d-flex justify-content-center">
+					<div class="col-3"></div>
+				<div class="col-md-2 d-flex justify-content-center">
+					<div class="diamond lt-purple text-center">
+						<div class="text-center icon">
+							<i class="devicon-javascript-plain"></i>
 						</div>
-															
-			
+
+						<div>
+							<p class="tool-name pt-2">JavaScript</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-2 d-flex justify-content-center">
+					<div class="diamond teal text-center">
+						<div class="icon">
+							<i class="devicon-sass-original"></i>
+						</div>
+
+						<div>
+							<p class="tool-name pt-2">Sass</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-2 d-flex justify-content-center">
+					<div class="diamond border neutral-brown text-center">
+						<div class="icon">
+							<i class="devicon-slack-plain"></i>
+						</div>
+
+						<div>
+							<p class="tool-name pt-2">Slack</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-3"></div>
+			</div>
+
+			<div class="row d-flex justify-content-center">
+				<div class="col-lg-3"></div>
+				<div class="col-md-2 d-flex justify-content-center">
+					<div class="diamond blue text-center">
+						<div class="icon">
+							<i class="devicon-jquery-plain"></i>
+						</div>
+
+						<div>
+							<p class="tool-name pt-2">jQuery</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-2 d-flex justify-content-center">
+					<div class="diamond light-green text-center">
+						<div class="icon">
+							<i class="devicon-git-plain"></i>
+						</div>
+
+						<div>
+							<p class="tool-name pt-2">Git</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-2 d-flex justify-content-center">
+					<div class="diamond pink-purple text-center">
+						<div class="icon">
+							<i class="devicon-bitbucket-plain"></i>
+						</div>
+
+						<div>
+							<p class="tool-name pt-2">Bitbucket</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3"></div>
+			</div>
+
+			<div class="row d-flex justify-content-center">
+				<div class="col-lg-3"></div>
+				<div class="col-md-2 d-flex justify-content-center">
+					<div class="diamond lighter-purple text-center">
+						<div class="icon ">
+							<i class="devicon-gulp-plain"></i>
+						</div>
+
+						<div>
+							<p class="tool-name pt-2 ">Gulp</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-2 d-flex justify-content-center">
+					<div class="diamond light-taupe text-center">
+						<div class="text-center icon">
+							<i class="devicon-bootstrap-plain "></i>
+						</div>
+
+						<div>
+							<p class="tool-name pt-2 ">Bootstrap 4.0</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-2 d-flex justify-content-center">
+					<div class="diamond lt-teal text-center">
+						<div class="text-center icon ">
+							<i class="devicon-visualstudio-plain "></i>
+						</div>
+
+						<div>
+							<p class="tool-name pt-2 ">Visual Studio</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3"></div>
+			</div>
+
+</section>
+
+	<div class="additional-tools">
+		<div class="row text-center">
+			<div class="col">
+				<h3 class="heading more-tools fade-in">Better not forget these...</h3>
+				<div class="row heading d-flex justify-content-center pt-2 slide-left">
+
+					<div class="col-lg-1">
+						<h4>APIs</h4>
+					</div>
+
+					<div class="col-lg-1">
+						<h4>Bash</h4>
+					</div>
+					<div class="col-lg-1">
+						<h4>RWD</h4>
+					</div>
+					<div class="col-lg-1">
+						<h4>JSON</h4>
+					</div>
+					<div class="col-lg-1">
+						<h4>XAMPP</h4>
+					</div>
+					<div class="col-lg-1">
+						<h4>SEO</h4>
+					</div>
+				</div>
+
+
 			</div>
 		</div>
 
 		<!-- Section for display my projects -->
-
+		<div id="experience">
 		<h2 class="heading text-center pb-3">Experience</h2>
 		<div class="circle-border text-center pb-5 mb-3">
 			<div class="circle mt-3"></div>
@@ -313,7 +327,9 @@
 					<p>Cory Robinson, Fullstack Developer/Former Mentor</p>
 			</div>
 		</div>
+	</div>
 
+	<div id="work">
 		<h2 class="heading text-center pb-3 mt-5">Work</h2>
 		<div class="circle-border text-center pb-5 mb-3">
 			<div class="circle mt-3"></div>
@@ -380,6 +396,7 @@
 		</div>
 	</div>
 	</div>
+</div>
 
 	<!-- wrapper -->
 
@@ -410,7 +427,7 @@
 		</div>
 	</div>
 
-	<div class="contact-section text-center pb-5 mb-5 ">
+	<div class="contact-section text-center pb-5 mb-5 " id="contact">
 		<h2 class="heading text-center pb-2 ">Let's talk!</h2>
 		<div class="circle-border text-center pb-5 mb-5">
 			<div class="circle mt-3"></div>
@@ -445,7 +462,7 @@
 			<div class="col-2">
 
 
-				<a href="#">
+				<a href="#header">
 
 					<i class="fas fa-home nav" data-fa-transform="left-4"></i>Home
 				</a>
@@ -457,7 +474,7 @@
 				</a>
 			</div>
 			<div class="col-2">
-				<a href="#">
+				<a href="#work">
 
 					<i class="fas fa-code-branch nav" data-fa-transform="left-4"></i>Work
 				</a>
@@ -465,7 +482,7 @@
 
 			<div class="col-2">
 
-				<a href="#">
+				<a href="#toolbox">
 
 					<i class="fas fa-wrench nav" data-fa-transform="left-4"></i>Toolbox
 				</a>
@@ -477,7 +494,7 @@
 				</a>
 			</div>
 			<div class="col-2">
-				<a href="#">
+				<a href="#contact">
 
 					<i class="far fa-envelope nav" data-fa-transform="left-4"></i>Contact
 				</a>

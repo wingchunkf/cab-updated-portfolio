@@ -19,6 +19,10 @@ body {
     background-color: #31004a;
 }
 
+.med-purple {
+    background-color: #887eb9;
+}
+
 .lt-purple {
     background-color: #55476d;
 }
@@ -68,7 +72,8 @@ a.nav-link:hover {
     border: none;
     border-radius: 80%;
     transform: scale(1.1);
-    background-color: #514f59;   
+    background-color: #887eb9;
+      
 }
 
 a.blue-nav:hover {
@@ -132,6 +137,7 @@ img.christine {
 .more-tools {
     opacity: 0;
     color: #869889;
+   
 }
 
 .additional-tools h4 {
@@ -155,8 +161,26 @@ img.christine {
 .icon {
     margin: 35px;
     transition: transform 0.5s ease-in-out;
-    -moz-transition: transform 0.5s ease-in-out;
+    -moz-transition: transform 0.5s ease-in-out;    
 }
+
+.spinning-tools {
+    position: relative;
+}
+
+// @media screen and (max-width: 425px) {
+//     .icon-divs {
+//         position: absolute;
+//         left: 50%;
+//         transform: translateX(50%);
+     
+//     }
+  
+
+
+
+
+
 
 .diamond {
     width: 8rem;
@@ -200,7 +224,7 @@ hr {
 	border: 1px solid black;
 }
 
-#about { 
+#header-wrapper { 
     padding: 0;
     margin: 0;
     overflow: hidden;
@@ -208,7 +232,7 @@ hr {
     position: relative;
 }
 
-#about img {
+#header-wrapper img {
     animation: backgroundEffects 20s infinite;
     height: 400px;
     width: 100%;
@@ -289,9 +313,9 @@ ul {
 
 .skew-right:hover {
     transform: perspective(50px) translateZ(10px);
-    -ms-transform: skewX(-35deg); /* IE 9 */
-    -webkit-transform: skewX(-35deg); /* Safari */
-    transform: skewX(-35deg); /* Standard syntax */
+    -ms-transform: skewX(-35deg); 
+    -webkit-transform: skewX(-35deg); 
+    transform: skewX(-35deg); 
 }
 
 a {
@@ -322,13 +346,14 @@ i.nav {
 .greeting {
     position: relative;
     transition: all 0.5s ease;
-    color: #55476d;
-    text-shadow: 2px 2px #888;
+    color: #5ad2f4;   
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    font-family: 'Playfair Display', sans-serif;
+    letter-spacing: 2px;    
 }
 
 .greeting:hover {
-    transform: perspective(500px) translateZ(50px);
-    color: #55476d;
+    transform: perspective(500px) translateZ(50px);    
     padding-bottom: 40px;
 }
 
@@ -439,6 +464,13 @@ img.sw-section {
     margin-right: -100px;
     max-width: 100%;
 }
+
+#desktop-navbar {
+    opacity: 0;   
+    transition: opacity 0.9s ease-in;
+}
+
+
 
 
 

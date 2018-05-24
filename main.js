@@ -7,6 +7,16 @@ var castleDetails = document.querySelector('.castle-details');
 var premierChevron = document.querySelector('.left-chevron-premier');
 var castleChevron = document.querySelector('.left-chevron-castle');
 
+// iife that fades in navbar on desktop view
+
+var myNav = document.querySelector('#desktop-navbar');
+
+(function navAppear () {
+    setTimeout(function() {
+        myNav.style.opacity = 1;
+    }, 3000);
+})();
+
 // script that fades in elements on scroll
 
 $(document).ready(function () {
@@ -26,7 +36,7 @@ $(document).ready(function () {
     });
 });
 
-// script that slides in project title from left on scroll
+// script that slides in elements from left on scroll
 
 $(document).ready(function () {
     $(window).scroll(function () {
@@ -41,24 +51,6 @@ $(document).ready(function () {
                 }, 1000);
             }
 
-        });
-    });
-});
-
-// script that slides in items from right on scroll
-
-$(document).ready(function () {
-    $(window).scroll(function () {
-        $('.fade-in-heading').each(function (i) {
-
-            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-            if (bottom_of_window > bottom_of_element) {
-                $(this).animate({
-                    'opacity': '1'
-                }, 1000);            
-            }
         });
     });
 });
