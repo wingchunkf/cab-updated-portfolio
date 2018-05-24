@@ -131,6 +131,11 @@ img.christine {
 
 .more-tools {
     opacity: 0;
+    color: #869889;
+}
+
+.additional-tools h4 {
+    color: #869889;
 }
 
 .container-fluid {
@@ -195,12 +200,41 @@ hr {
 	border: 1px solid black;
 }
 
-#about {
-    background-image: url('../img/portlaptop.jpg');
-    background-position: center;
-    background-size: 100% 100%;
+#about { 
     padding: 0;
     margin: 0;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+}
+
+#about img {
+    animation: backgroundEffects 20s infinite;
+    height: 400px;
+    width: 100%;
+}
+
+#header {
+    z-index: 999;
+    position: relative;
+}
+
+@keyframes backgroundEffects {
+    0% {
+    opacity: 0;
+    }
+    5% {
+    opacity: 1;
+    }
+    95% {
+        transform: scale3d(1.5, 1.5, 1.5) translate3d(-190px, -120px, 0px);
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+    100% {
+        transform: scale3d(2, 2, 2) translate3d(-170px, -100px, 0px);
+        opacity: 0;
+    }
 }
 
 .contact-section {
@@ -288,7 +322,7 @@ i.nav {
 .greeting {
     position: relative;
     transition: all 0.5s ease;
-    color: white;
+    color: #55476d;
     text-shadow: 2px 2px #888;
 }
 
