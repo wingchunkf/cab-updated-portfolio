@@ -142,18 +142,18 @@ img.christine {
   transform: perspective(600px) translate3d(0, 0, 200px) rotate(360deg) scale(1);
   -moz-transform: perspective(600px) translate3d(0, 0, 200px) rotate(360deg) scale(1); }
 
-.blue-texture-bg {
+.blue-texture-bg, .teal-texture-bg {
   background-color: #5ad2f4;
   background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
   font-family: 'Raleway', sans-serif;
   font-size: 110%;
   padding-top: 4rem;
   padding-bottom: 3rem;
-  line-height: 225%; }
+  line-height: 225%;
+  box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2); }
 
 .teal-texture-bg {
-  background-color: #62bec1;
-  background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png"); }
+  background-color: #62bec1; }
 
 hr {
   width: 25%;
@@ -172,7 +172,7 @@ hr {
   z-index: 1;
   position: relative; }
 
-#header-wrapper img {
+#laptop {
   animation: backgroundEffects 20s infinite;
   height: 400px;
   width: 100%; }
@@ -193,6 +193,9 @@ hr {
   100% {
     transform: scale3d(2, 2, 2) translate3d(-170px, -100px, 0px);
     opacity: 0; } }
+
+.christine {
+  animation: none; }
 
 .contact-section {
   height: 25rem; }

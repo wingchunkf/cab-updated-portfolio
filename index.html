@@ -86,15 +86,27 @@
 		<div>
 			<div class="row justify-content-center mt-3">
 
-				<img src="img/portlaptopbw.jpg">
-				<!-- <div class="col-lg col-md-12"> -->
-				<!-- <img src="img/christineupdated.jpg" class="img-fluid christine float-right" alt="woman smiling"> -->
-				<!-- </div> -->
+				<img src="img/portlaptopbwoverlay.jpg" id="laptop">
+			
+				</div>
+				</div>
 				<div class="col-lg col-md-12">
 					<h1 class="mt-5 pt-5 text-center text-darker greeting">Hi, I'm Christine.</h1>
 				</div>
+
+				<div class="row mt-5 mb-3 text-white d-flex justify-content-center">
+					<div class="col-lg-3">
+							<img src="img/christinebw.jpg" class="img-fluid christine" alt="woman smiling"> 
+					</div>
+						<div class="col-lg-6 text-center teal-texture-bg">
+							<p class="mx-5">
+								Veniam quis dolore consectetur voluptate reprehenderit laboris id qui enim commodo id dolor. Velit nulla occaecat aliqua deserunt laboris quis adipisicing et voluptate. Adipisicing ea amet in eu aliquip anim ullamco dolor reprehenderit reprehenderit enim. Non consectetur sint occaecat commodo consequat ea dolore pariatur adipisicing id laborum.
+							</p>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
+	
 	</div>
 
 	<!-- Tools section -->
@@ -441,6 +453,52 @@
 
 		<h3 style="color: #7e756d;">I'd love to hear from you.
 		</h3>
+	</div>
+</div>
+
+		<div class="container contact-form-page">
+			<form method="post" id="contact-form">
+				<div class="form-group row justify-content-center mt-5 mb-0 pb-0">
+					<div class="col-lg-8 col-md-10 col-xs-12 col-sm-12">
+						<label for="nameInput" id="name-label">Name</label>
+						<input class="form-control" type="text" placeholder="John Doe" id="nameInput" name="name">
+					</div>
+		
+					<div class="col-lg-8 col-md-10 col-xs-12 col-sm-12">
+						<label for="emailInput" id="email-label">Email</label>
+						<input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" name="email" placeholder="john.doe@gmail.com">
+					</div>
+					<div class="col-lg-8 col-md-10 col-xs-12 col-sm-12">
+						<label for="subjectInput" id="subject-label">Subject</label>
+						<input class="form-control" placeholder="Subject..." id="subjectInput" type="text" name="subject">
+					</div>
+					<div class="col-lg-8 col-md-10 col-xs-12 col-sm-12">
+						<label for="exampleFormControlTextarea1" id="message-label">Message</label>
+						<textarea class="form-control" id="messageInput" rows="5" name="msg"></textarea>
+					</div>
+				</div>
+		
+				<div class="row d-flex flex-column justify-content-center">
+					<div class="alert alert-danger text-center col-md-6 mx-auto my-3 d-none" id="email-failure-alert" role="alert">
+						<h4>There was a problem sending your message. Please try again.</h4>
+					</div>
+		
+					<div class="col-md-4 text-center mx-auto">
+						<input class="btn btn-primary btn-lg mt-4 mb-5 text-center" id="submit-button" type="submit" value="Submit">
+					</div>
+				</div>
+			</form>
+		
+			<div class="text-center col-md-6 mx-auto my-5 p-3 d-none" id="email-success-alert" role="alert">
+			
+		
+				<div class="alert alert-success">
+					<h3>Thanks! We'll get back to you ASAP!</h3>
+				</div>
+		
+			
+			</div>
+		</div>
 	</div>
 
 	<footer class="footer-bg">
