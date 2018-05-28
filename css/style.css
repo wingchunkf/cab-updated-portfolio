@@ -1,359 +1,28 @@
+/* --------------------
+    Sass Variables
+ --------------------*/
+/* --------------------
+    General CSS
+ --------------------*/
 body {
   font-family: 'Raleway';
   position: relative; }
 
-.blue {
-  background-color: #5ad2f4; }
+.container-fluid {
+  margin: 0;
+  padding: 0; }
 
-.teal {
-  background-color: #62bec1; }
-
-.green {
-  background-color: #647a67; }
-
-.purple {
-  background-color: #31004a; }
-
-.med-purple {
-  background-color: #887eb9; }
-
-.lt-purple {
-  background-color: #55476d; }
-
-.med-green {
-  background-color: #575; }
-
-.light-green {
-  background-color: #869889; }
-
-.lighter-purple {
-  background-color: #aba9b5; }
-
-.neutral-brown {
-  background-color: #5e5a5e; }
-
-.pink-purple {
-  background-color: #66436f; }
-
-.light-taupe {
-  background-color: #7e756d; }
-
-.lt-teal {
-  background-color: #b0dee0; }
-
-.text-medium {
-  color: #575; }
-
-a.nav-link {
-  width: 10.5rem;
-  font-size: 1.25rem;
-  transition: all ease 0.5s;
-  font-family: 'Raleway', sans-serif;
-  color: #887eb9; }
-
-a.nav-link:hover {
-  color: white;
-  border: none;
-  border-radius: 80%;
-  transform: scale(1.1);
-  background-color: #887eb9; }
-
-a.blue-nav:hover {
-  background-color: #5ad2f4; }
-
-a.teal-nav:hover {
-  background-color: #62bec1; }
-
-a.pink-purple-nav:hover {
-  background-color: #869889; }
-
-a.purple-nav:hover {
-  background-color: #55476d; }
-
-.text-darker {
-  color: #514f59; }
-
-.white {
-  color: white; }
-
-.navbar-toggler-icon {
-  color: white; }
-
-h1 {
-  font-size: 4rem; }
-
-img.christine {
-  height: 20rem;
-  width: auto; }
-
-.is-active {
-  box-shadow: 0 20px 5px -10px rgba(0, 0, 0, 0.4);
-  transform: translateY(10px); }
-
-.about h5 {
-  line-height: 225%; }
+ul {
+  list-style-type: none; }
 
 .vertical-center {
   position: relative;
   top: 50%;
   transform: translateY(-50%); }
 
-.heading {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  color: #7e756d; }
-
-.more-tools {
-  opacity: 0;
-  color: #869889; }
-
-.additional-tools h4 {
-  color: #869889; }
-
-.container-fluid {
-  margin: 0;
-  padding: 0; }
-
-.text-content {
-  padding: 0 20rem; }
-
-.devicon-javascript-plain, .devicon-jquery-plain, .devicon-git-plain, .devicon-bitbucket-plain, .devicon-gulp-plain, .devicon-bootstrap-plain, .devicon-visualstudio-plain, .devicon-sass-original, .devicon-slack-plain {
-  font-size: 3rem;
-  color: white; }
-
-.icon {
-  margin: 35px;
-  transition: transform 0.5s ease-in-out;
-  -moz-transition: transform 0.5s ease-in-out; }
-
-.spinning-tools {
-  position: relative; }
-
-.diamond {
-  width: 8rem;
-  height: 8rem;
-  border: 1px solid #efefef;
-  margin: 50px;
-  box-shadow: -5px -5px 5px #888;
-  transition: transform 0.3s ease-in-out;
-  -moz-transition: transform 0.3s ease-in-out; }
-
-.diamond:hover {
-  transform: perspective(600px) translate3d(0, 0, 200px) rotate(360deg) scale(1);
-  -moz-transform: perspective(600px) translate3d(0, 0, 200px) rotate(360deg) scale(1); }
-
-.blue-texture-bg, .teal-texture-bg {
-  background-color: #5ad2f4;
-  background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
-  font-family: 'Raleway', sans-serif;
-  font-size: 110%;
-  padding-top: 4rem;
-  padding-bottom: 3rem;
-  line-height: 225%;
-  box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2); }
-
-.teal-texture-bg {
-  background-color: #62bec1; }
-
-hr {
-  width: 25%;
-  padding-bottom: 1rem;
-  height: 12px;
-  border: 0;
-  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5); }
-
-.text-box p {
-  border: 1px solid black; }
-
-#header-wrapper {
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  z-index: 1;
-  position: relative; }
-
-#laptop {
-  animation: backgroundEffects 20s infinite;
-  height: 400px;
-  width: 100%; }
-
-#header {
-  z-index: 999;
-  position: relative; }
-
-@keyframes backgroundEffects {
-  0% {
-    opacity: 0; }
-  5% {
-    opacity: 1; }
-  95% {
-    transform: scale3d(1.5, 1.5, 1.5) translate3d(-190px, -120px, 0px);
-    animation-timing-function: ease-in;
-    opacity: 1; }
-  100% {
-    transform: scale3d(2, 2, 2) translate3d(-170px, -100px, 0px);
-    opacity: 0; } }
-
-.christine {
-  animation: none; }
-
-.contact-section {
-  height: 16rem;
-  padding-top: 2rem; }
-
-.copyright {
-  font-size: 1rem;
-  background: #aba9b5;
-  color: white; }
-
-ul {
-  list-style-type: none; }
-
-.social-media, .footer-nav {
-  color: white;
-  transition: transform .2s; }
-
-.social-media, .footer-nav {
-  transition: transform .2s; }
-
-.social-media:hover {
-  transform: scale(1.5); }
-
-.zoom {
-  transition: transform 0.2s; }
-
-.zoom:hover {
-  transform: scale(1.12); }
-
-.skew-left {
-  transition: transform 0.2s; }
-
-.skew-left:hover {
-  transform: perspective(50px) translateZ(10px);
-  -ms-transform: skewX(35deg);
-  /* IE 9 */
-  -webkit-transform: skewX(35deg);
-  /* Safari */
-  transform: skewX(35deg); }
-
-.skew-right {
-  transition: transform 0.2s; }
-
-.skew-right:hover {
-  transform: perspective(50px) translateZ(10px);
-  -ms-transform: skewX(-35deg);
-  -webkit-transform: skewX(-35deg);
-  transform: skewX(-35deg); }
-
-a {
-  color: #7e756d; }
-
-a:hover {
-  color: #869889; }
-
-i.nav {
-  padding-right: 10px; }
-
-.footer-bg {
-  background-color: #647a67;
-  background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
-  font-size: 110%;
-  line-height: 225%; }
-
-.footer-bg h2, .footer-bg a {
-  color: white;
-  transition: all 0.5s ease;
-  font-size: 120%; }
-
-.greeting {
-  position: relative;
-  transition: all 0.5s ease;
-  color: #5ad2f4;
-  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
-  font-family: 'Playfair Display', sans-serif;
-  letter-spacing: 2px; }
-
-.greeting:hover {
-  transform: perspective(500px) translateZ(50px);
-  padding-bottom: 40px; }
-
-h3.project-title {
-  box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2);
-  padding: 2rem 0;
-  margin-top: 6rem;
-  margin-bottom: 4rem;
-  text-align: center;
-  font-size: 150%; }
-
-.heading.premier-site, .work-info {
-  color: #62bec1;
-  box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2); }
-
-.work-info {
-  box-shadow: none;
-  text-align: center;
-  color: #62bec1;
-  font-style: italic;
-  line-height: 175%; }
-
-.bold {
-  font-weight: bold; }
-
-.heading.castle-site {
-  color: #62bec1; }
-
-.sw-app {
-  background: #55476d;
-  color: white; }
-
-.star-wars {
-  background: white; }
-
-.project-div {
-  height: 26rem;
-  box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2); }
-
-img.sw-section {
-  height: 35rem;
-  width: 42rem; }
-
-.left-chevron-castle, .left-chevron-premier {
-  color: #5ad2f4;
-  display: none; }
-
-.btn-group-lg > .btn, .btn-lg {
-  border-radius: 0 !important;
-  background-color: #5ad2f4;
-  color: white; }
-
-.btn-group-lg:hover > .btn:hover, .btn-lg:hover {
-  background-color: #bdedfa;
-  color: #7e756d; }
-
-.project-text {
-  line-height: 2.75;
-  font-size: 105%; }
-
-.demo:hover {
-  background: #62bec1; }
-
-.demo-link {
-  text-decoration: none !important;
-  color: #62bec1;
-  border: 1px solid #62bec1; }
-
-.demo-link:hover {
-  color: white;
-  background-color: #62bec1; }
-
-.circle, .circle-footer {
-  border-radius: 50%;
-  width: 15px;
-  height: 15px;
-  background-color: #887eb9;
-  display: inline-block;
-  margin-right: 30px; }
-
+/* --------------------
+    Classes for JS  
+ --------------------*/
 .fade-in {
   opacity: 0; }
 
@@ -365,19 +34,299 @@ img.sw-section {
   margin-right: -100px;
   max-width: 100%; }
 
-input[name="first-name"], input[name="last-name"], input[name="email"], input[name="subject"], input[name="submit"] {
-  border-radius: 0;
-  height: 3.5rem;
+/* --------------------
+Background-color classes
+ --------------------*/
+.blue {
+  background-color: #5ad2f4; }
+
+.teal {
+  background-color: #62bec1; }
+
+.teal-texture-bg {
+  background-color: #62bec1; }
+
+.lt-green {
+  background-color: #869889; }
+
+.purple {
+  background-color: #31004a; }
+
+.lt-purple {
+  background-color: #55476d; }
+
+.lighter-purple {
+  background-color: #aba9b5; }
+
+.neutral-brown {
+  background-color: #5e5a5e; }
+
+.pink-purple {
+  background-color: #66436f; }
+
+.lt-taupe {
+  background-color: #7e756d; }
+
+.lt-teal {
+  background-color: #b0dee0; }
+
+/* --------------------
+    Color classes
+ --------------------*/
+.white {
+  color: #fff; }
+
+/* --------------------
+        Navbar
+ --------------------*/
+a.nav-link {
+  color: #887eb9;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.25rem;
+  transition: all ease 0.5s;
+  width: 10.5rem; }
+
+a.nav-link:hover {
+  background-color: #887eb9;
   border: none;
-  border-bottom: 1px solid #ced4da;
-  outline: none; }
+  border-radius: 80%;
+  color: #fff;
+  transform: scale(1.1); }
+
+i.nav {
+  padding-right: 10px; }
+
+.navbar-toggler-icon {
+  color: #fff; }
+
+/* --------------------
+    Header section
+ --------------------*/
+#header-wrapper {
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  z-index: 1; }
+
+#header {
+  position: relative;
+  z-index: 999; }
 
 #desktop-navbar {
   opacity: 0;
   transition: opacity 0.9s ease-in; }
 
+.bold {
+  font-weight: bold; }
+
+#laptop {
+  animation: backgroundEffects 20s infinite;
+  height: 400px;
+  width: 100%; }
+
+@keyframes backgroundEffects {
+  0% {
+    opacity: 0; }
+  5% {
+    opacity: 1; }
+  95% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: scale3d(1.5, 1.5, 1.5) translate3d(-190px, -120px, 0px); }
+  100% {
+    opacity: 0;
+    transform: scale3d(2, 2, 2) translate3d(-170px, -100px, 0px); } }
+
+.greeting {
+  color: #5ad2f4;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  position: relative;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease; }
+
+.greeting:hover {
+  padding-bottom: 40px;
+  transform: perspective(500px) translateZ(50px); }
+
+img.christine {
+  animation: none;
+  height: 20rem;
+  width: auto; }
+
+q:before {
+  content: '\201c'; }
+
+q:after {
+  content: '\201d'; }
+
+/* --------------------
+    Tools section
+ --------------------*/
+.heading {
+  color: #7e756d;
+  padding-bottom: 4rem;
+  padding-top: 4rem; }
+
+.more-tools {
+  color: #869889;
+  opacity: 0; }
+
+.additional-tools h4 {
+  color: #869889; }
+
+/* --------------------
+    Spinning Icons
+ --------------------*/
+.devicon-javascript-plain, .devicon-jquery-plain, .devicon-git-plain, .devicon-bitbucket-plain, .devicon-gulp-plain, .devicon-bootstrap-plain, .devicon-visualstudio-plain, .devicon-sass-original, .devicon-slack-plain {
+  color: #fff;
+  font-size: 3rem; }
+
+.icon {
+  margin: 35px;
+  transition: transform 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out; }
+
+.spinning-tools {
+  position: relative; }
+
+.diamond {
+  border: 1px solid #efefef;
+  box-shadow: -5px -5px 5px #888;
+  height: 8rem;
+  margin: 50px;
+  transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  width: 8rem; }
+
+.diamond:hover {
+  transform: perspective(600px) translate3d(0, 0, 200px) rotate(360deg) scale(1);
+  -moz-transform: perspective(600px) translate3d(0, 0, 200px) rotate(360deg) scale(1); }
+
+/* --------------------
+    Testimonial 
+ --------------------*/
+.blue-texture-bg, .teal-texture-bg {
+  background-color: #5ad2f4;
+  background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+  box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2);
+  font-family: 'Raleway', sans-serif;
+  font-size: 110%;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  line-height: 225%; }
+
+/* --------------------
+    Work Section 
+ --------------------*/
+h3.project-title {
+  box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2);
+  font-size: 150%;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  padding: 2rem 0;
+  text-align: center; }
+
+.heading.premier-site, .work-info {
+  box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2);
+  color: #62bec1; }
+
+.work-info {
+  box-shadow: none;
+  color: #62bec1;
+  font-style: italic;
+  line-height: 175%;
+  text-align: center; }
+
+.heading.castle-site {
+  color: #62bec1; }
+
+.sw-app {
+  background: #55476d;
+  color: #fff; }
+
+.star-wars {
+  background: #fff; }
+
+.project-div {
+  box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2);
+  height: 26rem; }
+
+img.sw-section {
+  height: 35rem;
+  width: 42rem; }
+
+.left-chevron-castle, .left-chevron-premier {
+  color: #5ad2f4;
+  display: none; }
+
+.btn-group-lg > .btn, .btn-lg {
+  background-color: #5ad2f4;
+  border-radius: 0 !important;
+  color: #fff; }
+
+.btn-group-lg:hover > .btn:hover, .btn-lg:hover {
+  background-color: #bdedfa;
+  color: #7e756d; }
+
+.project-text {
+  font-size: 105%;
+  line-height: 2.75; }
+
+.demo:hover {
+  background: #62bec1; }
+
+.demo-link {
+  border: 1px solid #62bec1;
+  color: #62bec1;
+  text-decoration: none !important; }
+
+.demo-link:hover {
+  background-color: #62bec1;
+  color: #fff; }
+
+.skew-left {
+  transition: transform 0.2s; }
+
+.skew-left:hover {
+  transform: perspective(50px) translateZ(10px);
+  transform: skewX(35deg);
+  -ms-transform: skewX(35deg);
+  -webkit-transform: skewX(35deg); }
+
+.skew-right {
+  transition: transform 0.2s; }
+
+.skew-right:hover {
+  transform: perspective(50px) translateZ(10px);
+  transform: skewX(-35deg);
+  -ms-transform: skewX(-35deg);
+  -webkit-transform: skewX(-35deg); }
+
+.zoom {
+  transition: transform 0.2s; }
+
+.zoom:hover {
+  transform: scale(1.12); }
+
+/* --------------------
+    Contact Section 
+ --------------------*/
+.contact-section {
+  height: 16rem;
+  padding-top: 2rem; }
+
+input[name="first-name"], input[name="last-name"], input[name="email"], input[name="subject"], input[name="submit"] {
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  border-radius: 0;
+  height: 3.5rem;
+  outline: none; }
+
 label {
-  background-color: white;
+  background-color: #fff;
   border: 1px solid #5ad2f4;
   color: #5ad2f4;
   width: 160px; }
@@ -388,10 +337,41 @@ textarea[name="message"] {
 
 input[name="submit"] {
   background: #887eb9;
-  color: white; }
+  color: #fff; }
 
-q:before {
-  content: '\201c'; }
+/* --------------------
+        Footer  
+ --------------------*/
+.circle, .circle-footer {
+  background-color: #887eb9;
+  border-radius: 50%;
+  display: inline-block;
+  height: 15px;
+  margin-right: 30px;
+  width: 15px; }
 
-q:after {
-  content: '\201d'; }
+.copyright {
+  background: #aba9b5;
+  color: #fff;
+  font-size: 1rem; }
+
+.footer-bg {
+  background-color: #647a67;
+  background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+  font-size: 110%;
+  line-height: 225%; }
+
+.footer-bg h2, .footer-bg a {
+  color: #fff;
+  font-size: 120%;
+  transition: all 0.5s ease; }
+
+.social-media, .footer-nav {
+  color: #fff;
+  transition: transform .2s; }
+
+.social-media, .footer-nav {
+  transition: transform .2s; }
+
+.social-media:hover {
+  transform: scale(1.5); }
