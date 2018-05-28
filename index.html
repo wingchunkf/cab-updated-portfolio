@@ -451,9 +451,10 @@
 		</div>
 	</div>
 
-	<div class="contact-section text-center pb-5 mb-5 " id="contact">
+
+	<div class="contact-section text-center pb-5 mb-3" id="contact">
 		<h2 class="heading text-center pb-2 ">Let's talk!</h2>
-		<div class="circle-border text-center pb-5 mb-5">
+		<div class="circle-border text-center">
 			<div class="circle mt-3"></div>
 			<div class="circle"></div>
 			<div class="circle"></div>
@@ -463,28 +464,59 @@
 			<div class="circle"></div>
 		</div>
 
-		<h3 style="color: #7e756d;">I'd love to hear from you.
-		</h3>
+	
 	</div>
-	</div>
+	<!-- </div> -->
+	<div class="contact-form-section">
+	<form action="contact.php" name="my-form" method="post">
+			<div class="row d-flex justify-content-center pt-2 pb-5">
+				<div class="col-lg-4">
+						<label class='text-center px-3 py-3'><i class="fas fa-user">&nbsp;</i>First Name</label>
+					<input type="text" class="form-control first" name="first-name">
+				</div>
+				<div class="col-lg-4">
+						<label class="text-center px-3 py-3" for='last'><i class="fas fa-user">&nbsp;</i>Last name</label>
+						<input type="text" class="form-control" name="last-name">
+					</div>
+					</div>
+	
+			
+		
+	
+			<div class="row d-flex justify-content-center pb-5">
+					<div class="col-lg-4">
+							<label class="text-center px-3 py-3" for='email'><i class="fas fa-envelope">&nbsp;</i>Email</label>
+							<input type="text" name="email" class="form-control">
+						</div>
+				<div class="col-lg-4">
+						<label class="text-center px-3 py-3" for='subject'><i class="fas fa-tag">&nbsp;</i>Subject</label>
+					<input type="text" name="subject" class="form-control">
+				</div>
+			</div>
+	
+			<div class="row d-flex justify-content-center pb-5">
+				<div class="col-lg-8">
+					<label for='message' class="text-center px-3 py-3"><i class="fas fa-comment-alt">&nbsp;</i>Message</label>
+					<textarea class="form-control mt-3" name="message" rows="8"></textarea>
+				</div>
+			</div>
+	
+			<div class="row d-flex justify-content-center pb-5">
+				<div class="col-lg-8">
+					<input class="form-control" type="submit" name="submit" value="Submit">
+					<div class="clear">
+					</div>
+				</div>
+	
+			</div>
 
-	<div class="contactFrm">
-		<?php if(!empty($statusMsg)){ ?>
-			<p class="statusMsg <?php echo !empty($msgClass)?$msgClass:''; ?>"><?php echo $statusMsg; ?></p>
-		<?php } ?>
-		<form action="" method="post">
-			<h4>Name</h4>
-			<input type="text" name="name" placeholder="Your Name" required="">
-			<h4>Email </h4>
-			<input type="email" name="email" placeholder="email@example.com" required="">
-			<h4>Subject</h4>
-			<input type="text" name="subject" placeholder="Write subject" required="">
-			<h4>Message</h4>
-			<textarea name="message" placeholder="Write your message here" required=""> </textarea>
-			<input type="submit" name="submit" value="Submit">
-			<div class="clear"> </div>
-		</form>
-	</div>
+
+		<div class="row">
+		<h3 class="mx-auto pt-3 pb-5" style="color: #7e756d;">I'd love to hear from you <i class="far fa-smile"></i>
+			</h3>
+		</div>
+	</form>
+</div>
 
 	<footer class="footer-bg">
 

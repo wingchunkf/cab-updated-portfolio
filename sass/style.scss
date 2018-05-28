@@ -204,7 +204,8 @@ hr {
 }
 
 .contact-section {
-    height: 25rem;   
+    height: 16rem;
+    padding-top: 2rem;   
 }
 
 .copyright {
@@ -406,18 +407,27 @@ img.sw-section {
     max-width: 100%;
 }
 
+input[name="first-name"], input[name="last-name"], input[name="email"], input[name="subject"], input[name="submit"] {
+    border-radius: 0;
+    height: 3.5rem;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    outline: none;    
+}
 
+label {
+    background-color: white;
+    border: 1px solid #5ad2f4;
+    color: #5ad2f4;
+    width: 160px;   
+}
 
+textarea[name="message"] {
+    border-radius: 0;
+    outline: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+input[name="submit"] {    
+    background: #887eb9;
+    color: white;
+}

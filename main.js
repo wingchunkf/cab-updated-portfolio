@@ -62,3 +62,5 @@ $(document).ready(function () {
         });
     });
 });
+
+var firstNameInput = document.querySelector('.first');
