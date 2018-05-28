@@ -365,13 +365,16 @@ img.sw-section {
   margin-right: -100px;
   max-width: 100%; }
 
-<<<<<<< HEAD
 input[name="first-name"], input[name="last-name"], input[name="email"], input[name="subject"], input[name="submit"] {
   border-radius: 0;
   height: 3.5rem;
   border: none;
   border-bottom: 1px solid #ced4da;
   outline: none; }
+
+#desktop-navbar {
+  opacity: 0;
+  transition: opacity 0.9s ease-in; }
 
 label {
   background-color: white;
@@ -386,8 +389,9 @@ textarea[name="message"] {
 input[name="submit"] {
   background: #887eb9;
   color: white; }
-=======
-#desktop-navbar {
-  opacity: 0;
-  transition: opacity 0.9s ease-in; }
->>>>>>> about-section
+
+q:before {
+  content: '\201c'; }
+
+q:after {
+  content: '\201d'; }
