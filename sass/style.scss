@@ -19,6 +19,10 @@ body {
     background-color: #31004a;
 }
 
+.med-purple {
+    background-color: #887eb9;
+}
+
 .lt-purple {
     background-color: #55476d;
 }
@@ -68,7 +72,8 @@ a.nav-link:hover {
     border: none;
     border-radius: 80%;
     transform: scale(1.1);
-    background-color: #514f59;   
+    background-color: #887eb9;
+      
 }
 
 a.blue-nav:hover {
@@ -131,6 +136,12 @@ img.christine {
 
 .more-tools {
     opacity: 0;
+    color: #869889;
+   
+}
+
+.additional-tools h4 {
+    color: #869889;
 }
 
 .container-fluid {
@@ -150,8 +161,26 @@ img.christine {
 .icon {
     margin: 35px;
     transition: transform 0.5s ease-in-out;
-    -moz-transition: transform 0.5s ease-in-out;
+    -moz-transition: transform 0.5s ease-in-out;    
 }
+
+.spinning-tools {
+    position: relative;
+}
+
+// @media screen and (max-width: 425px) {
+//     .icon-divs {
+//         position: absolute;
+//         left: 50%;
+//         transform: translateX(50%);
+     
+//     }
+  
+
+
+
+
+
 
 .diamond {
     width: 8rem;
@@ -168,19 +197,19 @@ img.christine {
     -moz-transform: perspective(600px) translate3d(0, 0, 200px) rotate(360deg) scale(1);
 }
 
-.blue-texture-bg {  
+.blue-texture-bg, .teal-texture-bg {  
 	background-color: #5ad2f4;
 	background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
 	font-family: 'Raleway', sans-serif;
 	font-size: 110%;
 	padding-top: 4rem;
 	padding-bottom: 3rem;
-	line-height: 225%;
+    line-height: 225%;
+    box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2);
 }
 
 .teal-texture-bg {
-	background-color: #62bec1;
-    background-image:  url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+	background-color: #62bec1;  
 }
 
 hr {
@@ -195,12 +224,45 @@ hr {
 	border: 1px solid black;
 }
 
-#about {
-    background-image: url('../img/portlaptop.jpg');
-    background-position: center;
-    background-size: 100% 100%;
+#header-wrapper { 
     padding: 0;
     margin: 0;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+}
+
+#laptop {
+    animation: backgroundEffects 20s infinite;
+    height: 400px;
+    width: 100%;
+}
+
+#header {
+    z-index: 999;
+    position: relative;
+}
+
+@keyframes backgroundEffects {
+    0% {
+    opacity: 0;
+    }
+    5% {
+    opacity: 1;
+    }
+    95% {
+        transform: scale3d(1.5, 1.5, 1.5) translate3d(-190px, -120px, 0px);
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+    100% {
+        transform: scale3d(2, 2, 2) translate3d(-170px, -100px, 0px);
+        opacity: 0;
+    }
+}
+
+.christine {
+    animation: none;
 }
 
 .contact-section {
@@ -256,9 +318,9 @@ ul {
 
 .skew-right:hover {
     transform: perspective(50px) translateZ(10px);
-    -ms-transform: skewX(-35deg); /* IE 9 */
-    -webkit-transform: skewX(-35deg); /* Safari */
-    transform: skewX(-35deg); /* Standard syntax */
+    -ms-transform: skewX(-35deg); 
+    -webkit-transform: skewX(-35deg); 
+    transform: skewX(-35deg); 
 }
 
 a {
@@ -289,13 +351,14 @@ i.nav {
 .greeting {
     position: relative;
     transition: all 0.5s ease;
-    color: white;
-    text-shadow: 2px 2px #888;
+    color: #5ad2f4;   
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    font-family: 'Playfair Display', sans-serif;
+    letter-spacing: 2px;    
 }
 
 .greeting:hover {
-    transform: perspective(500px) translateZ(50px);
-    color: #55476d;
+    transform: perspective(500px) translateZ(50px);    
     padding-bottom: 40px;
 }
 
@@ -407,6 +470,7 @@ img.sw-section {
     max-width: 100%;
 }
 
+<<<<<<< HEAD
 input[name="first-name"], input[name="last-name"], input[name="email"], input[name="subject"], input[name="submit"] {
     border-radius: 0;
     height: 3.5rem;
@@ -414,6 +478,17 @@ input[name="first-name"], input[name="last-name"], input[name="email"], input[na
     border-bottom: 1px solid #ced4da;
     outline: none;    
 }
+=======
+#desktop-navbar {
+    opacity: 0;   
+    transition: opacity 0.9s ease-in;    
+}
+
+
+
+
+
+>>>>>>> about-section
 
 label {
     background-color: white;
