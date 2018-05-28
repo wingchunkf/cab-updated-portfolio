@@ -53,28 +53,4 @@ $(document).ready(function () {
 
         });
     });
-<<<<<<< HEAD
 });
-
-// script that slides in items from right on scroll
-
-$(document).ready(function () {
-    $(window).scroll(function () {
-        $('.fade-in-heading').each(function (i) {
-
-            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-            if (bottom_of_window > bottom_of_element) {
-                $(this).animate({
-                    'opacity': '1'
-                }, 1000);            
-            }
-        });
-    });
-});
-
-var firstNameInput = document.querySelector('.first');
-=======
-});
->>>>>>> about-section
