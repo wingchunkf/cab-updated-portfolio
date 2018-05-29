@@ -477,13 +477,14 @@ input[name="submit"] {
     background: $med-purple;
     color: $white;
     font-size: 130%;
+    font-weight: bold;
     transition: all 0.3s ease;
 }
 
 input[name="submit"]:hover {
     background-color: $white;
-    color: $med-purple;
     border: 2px solid $med-purple;
+    color: $med-purple;   
     font-weight: bold;
 }
 
