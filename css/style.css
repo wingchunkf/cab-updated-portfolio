@@ -209,6 +209,11 @@ q:after {
   -moz-transform: rotate(360deg) scale(1.3);
   -webkit-transform: rotate(360deg) scale(1.3); }
 
+.tool-name {
+  color: #7e756d;
+  font-size: 110%;
+  padding-top: 2rem; }
+
 /* --------------------
     Learning Section 
  --------------------*/
