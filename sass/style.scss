@@ -151,6 +151,25 @@ i.nav {
 }
 
 /* --------------------
+    Mobile navbar
+ --------------------*/
+
+.mobile-navigation > ul > li {
+    width: 100%;      
+}
+
+#mobile-nav-list.mobile-navigation > ul > li > a {
+    color: $lt-purple;
+    
+}
+
+#mobile-nav-list > ul > li > a:hover {
+    text-decoration: none;
+}
+
+
+
+/* --------------------
     Header section
  --------------------*/
 #header-wrapper {     

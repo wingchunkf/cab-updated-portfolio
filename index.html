@@ -22,11 +22,7 @@
 	<div id="header-wrapper">
 		<div class="container-fluid" id="header">
 			<div class="row d-flex justify-content-center mt-2">
-				<nav class="navbar navbar-expand-lg d-none d-lg-block d-xl-block">
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-					    aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
+				<nav class="navbar navbar-expand-lg">				
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav mr-auto text-center" id="desktop-navbar">
 							<li class="nav-item active">
@@ -68,29 +64,33 @@
 			</div>
 		</div>
 		<!-- mobile navbar -->
-		<div class="container-fluid mobile-navigation d-lg-none">
-			<div class="row justify-content-around">
-				<ul class="mobile-nav-list text-center w-100 px-5">
-					<li class="item blue py-4 pr-5">
+		<div class="container-fluid mobile-navigation d-block d-lg-none" >			
+			<div class="row d-flex justify-content-center">
+					<div class="col">						
+				<ul class="mobile-nav-list text-center mx-auto" id="mobile-nav-list">
+					<li class="py-4 mb-3">
 						<a href="#header">Home</a>
 					</li>
-					<li class="item teal py-4 pr-5">
-						<a href="#about">About</a>
+					<li class="py-4 my-3">
+						<a href="#about lt-purple">About</a>
 					</li>
-					<li class="item teal py-4 pr-5">
+					<li class="py-4 my-3">
 						<a href="#experience">Experience</a>
 					</li>
-					<li class="item pink-purple py-4 pr-5">
+					<li class="py-4 my-3">
 						<a href="#work">Work</a>
 					</li>
-					<li class="item lt-purple py-4 pr-5">
+					<li class="py-4 my-3">
 						<a href="#toolbox">Toolbox</a>
 					</li>
-					<li class="item lt-purple py-4 pr-5">Learning</li>
-					<li class="item purple py-4 pr-5">
+					<li class="py-4 my-3">
+						<a href="#learning">Learning</a>
+					</li>
+					<li class="py-4 my-3">
 						<a href="#contact">Contact</a>
 					</li>
 				</ul>
+			</div>
 			</div>
 		</div>
 
