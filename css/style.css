@@ -152,9 +152,7 @@ i.nav {
   transform: perspective(500px) translateZ(50px); }
 
 img.christine {
-  animation: none;
-  height: 20rem;
-  width: auto; }
+  animation: none; }
 
 q:before {
   content: '\201c'; }
@@ -408,3 +406,33 @@ input[name="submit"] {
 .social-media:hover {
   opacity: 0.8;
   transform: scale(1.2); }
+
+/* --------------------
+      Media Queries  
+ --------------------*/
+@media screen and (max-width: 768px) {
+  .heading {
+    padding-bottom: 1rem;
+    padding-top: 1rem; }
+  label {
+    width: 100%;
+    margin-bottom: 1rem; }
+  h3.project-title {
+    margin-top: -0.75rem; }
+  img.zoom.fade-in {
+    height: 15rem; }
+  h1.greeting {
+    font-size: 200%; }
+  .circle {
+    display: none; }
+  .contact-section {
+    height: 8rem; }
+  .contact-form-section h4 {
+    font-size: 97%; } }
+
+@media screen and (max-width: 1024px) {
+  img.rounded-circle.christine.img-fluid {
+    max-width: 50%;
+    height: auto;
+    margin-left: 24%;
+    margin-bottom: 1.75rem; } }
