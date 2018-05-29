@@ -212,17 +212,23 @@ q:after {
   -webkit-transform: rotate(360deg) scale(1.3); }
 
 /* --------------------
-    Testimonial 
+    Learning Section 
  --------------------*/
-.blue-texture-bg, .teal-texture-bg {
-  background-color: #5ad2f4;
-  background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+#learning h5 {
+  font-style: italic;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; }
+
+hr {
+  color: #55476d;
+  width: 50%; }
+
+.studies {
   box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2);
-  font-family: 'Raleway', sans-serif;
-  font-size: 110%;
-  padding-top: 4rem;
-  padding-bottom: 3rem;
-  line-height: 225%; }
+  transition: transform 0.2s; }
+
+.studies:hover {
+  transform: scale(1.12); }
 
 /* --------------------
     Work Section 
@@ -316,6 +322,19 @@ img.sw-section {
 
 .zoom:hover {
   transform: scale(1.12); }
+
+/* --------------------
+    Testimonial 
+ --------------------*/
+.blue-texture-bg, .teal-texture-bg {
+  background-color: #5ad2f4;
+  background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+  box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2);
+  font-family: 'Raleway', sans-serif;
+  font-size: 110%;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  line-height: 225%; }
 
 /* --------------------
     Contact Section 

@@ -20,8 +20,7 @@
 
 <body>
 	<div id="header-wrapper">
-		<div class="container-fluid" id="header">
-			<!-- <div class="col"> -->
+		<div class="container-fluid" id="header">			
 			<div class="row d-flex justify-content-center mt-2">
 				<nav class="navbar navbar-expand-lg d-none d-lg-block d-xl-block">
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -268,7 +267,7 @@
 	<div class="additional-tools">
 		<div class="row text-center">
 			<div class="col">
-				<h3 class="heading more-tools fade-in">As well as...</h3>
+				<h3 class="heading fade-in">As well as...</h3>
 				<div class="row heading d-flex justify-content-center pt-2 slide-left">
 
 					<div class="col-1">
@@ -306,10 +305,9 @@
 		</div>
 	</div>
 
-	<!-- Section for display my projects -->
-	<div id="experience">
-		<h2 class="heading text-center pb-3">Experience</h2>
-		<div class="circle-border text-center pb-5 mb-3">
+	<div class="currently-learning pb-5 mb-5" id="learning">
+		<h2 class="heading text-center pb-2">Learning</h2>
+		<div class="circle-border text-center pb-5">
 			<div class="circle mt-3"></div>
 			<div class="circle"></div>
 			<div class="circle"></div>
@@ -319,120 +317,155 @@
 			<div class="circle"></div>
 		</div>
 
-		<div class="work-experience pb-3">
-			<div class="row d-flex justify-content-center">
+		<div class="row pt-lg-5 mt-2 d-flex justify-content-center text-center fade-in">
+			<div class="col-lg-4 border mr-lg-5 studies">
+				<h4 class="heading pb-4">Currently Learning</h4>
+				<hr class="pb-3">
+				<h5>Vue JS</h5>
+				<h5>BEM</h5>
+				<h5>CSS animation</h5>
+				<br>
+				<br>
+				<p class="pb-5 mx-5">~ I've been studying and building with Vue JS for a few months and am in the process of strengthening my skills.</p>
+			</div>
 
-				<div class="col-5 pb-2 mx-auto">
+			<div class="col-lg-4 mt-3 mt-lg-0 border studies">
+				<h4 class="heading pb-4">Areas of Interest</h4>
+				<hr class="pb-3">
+				<h5>React JS</h5>
+				<h5>PHP</h5>
+				<h5>Node JS</h5>
+				<h5 class="pb-3">Unit testing</h5>
+				<p class="pb-5 mx-3">~ I have some familiarity with React JS and PHP.</p>
+			</div>
+		</div>
+		<!-- Section for display my projects -->
+		<div id="experience" class="pt-lg-5">
+			<h2 class="heading text-center pb-3">Experience</h2>
+			<div class="circle-border text-center pb-5 mb-3">
+				<div class="circle mt-3"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+			</div>
 
-					<h4 class="work-info pb-3">
-						<span class="bold pb-0">Junior Front-End Developer</span>
-						<br>
-						<h5 class="work-info pb-3">American Solutions, LLC
-							<br>June 2017 through April 2018</h5>
-					</h4>
+			<div class="work-experience pb-3">
+				<div class="row d-flex justify-content-center">
 
-				</div>
-				<div class="col-8 project-text">
-					<p class="fade-in">Working under a mentor, I was involved in two major projects. The first was a template-based site for a local home renovation/construction
-						company, Castle Rock Construction. The site can be viewed
-						<a href="https://www.castlerock-construction.com/">here.</a> For this project, I reorganized the layout of each page to suit the needs of the client, chose a color palette
-						and created the corresponding Sass variables, added images, implemented Google Analytics, added a Favicon, and created
-						a build pipeline for compiling Sass files.</p>
+					<div class="col-5 pb-2 mx-auto">
+
+						<h4 class="work-info pb-3">
+							<span class="bold pb-0">Junior Front-End Developer</span>
+							<br>
+							<h5 class="work-info pb-3">American Solutions, LLC
+								<br>June 2017 through April 2018</h5>
+						</h4>
+					</div>
+
+					<div class="col-8 project-text">
+						<p class="fade-in">Working under a mentor, I was involved in two major projects. The first was a template-based site for a local home
+							renovation/construction company, Castle Rock Construction. The site can be viewed
+							<a href="https://www.castlerock-construction.com/">here.</a> For this project, I reorganized the layout of each page to suit the needs of the client, chose a color palette
+							and created the corresponding Sass variables, added images, implemented Google Analytics, added a Favicon, and created
+							a build pipeline for compiling Sass files.</p>
 						<p class="fade-in">For the second project, which was much larger in scope, I was responsible for a complete revamping of the website accompanying
-						a security company management app built and owned by my mentor. At that time, the app was being offered free of charge
-						and was utilized by approximately 500 users per day. The goal of this project was to revamp the website and app for
-						monetizing purposes. Working from basic Justinmind prototypes, I coded the HTML, styled the six-page site, and used
-						JavaScript, Vue, and jQuery to add functionality and interactivity.</p>					
+							a security company management app built and owned by my mentor. At that time, the app was being offered free of charge
+							and was utilized by approximately 500 users per day. The goal of this project was to revamp the website and app for
+							monetizing purposes. Working from basic Justinmind prototypes, I coded the HTML, styled the six-page site, and used
+							JavaScript, Vue, and jQuery to add functionality and interactivity.</p>
 						<p class="fade-in">My mentor also tasked me with cross-browser compatibility testing, testing the site on various devices and operating
-						systems, and finding and eliminating bugs throughout the entire process. In addition, I implemented Google Analytics
-						for the project and completed many SEO-related tasks. Multiple tools and frameworks were used for this effort, including
-						Bootstrap 4, Sass, Gulp, Vue JS, Photoshop, Git, Visual Studio Code, the Git Bash CLI, JavaScript, and jQuery. The
-						project was managed in Jira, stored in a Bitbucket repository, and developed in two-week sprints using an Agile approach.
-						Over the course of both projects, I gained a plethora of technical skills and also experienced the software development
-						lifecycle as a member of a development team.</p>
+							systems, and finding and eliminating bugs throughout the entire process. In addition, I implemented Google Analytics
+							for the project and completed many SEO-related tasks. Multiple tools and frameworks were used for this effort, including
+							Bootstrap 4, Sass, Gulp, Vue JS, Photoshop, Git, Visual Studio Code, the Git Bash CLI, JavaScript, and jQuery. The
+							project was managed in Jira, stored in a Bitbucket repository, and developed in two-week sprints using an Agile approach.
+							Over the course of both projects, I gained a plethora of technical skills and also experienced the software development
+							lifecycle as a member of a development team.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row mt-5 mb-3 text-white">
+				<div class="col-lg-6 mx-auto text-center blue-texture-bg">
+					<p class="ml-5">
+						<i class="fas fa-quote-left fa-lg" style="margin-bottom: 15px; margin-right: 15px;"></i>&nbspWorking with Christine was both a valuable and rewarding experience. Christine is an articulate and talented
+						web developer. I've had the pleasure to work with her on multiple projects and truly appreciate her ability to move
+						through tasks quickly as well as adding her touch of creativity. I would highly recommend Christine to anyone in the
+						market for web development or web services!&nbsp
+						<i class="fas fa-quote-right fa-lg" style="margin-bottom: 15px; margin-left: 15px;"></i>
+						<p>Cory Robinson, Fullstack Developer/Former Mentor</p>
 				</div>
 			</div>
 		</div>
 
-		<div class="row mt-5 mb-3 text-white">
-			<div class="col-lg-6 mx-auto text-center blue-texture-bg">
-				<p class="ml-5">
-					<i class="fas fa-quote-left fa-lg" style="margin-bottom: 15px; margin-right: 15px;"></i>&nbspWorking with Christine was both a valuable and rewarding experience. Christine is an articulate and talented
-					web developer. I've had the pleasure to work with her on multiple projects and truly appreciate her ability to move
-					through tasks quickly as well as adding her touch of creativity. I would highly recommend Christine to anyone in the
-					market for web development or web services!&nbsp
-					<i class="fas fa-quote-right fa-lg" style="margin-bottom: 15px; margin-left: 15px;"></i>
-					<p>Cory Robinson, Fullstack Developer/Former Mentor</p>
+		<div id="work">
+			<h2 class="heading text-center pb-3 mt-5">Work</h2>
+			<div class="circle-border text-center pb-5 mb-3">
+				<div class="circle mt-3"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
 			</div>
-		</div>
-	</div>
 
-	<div id="work">
-		<h2 class="heading text-center pb-3 mt-5">Work</h2>
-		<div class="circle-border text-center pb-5 mb-3">
-			<div class="circle mt-3"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-		</div>
-
-		<div class="sw-app">
-			<div class="row">
-				<div class="col-5 pb-2 mx-auto">
-					<h3 class="project-title star-wars heading">Star Wars Trivia App</h3>
+			<div class="sw-app">
+				<div class="row">
+					<div class="col-5 pb-2 mx-auto">
+						<h3 class="project-title star-wars heading">Star Wars Trivia App</h3>
+					</div>
 				</div>
-			</div>
 
-			<div class="row mx-auto d-flex justify-content-center">
-				<img src="img/swmockupmed.png" class="img-fluid mb-5 pb-5 zoom fade-in">
-			</div>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-lg-6 mx-auto">
-			<p class="project-text mt-5">
-				This app utilizes SWAPI, an API built by Paul Hallett and team. Users may choose from six different categories, Characters,
-				Species, Planets, Starships, Vehicles, and Films. Asynchronous data requests are made with the HTTP client Axios. Tools
-				used include JavaScript, jQuery, Axios, Gulp, Sass, and Bootstrap 4. The project was planned and tracked in Jira using
-				an Agile approach. This is a completely original project, no tutorials or Free Code Camp.
-			</p>
-		</div>
-	</div>
-	<div class="row">
-		<a href="///C:/Users/BERGMCJ2/Desktop/starwars-app/index.html" class="demo-link px-5 py-2 my-lg-5 mx-auto">Demo</a>
-	</div>
-
-	<div class="wrapper">
-		<div class="row d-flex justify-content-center ml-lg-5">
-			<div class="col-lg-6 pb-lg-5 ">
-				<h3 class="project-title heading premier-site slide-left">Premier Transcription Website</h3>
+				<div class="row mx-auto d-flex justify-content-center">
+					<img src="img/swmockupmed.png" class="img-fluid mb-5 pb-5 zoom fade-in">
+				</div>
 			</div>
 		</div>
 
 		<div class="row">
-			<div class="col-lg-6 ml-lg-5 pl-lg-5">
-				<img src="img/premiermockup.png" class="premier-section img-fluid mb-5 skew-left fade-in" alt="Website of Premier Transcription company">
+			<div class="col-lg-6 mx-auto">
+				<p class="project-text mt-5">
+					This app utilizes SWAPI, an API built by Paul Hallett and team. Users may choose from six different categories, Characters,
+					Species, Planets, Starships, Vehicles, and Films. Asynchronous data requests are made with the HTTP client Axios. Tools
+					used include JavaScript, jQuery, Axios, Gulp, Sass, and Bootstrap 4. The project was planned and tracked in Jira using
+					an Agile approach. This is a completely original, solo project.
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<a href="///C:/Users/BERGMCJ2/Desktop/starwars-app/index.html" class="demo-link px-5 py-2 my-lg-5 mx-auto">Demo</a>
+		</div>
+
+		<div class="wrapper">
+			<div class="row d-flex justify-content-center ml-lg-5">
+				<div class="col-lg-6 pb-lg-5 ">
+					<h3 class="project-title heading premier-site slide-left">Premier Transcription Website</h3>
+				</div>
 			</div>
 
-			<div class="col-lg-5 project-details">
-				<div class="premier-details">
-					<p class="project-text mr-lg-5 pr-lg-5 fade-in">This project was my first freelance gig, commmissioned by a former employer. Responsive web design principles were used
-						in order to produce a mobile-friendly product. I also implemented basic SEO techniques in order to boost visibility.
-						I created the "loader" logo and all content on the site. The client is in the process of writing her own biography
-						which has delayed deployment.
-					</p>
+			<div class="row">
+				<div class="col-lg-6 ml-lg-5 pl-lg-5">
+					<img src="img/premiermockup.png" class="premier-section img-fluid mb-5 skew-left fade-in" alt="Website of Premier Transcription company">
+				</div>
 
-					<div class="row">
-						<a href="http://dev.premiertranscript.com" class="demo-link fade-in mx-auto px-4 py-2">View Site</a>
+				<div class="col-lg-5 project-details">
+					<div class="premier-details">
+						<p class="project-text mr-lg-5 pr-lg-5 fade-in">This project was my first freelance gig, commmissioned by a former employer. Responsive web design principles were
+							used in order to produce a mobile-friendly product. I also implemented basic SEO techniques in order to boost visibility.
+							I created the "loader" logo and all content on the site. The client is in the process of writing her own biography
+							which has delayed deployment.
+						</p>
+
+						<div class="row">
+							<a href="http://dev.premiertranscript.com" class="demo-link fade-in mx-auto px-4 py-2">View Site</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 	</div>
 	</div>
 
@@ -477,8 +510,6 @@
 			<div class="circle"></div>
 			<div class="circle"></div>
 		</div>
-
-
 	</div>
 	<!-- </div> -->
 	<div class="contact-form-section">
@@ -496,9 +527,6 @@
 				</div>
 			</div>
 
-
-
-
 			<div class="row d-flex justify-content-center pb-3">
 				<div class="col-lg-4">
 					<label class="text-center px-3 py-3" for='email'>
@@ -515,65 +543,62 @@
 			<div class="row d-flex justify-content-center pt-5 pb-5">
 				<div class="col-lg text-center">
 					<h4>References available upon request, just let me know in your message.</h4>
-					</div>
 				</div>
-					<div class="row d-flex justify-content-center pb-5">
-					<div class="col-lg-8">
-					<textarea class="form-control mt-2" name="message" rows="8"></textarea>
-				</div>
-				</div>
-		
 			</div>
-
 			<div class="row d-flex justify-content-center pb-5">
 				<div class="col-lg-8">
-					<input class="form-control" type="submit" name="submit" value="Submit">
-					<div class="clear">
-					</div>
+					<textarea class="form-control mt-2" name="message" rows="8"></textarea>
 				</div>
-
 			</div>
+	</div>
 
-
-			<div class="row">
-				<h3 class="mx-auto pt-3 pb-5" style="color: #7e756d;">I'd love to hear from you
-					<i class="far fa-smile"></i>
-				</h3>
+	<div class="row d-flex justify-content-center pb-5">
+		<div class="col-lg-8">
+			<input class="form-control" type="submit" name="submit" value="Submit">
+			<div class="clear">
 			</div>
-		</form>
+		</div>
+	</div>
+
+	<div class="row">
+		<h3 class="mx-auto pt-3 pb-5" style="color: #7e756d;">I'd love to hear from you
+			<i class="far fa-smile"></i>
+		</h3>
+	</div>
+	</form>
 	</div>
 
 	<footer class="footer-bg">
-		
-			<div class="row d-flex justify-content-center text-center my-5 pt-5">
-					<div class="col-1 footer-link">
-						<a href="https://twitter.com/bergmcj?lang=en">
-							<i class="fab fa-twitter-square fa-2x social-media"></i>
-						</a>
-					</div>
-		
-					<div class="col-1 footer-link">
-						<a href="https://github.com/wingchunkf">
-							<i class="fab fa-github fa-2x social-media"></i>
-						</a>
-					</div>
-		
-					<div class="col-1 footer-link">
-						<a href="https://www.linkedin.com/in/christine-bergman-0a61a590">
-							<i class="fab fa-linkedin fa-2x social-media"></i>
-						</a>
-					</div>
-		
-					<div class="col-1 footer-link">
-						<a href="https://bitbucket.org/christinebergman2018/starwars-app/src/master/">
-							<i class="fab fa-bitbucket fa-2x social-media"></i>
-						</a>
-					</div>
-				</div>
-				</div>
 
-		<div class="row text-center pb-5 mb-2 footer-nav">		
-			<div class="col-2"></div>	
+		<div class="row d-flex justify-content-center text-center my-5 pt-5">
+			<div class="col-1 footer-link">
+				<a href="https://twitter.com/bergmcj?lang=en">
+					<i class="fab fa-twitter-square fa-2x social-media"></i>
+				</a>
+			</div>
+
+			<div class="col-1 footer-link">
+				<a href="https://github.com/wingchunkf">
+					<i class="fab fa-github fa-2x social-media"></i>
+				</a>
+			</div>
+
+			<div class="col-1 footer-link">
+				<a href="https://www.linkedin.com/in/christine-bergman-0a61a590">
+					<i class="fab fa-linkedin fa-2x social-media"></i>
+				</a>
+			</div>
+
+			<div class="col-1 footer-link">
+				<a href="https://bitbucket.org/christinebergman2018/starwars-app/src/master/">
+					<i class="fab fa-bitbucket fa-2x social-media"></i>
+				</a>
+			</div>
+		</div>
+		</div>
+
+		<div class="row text-center pb-5 mb-2 footer-nav">
+			<div class="col-2"></div>
 			<div class="col">
 				<a href="#header">
 					Home
@@ -615,15 +640,15 @@
 					Contact
 				</a>
 			</div>
-			<div class="col-2"></div>	
+			<div class="col-2"></div>
 		</div>
 		</div>
 	</footer>
 
 
-		<div class="row copyright">
-			<p class="col d-flex justify-content-center pt-3">Created by Christine Bergman copyright@2018</p>
-		</div>
+	<div class="row copyright">
+		<p class="col d-flex justify-content-center pt-3">Created by Christine Bergman copyright@2018</p>
+	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q
