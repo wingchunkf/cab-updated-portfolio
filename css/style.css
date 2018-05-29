@@ -203,21 +203,18 @@ hr {
 
 .copyright {
   font-size: 1rem;
-  background: #aba9b5;
-  color: white; }
+  color: #aba9b5; }
 
 ul {
   list-style-type: none; }
 
-.social-media, .footer-nav {
+.social-media {
   color: white;
   transition: transform .2s; }
 
-.social-media, .footer-nav {
-  transition: transform .2s; }
-
 .social-media:hover {
-  transform: scale(1.5); }
+  opacity: 0.8;
+  transform: scale(1.2); }
 
 .zoom {
   transition: transform 0.2s; }
@@ -264,6 +261,16 @@ i.nav {
   color: white;
   transition: all 0.5s ease;
   font-size: 120%; }
+
+.footer-nav a {
+  opacity: 0.7;
+  transition: all ease-in; }
+
+.footer-nav a:hover {
+  font-weight: bold;
+  opacity: 1;
+  text-decoration: none;
+  transform: scale(1.2); }
 
 .greeting {
   position: relative;
