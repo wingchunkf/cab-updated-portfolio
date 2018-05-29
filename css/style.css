@@ -363,7 +363,15 @@ textarea[name="message"] {
 
 input[name="submit"] {
   background: #887eb9;
-  color: #fff; }
+  color: #fff;
+  font-size: 130%;
+  transition: all 0.3s ease; }
+
+input[name="submit"]:hover {
+  background-color: #fff;
+  color: #887eb9;
+  border: 2px solid #887eb9;
+  font-weight: bold; }
 
 /* --------------------
         Footer  
