@@ -127,10 +127,13 @@ Background-color classes
  --------------------*/
 
 a.nav-link {
-    color:   $med-purple;  
+    color:   $white;  
     font-family: 'Raleway', sans-serif;
-    font-size: 1.25rem;    
-    transition: all ease 0.5s;   
+    font-size: 1.25rem; 
+    font-weight: bolder; 
+    letter-spacing: 1px;     
+    transition: all ease 0.5s;  
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.5); 
     width: 10.5rem; 
 }
 
