@@ -357,9 +357,9 @@ input[name="submit"] {
   width: 15px; }
 
 .copyright {
-  background: #aba9b5;
-  color: #fff;
-  font-size: 1rem; }
+  background-color: #fff;
+  font-size: 1rem;
+  color: #aba9b5; }
 
 .footer-bg {
   background-color: #647a67;
@@ -372,12 +372,20 @@ input[name="submit"] {
   font-size: 120%;
   transition: all 0.5s ease; }
 
-.social-media, .footer-nav {
-  color: #fff;
-  transition: transform .2s; }
+.footer-nav a {
+  opacity: 0.7;
+  transition: all ease-in; }
 
-.social-media, .footer-nav {
+.footer-nav a:hover {
+  font-weight: bold;
+  opacity: 1;
+  text-decoration: none;
+  transform: scale(1.2); }
+
+.social-media {
+  color: white;
   transition: transform .2s; }
 
 .social-media:hover {
-  transform: scale(1.5); }
+  opacity: 0.8;
+  transform: scale(1.2); }
