@@ -341,6 +341,9 @@ img.sw-section {
   height: 16rem;
   padding-top: 2rem; }
 
+.contact-form-section h4, .contact-form-section h3 {
+  color: #7e756d; }
+
 input[name="first-name"], input[name="last-name"], input[name="email"], input[name="subject"], input[name="submit"] {
   border: none;
   border-bottom: 1px solid #ced4da;
@@ -426,9 +429,7 @@ input[name="submit"] {
   .circle {
     display: none; }
   .contact-section {
-    height: 8rem; }
-  .contact-form-section h4 {
-    font-size: 97%; } }
+    height: 8rem; } }
 
 @media screen and (max-width: 1024px) {
   img.rounded-circle.christine.img-fluid {
