@@ -103,24 +103,16 @@ Background-color classes
         Navbar
  --------------------*/
 a.nav-link {
-<<<<<<< HEAD
   border-bottom: 1px solid transparent;
   border-top: 1px solid transparent;
-=======
->>>>>>> mobile-navbar
   color: #fff;
   font-family: 'Raleway', sans-serif;
   font-size: 1.25rem;
   font-weight: bolder;
   letter-spacing: 1px;
   transition: all ease 0.5s;
-<<<<<<< HEAD
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out; }
-=======
-  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5);
-  width: 10rem; }
->>>>>>> mobile-navbar
 
 a.nav-link:hover {
   border-bottom: 1px solid #887eb9;
