@@ -80,21 +80,22 @@ Background-color classes
         Navbar
  --------------------*/
 a.nav-link {
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
   color: #fff;
   font-family: 'Raleway', sans-serif;
   font-size: 1.25rem;
   font-weight: bolder;
   letter-spacing: 1px;
   transition: all ease 0.5s;
-  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5);
-  width: 10.5rem; }
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out; }
 
 a.nav-link:hover {
-  background-color: #887eb9;
-  border: none;
-  border-radius: 80%;
-  color: #fff;
-  transform: scale(1.1); }
+  border-bottom: 1px solid #887eb9;
+  border-top: 1px solid #887eb9;
+  color: #887eb9;
+  transform: scale(1.3); }
 
 i.nav {
   padding-right: 10px; }
@@ -442,7 +443,7 @@ input[name="submit"]:hover {
   transform: scale(1.2); }
 
 /* --------------------
-      Media Queries  
+    Media Queries  
  --------------------*/
 @media screen and (max-width: 768px) {
   .heading {
