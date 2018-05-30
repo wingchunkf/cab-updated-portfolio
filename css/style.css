@@ -111,6 +111,7 @@ a.nav-link {
   font-weight: bolder;
   letter-spacing: 1px;
   transition: all ease 0.5s;
+  text-align: center;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out; }
 
@@ -130,28 +131,37 @@ i.nav {
     Mobile nav
  --------------------*/
 @media screen and (max-width: 992px) {
-  .hamburger {
-    color: #31004a; }
+  i.hamburger {
+    color: #887eb9;
+    font-size: 1.75rem; }
+  li.nav-item.home-link {
+    display: none;
+    box-shadow: none; }
   li.nav-item {
-    background-color: #5ad2f4;
+    background-color: #887eb9;
+    background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
     margin-bottom: 1rem;
-    padding: 0.75rem 0; }
+    height: 6rem;
+    transition: all 0.3s ease-in-out; }
+  li.nav-item:hover {
+    background-color: #fff;
+    box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2);
+    transform: scale(1.2); }
   a.nav-link {
-    position: relative;
-    left: 40%; }
+    transition: all 0.3s ease-in-out; }
   a.nav-link:hover {
-    transform: scale(1);
-    background-color: #5ad2f4;
-    border-radius: none;
-    transform: none; }
-  li.home {
-    display: none; }
+    transform: scale(1.2);
+    background-color: #fff; }
   li.nav-item.active {
-    background-color: transparent; }
+    display: none;
+    background-color: #fff;
+    transition: none;
+    box-shadow: none; }
   ul#desktop-navbar {
     opacity: 1;
     margin-right: -15px;
-    margin-left: -15px; } }
+    margin-left: -15px;
+    margin-bottom: 1.5rem; } }
 
 /* --------------------
     Header
