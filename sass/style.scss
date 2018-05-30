@@ -151,14 +151,14 @@ Background-color classes
  --------------------*/
 
 a.nav-link {
-    color:   $white;  
+    color:  $white;  
     font-family: 'Raleway', sans-serif;
     font-size: 1.25rem; 
     font-weight: bolder; 
     letter-spacing: 1px;     
     transition: all ease 0.5s;  
     text-shadow: 2px 4px 3px rgba(0,0,0,0.5); 
-    width: 10.5rem; 
+    width: 10rem; 
 }
 
 a.nav-link:hover {
@@ -173,44 +173,50 @@ i.nav {
     padding-right: 10px;
 }
 
-.navbar-toggler-icon {
-    color: $white;
+.hamburger {
+    color: $blue;
 }
 
 /* --------------------
     Mobile nav
  --------------------*/
+@media screen and (max-width: 992px) {
+    .hamburger {
+        color: $purple;
+    }
 
-.hide-items {
-    display: none;
-}
+    li.nav-item {
+        background-color: $blue;
+        margin-bottom: 1rem;
+        padding: 0.75rem 0;
+    }
 
-.hamburger {
-    color: $lt-taupe;
-}
+    a.nav-link {
+        position: relative;
+        left: 40%;
+        // transform: translateX(-50%);       
+    }
 
-ul > li > a {
-    color: $med-purple;
-    font-weight: bold;
-    font-size: 120%;
-}
+    a.nav-link:hover {
+        transform: scale(1);
+        background-color: $blue;
+        border-radius: none;
+        transform: none;
+    }  
 
-a.mobile {
-    transition: all 0.3s ease-in-out;
-    padding: 15px;
-    background-color: $white;
-}
+    li.home {
+        display: none;
+    }
 
-#mobile-nav-list hr {
-    background-color: white;
-}
+    li.nav-item.active {
+        background-color: transparent;
+    }
 
-ul > li > a.mobile:hover {
-    text-decoration: none;
-    color: $white;  
-    border-radius: 50%;  
-    background-color: $med-purple;   
-    box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2);
+    ul#desktop-navbar {
+        opacity: 1;
+        margin-right: -15px;
+        margin-left: -15px;      
+    }    
 }
 
 /* --------------------

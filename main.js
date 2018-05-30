@@ -55,17 +55,17 @@ $(document).ready(function () {
     });
 });
 
-var navToggle = document.querySelector('.mobile-nav-toggle');
-var mobileNav = document.querySelector('#mobile-menu');
+// var navToggle = document.querySelector('.mobile-nav-toggle');
+// var mobileNav = document.querySelector('#mobile-menu');
 
 
 
-navToggle.addEventListener('click', function () {
+// navToggle.addEventListener('click', function () {
 
-   mobileNav.classList.toggle('hide-items');
+//    mobileNav.classList.toggle('hide-items');
   
    
    
-    })
+//     })
   
 

@@ -21,115 +21,81 @@
 <body>
 	<div id="header-wrapper">
 		<div class="container-fluid" id="header">
-			<div class="row d-flex justify-content-center mt-2">
-				<nav class="navbar navbar-expand-lg">				
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav mr-auto text-center" id="desktop-navbar">
-							<li class="nav-item active">
-								<a class="border-0" href="#header">
-									<span class="sr-only">(current)</span>
-								</a>
-							</li>
-							<li class="nav-item text-center">
-								<a class="nav-link py-4 mx-lg-1" href="#header">
-									<i class="fas fa-home nav"></i>Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link py-4 mx-lg-1" href="#about-me">
-									<i class="fas fa-user nav"></i>About</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link py-4 mx-lg-1" href="#experience">
-									<i class="fas fa-laptop nav"></i>Experience</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link py-4 mx-2" href="#work">
-									<i class="fas fa-code-branch nav"></i>Work</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link py-4 mx-2" href="#toolbox">
-									<i class="fas fa-wrench nav"></i>Toolbox</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link py-4 mx-2" href="#learning">
-									<i class="fas fa-book nav"></i>Learning</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link py-4 mx-2" href="#contact">
-									<i class="far fa-envelope nav"></i>Contact</a>
-							</li>
-						</ul>
-					</div>
-				</nav>
-			</div>
+			<nav class="navbar navbar-expand-lg">
+				<a class="navbar-brand" href="#"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent"
+				    aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fas fa-bars float-right hamburger"></i>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto text-center mx-auto" id="desktop-navbar">
+						<li class="nav-item active">
+							<a class="border-0" href="#header">
+								<span class="sr-only">(current)</span>
+							</a>
+						</li>
+						<li class="nav-item text-center home">
+							<a class="nav-link py-4 mx-lg-1" href="#header">
+								<i class="fas fa-home nav"></i>Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link py-4 mx-lg-1" href="#about-me">
+								<i class="fas fa-user nav"></i>About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link py-4 mx-lg-1" href="#experience">
+								<i class="fas fa-laptop nav"></i>Experience</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link py-4 mx-2" href="#work">
+								<i class="fas fa-code-branch nav"></i>Work</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link py-4 mx-2" href="#toolbox">
+								<i class="fas fa-wrench nav"></i>Toolbox</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link py-4 mx-2" href="#learning">
+								<i class="fas fa-book nav"></i>Learning</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link py-4 mx-2" href="#contact">
+								<i class="far fa-envelope nav"></i>Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
 		</div>
-		<!-- mobile navbar -->
+	</div>
+	
+	<div class="d-none d-lg-block">
+		<div class="row justify-content-center mt-3">
 
-		<div class="pb-2 mb-5 mt-0 mr-4 mobile-nav-toggle d-block d-lg-none">
-				<i class="fas fa-bars fa-2x float-right hamburger"></i>		
+			<img src="img/portlaptopbwoverlay.jpg" id="laptop">
+
 		</div>
+	</div>
 
-		<div class="container-fluid mobile-navigation mb-5 mt-0 pt-0 hide-items" id="mobile-menu" >			
-			<div class="row pt-0 mt-0 d-flex justify-content-center">
-					<div class="col">	
+	<div class="col-lg col-md-12" id="about-me">
+		<h1 class="py-lg-5 text-center greeting">Hi, I'm Christine.</h1>
+	</div>
 
-				<ul class="mobile-nav-list text-center mr-4 pr-2" id="mobile-nav-list">						
-					<li class="py-2 my-3">
-						<a href="#about-me" class="mobile"><i class="fas fa-user nav"></i>About</a>
-					</li>
-					<hr>
-					<li class="py-2 my-3">
-						<a href="#experience" class="mobile"><i class="fas fa-laptop nav"></i>Experience</a>
-					</li>
-					<hr>
-					<li class="py-2 my-3">
-						<a href="#work" class="mobile"><i class="fas fa-code-branch nav"></i>Work</a>
-					</li>
-					<hr>
-					<li class="py-2 my-3">
-						<a href="#toolbox" class="mobile"><i class="fas fa-wrench nav"></i>Toolbox</a>
-					</li>
-					<hr>
-					<li class="py-2 my-3">
-						<a href="#learning" class="mobile"><i class="fas fa-book nav"></i>Learning</a>
-					</li>
-					<hr>
-					<li class="py-2 my-3">
-						<a href="#contact" class="mobile"><i class="far fa-envelope nav"></i>Contact</a>
-					</li>
-				</ul>
-			</div>
-			</div>
+	<div class="row mt-5 mb-3 text-white d-flex justify-content-center">
+		<div class="col-lg-3">
+			<img src="img/christinebw.jpg" class="rounded-circle img-fluid christine" alt="woman smiling">
 		</div>
-
-		<div class="d-none d-lg-block">
-			<div class="row justify-content-center mt-3">
-
-				<img src="img/portlaptopbwoverlay.jpg" id="laptop">
-
-			</div>
+		<div class="col-lg-6 ml-lg-3 text-center teal-texture-bg">
+			<p class="mx-5">
+				Veniam quis dolore consectetur voluptate reprehenderit laboris id qui enim commodo id dolor. Velit nulla occaecat aliqua
+				deserunt laboris quis adipisicing et voluptate. Adipisicing ea amet in eu aliquip anim ullamco dolor reprehenderit reprehenderit
+				enim. Non consectetur sint occaecat commodo consequat ea dolore pariatur adipisicing id laborum.
+			</p>
+			<p>
+				<q>Programming isn't about what you know; it's about what you can figure out.</q>
+			</p>
+			<p>~ Chris Pine</p>
 		</div>
-
-		<div class="col-lg col-md-12" id="about-me">
-			<h1 class="py-lg-5 text-center greeting">Hi, I'm Christine.</h1>
-		</div>
-
-		<div class="row mt-5 mb-3 text-white d-flex justify-content-center">
-			<div class="col-lg-3">
-				<img src="img/christinebw.jpg" class="rounded-circle img-fluid christine" alt="woman smiling">
-			</div>
-			<div class="col-lg-6 ml-lg-3 text-center teal-texture-bg">
-				<p class="mx-5">
-					Veniam quis dolore consectetur voluptate reprehenderit laboris id qui enim commodo id dolor. Velit nulla occaecat aliqua
-					deserunt laboris quis adipisicing et voluptate. Adipisicing ea amet in eu aliquip anim ullamco dolor reprehenderit reprehenderit
-					enim. Non consectetur sint occaecat commodo consequat ea dolore pariatur adipisicing id laborum.
-				</p>
-				<p>
-					<q>Programming isn't about what you know; it's about what you can figure out.</q>
-				</p>
-				<p>~ Chris Pine</p>
-			</div>
-		</div>
+	</div>
 	</div>
 	</div>
 	</div>
