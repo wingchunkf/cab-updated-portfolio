@@ -1,8 +1,31 @@
+/* --------------------    
+SCSS organized by order 
+sections appear on page
+
+    1. Sass variables
+    2. General SCSS
+    3. Classes for JS
+    4. Background color classes
+    5. Color classes
+    6. Navbar
+    7. Mobile nav
+    8. Header
+    9. Tools section
+    10. Spinning Icons
+    11. Learning section
+    12. Experience section
+    13. Work section
+    14. Testimonial
+    15. Contact section
+    16. Footer
+    17. Media queries
+
+ --------------------*/
 /* --------------------
     Sass Variables
  --------------------*/
 /* --------------------
-    General CSS
+    General SCSS
  --------------------*/
 body {
   font-family: 'Raleway';
@@ -80,16 +103,24 @@ Background-color classes
         Navbar
  --------------------*/
 a.nav-link {
+<<<<<<< HEAD
   border-bottom: 1px solid transparent;
   border-top: 1px solid transparent;
+=======
+>>>>>>> mobile-navbar
   color: #fff;
   font-family: 'Raleway', sans-serif;
   font-size: 1.25rem;
   font-weight: bolder;
   letter-spacing: 1px;
   transition: all ease 0.5s;
+<<<<<<< HEAD
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out; }
+=======
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5);
+  width: 10rem; }
+>>>>>>> mobile-navbar
 
 a.nav-link:hover {
   border-bottom: 1px solid #887eb9;
@@ -100,11 +131,38 @@ a.nav-link:hover {
 i.nav {
   padding-right: 10px; }
 
-.navbar-toggler-icon {
-  color: #fff; }
+.hamburger {
+  color: #5ad2f4; }
 
 /* --------------------
-    Header section
+    Mobile nav
+ --------------------*/
+@media screen and (max-width: 992px) {
+  .hamburger {
+    color: #31004a; }
+  li.nav-item {
+    background-color: #5ad2f4;
+    margin-bottom: 1rem;
+    padding: 0.75rem 0; }
+  a.nav-link {
+    position: relative;
+    left: 40%; }
+  a.nav-link:hover {
+    transform: scale(1);
+    background-color: #5ad2f4;
+    border-radius: none;
+    transform: none; }
+  li.home {
+    display: none; }
+  li.nav-item.active {
+    background-color: transparent; }
+  ul#desktop-navbar {
+    opacity: 1;
+    margin-right: -15px;
+    margin-left: -15px; } }
+
+/* --------------------
+    Header
  --------------------*/
 #header-wrapper {
   margin: 0;
@@ -469,3 +527,9 @@ input[name="submit"]:hover {
     height: auto;
     margin-left: 24%;
     margin-bottom: 1.75rem; } }
+
+@media screen and (min-width: 992px) {
+  #mobile-menu {
+    display: none; }
+  .nav-toggle {
+    display: none; } }
