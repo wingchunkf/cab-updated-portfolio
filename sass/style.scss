@@ -1,3 +1,27 @@
+/* --------------------    
+SCSS organized by order 
+sections appear on page
+
+    1. Sass variables
+    2. General SCSS
+    3. Classes for JS
+    4. Background color classes
+    5. Color classes
+    6. Navbar
+    7. Mobile nav
+    8. Header
+    9. Tools section
+    10. Spinning Icons
+    11. Learning section
+    12. Experience section
+    13. Work section
+    14. Testimonial
+    15. Contact section
+    16. Footer
+    17. Media queries
+
+ --------------------*/
+
 /* --------------------
     Sass Variables
  --------------------*/
@@ -25,7 +49,7 @@ $dk-brown: #888;
 $text-darker: #514f59;
 
 /* --------------------
-    General CSS
+    General SCSS
  --------------------*/
 
  body {
@@ -127,10 +151,13 @@ Background-color classes
  --------------------*/
 
 a.nav-link {
-    color:   $med-purple;  
+    color:   $white;  
     font-family: 'Raleway', sans-serif;
-    font-size: 1.25rem;    
-    transition: all ease 0.5s;   
+    font-size: 1.25rem; 
+    font-weight: bolder; 
+    letter-spacing: 1px;     
+    transition: all ease 0.5s;  
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.5); 
     width: 10.5rem; 
 }
 
@@ -151,26 +178,43 @@ i.nav {
 }
 
 /* --------------------
-    Mobile navbar
+    Mobile nav
  --------------------*/
 
-.mobile-navigation > ul > li {
-    width: 100%;      
+.hide-items {
+    display: none;
 }
 
-#mobile-nav-list.mobile-navigation > ul > li > a {
-    color: $lt-purple;
-    
+.hamburger {
+    color: $lt-taupe;
 }
 
-#mobile-nav-list > ul > li > a:hover {
+ul > li > a {
+    color: $med-purple;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+a.mobile {
+    transition: all 0.3s ease-in-out;
+    padding: 15px;
+    background-color: $white;
+}
+
+#mobile-nav-list hr {
+    background-color: white;
+}
+
+ul > li > a.mobile:hover {
     text-decoration: none;
+    color: $white;  
+    border-radius: 50%;  
+    background-color: $med-purple;   
+    box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2);
 }
-
-
 
 /* --------------------
-    Header section
+    Header
  --------------------*/
 #header-wrapper {     
     margin: 0;
@@ -219,7 +263,7 @@ i.nav {
 }
 
 .greeting {
-    color: $blue;  
+    color: $med-purple;  
     font-family: 'Playfair Display', sans-serif;
     font-size: 4rem;
     letter-spacing: 2px;  
@@ -304,6 +348,12 @@ q:after {
     -webkit-transform: rotate(360deg) scale(1.3);   
 }
 
+.tool-name {
+    color: $lt-taupe;
+    font-size: 110%;
+    padding-top: 2rem;
+}
+
 /* --------------------
     Learning Section 
  --------------------*/
@@ -328,6 +378,22 @@ hr {
     transform: scale(1.12);
 }
 
+/* --------------------
+    Experience Section 
+ --------------------*/
+
+.project-text > p > a {
+    color: $teal; 
+    font-weight: bold;
+    letter-spacing: 0.5px;     
+    opacity: 0.7;  
+    text-decoration: none;
+}
+
+.project-text > p > a:hover {
+    font-weight: bold;
+    opacity: 1;
+}
 
 /* --------------------
     Work Section 
@@ -495,6 +561,16 @@ textarea[name="message"] {
 input[name="submit"] {    
     background: $med-purple;
     color: $white;
+    font-size: 130%;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+input[name="submit"]:hover {
+    background-color: $white;
+    border: 2px solid $med-purple;
+    color: $med-purple;   
+    font-weight: bold;
 }
 
 /* --------------------
@@ -552,7 +628,7 @@ input[name="submit"] {
 }
 
 /* --------------------
-      Media Queries  
+    Media Queries  
  --------------------*/
 
 @media screen and (max-width: 768px) {  
@@ -560,7 +636,7 @@ input[name="submit"] {
     .heading {
         padding-bottom: 1rem;
         padding-top: 1rem;
-    }
+    } 
 
     label {
         width: 100%;
@@ -594,5 +670,15 @@ input[name="submit"] {
         height: auto;
         margin-left: 24%;
         margin-bottom: 1.75rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #mobile-menu {
+        display: none;    
+    }
+
+    .nav-toggle {
+        display: none;
     }
 }

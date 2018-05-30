@@ -1,8 +1,31 @@
+/* --------------------    
+SCSS organized by order 
+sections appear on page
+
+    1. Sass variables
+    2. General SCSS
+    3. Classes for JS
+    4. Background color classes
+    5. Color classes
+    6. Navbar
+    7. Mobile nav
+    8. Header
+    9. Tools section
+    10. Spinning Icons
+    11. Learning section
+    12. Experience section
+    13. Work section
+    14. Testimonial
+    15. Contact section
+    16. Footer
+    17. Media queries
+
+ --------------------*/
 /* --------------------
     Sass Variables
  --------------------*/
 /* --------------------
-    General CSS
+    General SCSS
  --------------------*/
 body {
   font-family: 'Raleway';
@@ -80,10 +103,13 @@ Background-color classes
         Navbar
  --------------------*/
 a.nav-link {
-  color: #887eb9;
+  color: #fff;
   font-family: 'Raleway', sans-serif;
   font-size: 1.25rem;
+  font-weight: bolder;
+  letter-spacing: 1px;
   transition: all ease 0.5s;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5);
   width: 10.5rem; }
 
 a.nav-link:hover {
@@ -100,19 +126,36 @@ i.nav {
   color: #fff; }
 
 /* --------------------
-    Mobile navbar
+    Mobile nav
  --------------------*/
-.mobile-navigation > ul > li {
-  width: 100%; }
+.hide-items {
+  display: none; }
 
-#mobile-nav-list.mobile-navigation > ul > li > a {
-  color: #55476d; }
+.hamburger {
+  color: #7e756d; }
 
-#mobile-nav-list > ul > li > a:hover {
-  text-decoration: none; }
+ul > li > a {
+  color: #887eb9;
+  font-weight: bold;
+  font-size: 120%; }
+
+a.mobile {
+  transition: all 0.3s ease-in-out;
+  padding: 15px;
+  background-color: #fff; }
+
+#mobile-nav-list hr {
+  background-color: white; }
+
+ul > li > a.mobile:hover {
+  text-decoration: none;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #887eb9;
+  box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2); }
 
 /* --------------------
-    Header section
+    Header
  --------------------*/
 #header-wrapper {
   margin: 0;
@@ -151,7 +194,7 @@ i.nav {
     transform: scale3d(2, 2, 2) translate3d(-170px, -100px, 0px); } }
 
 .greeting {
-  color: #5ad2f4;
+  color: #887eb9;
   font-family: 'Playfair Display', sans-serif;
   font-size: 4rem;
   letter-spacing: 2px;
@@ -221,6 +264,11 @@ q:after {
   -moz-transform: rotate(360deg) scale(1.3);
   -webkit-transform: rotate(360deg) scale(1.3); }
 
+.tool-name {
+  color: #7e756d;
+  font-size: 110%;
+  padding-top: 2rem; }
+
 /* --------------------
     Learning Section 
  --------------------*/
@@ -239,6 +287,20 @@ hr {
 
 .studies:hover {
   transform: scale(1.12); }
+
+/* --------------------
+    Experience Section 
+ --------------------*/
+.project-text > p > a {
+  color: #62bec1;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  opacity: 0.7;
+  text-decoration: none; }
+
+.project-text > p > a:hover {
+  font-weight: bold;
+  opacity: 1; }
 
 /* --------------------
     Work Section 
@@ -375,7 +437,16 @@ textarea[name="message"] {
 
 input[name="submit"] {
   background: #887eb9;
-  color: #fff; }
+  color: #fff;
+  font-size: 130%;
+  font-weight: bold;
+  transition: all 0.3s ease; }
+
+input[name="submit"]:hover {
+  background-color: #fff;
+  border: 2px solid #887eb9;
+  color: #887eb9;
+  font-weight: bold; }
 
 /* --------------------
         Footer  
@@ -423,7 +494,7 @@ input[name="submit"] {
   transform: scale(1.2); }
 
 /* --------------------
-      Media Queries  
+    Media Queries  
  --------------------*/
 @media screen and (max-width: 768px) {
   .heading {
@@ -449,3 +520,9 @@ input[name="submit"] {
     height: auto;
     margin-left: 24%;
     margin-bottom: 1.75rem; } }
+
+@media screen and (min-width: 992px) {
+  #mobile-menu {
+    display: none; }
+  .nav-toggle {
+    display: none; } }
