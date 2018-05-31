@@ -55,17 +55,6 @@ $(document).ready(function () {
     });
 });
 
-// var navToggle = document.querySelector('.mobile-nav-toggle');
-// var mobileNav = document.querySelector('#mobile-menu');
 
 
-
-// navToggle.addEventListener('click', function () {
-
-//    mobileNav.classList.toggle('hide-items');
-  
-   
-   
-//     })
-  
 
