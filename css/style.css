@@ -1,4 +1,5 @@
-/* --------------------    
+/* --------------------  
+
 SCSS organized by order 
 sections appear on page
 
@@ -48,6 +49,15 @@ ul {
  --------------------*/
 .fade-in {
   opacity: 0; }
+
+.heading, #sw-link {
+  color: #7e756d;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+  text-decoration: none; }
+
+#sw-link:hover {
+  opacity: 0.6; }
 
 .slide-left {
   margin-left: -1300px;
@@ -234,11 +244,6 @@ q:after {
 /* --------------------
     Tools section
  --------------------*/
-.heading {
-  color: #7e756d;
-  padding-bottom: 4rem;
-  padding-top: 4rem; }
-
 .more-tools {
   color: #869889;
   opacity: 0; }
@@ -469,6 +474,30 @@ input[name="submit"]:hover {
   border: 2px solid #887eb9;
   color: #887eb9;
   font-weight: bold; }
+
+::-webkit-input-placeholder {
+  color: #ced4da;
+  font-style: italic;
+  letter-spacing: 2px; }
+
+:focus::-webkit-input-placeholder {
+  opacity: 0; }
+
+::-moz-placeholder {
+  color: #ced4da;
+  font-style: italic;
+  letter-spacing: 2px; }
+
+:focus::-moz-placeholder {
+  opacity: 0; }
+
+:-ms-input-placeholder {
+  color: #ced4da;
+  font-style: italic;
+  letter-spacing: 2px; }
+
+::focus:-ms-input-placeholder {
+  opacity: 0; }
 
 /* --------------------
         Footer  

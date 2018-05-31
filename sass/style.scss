@@ -1,4 +1,5 @@
-/* --------------------    
+/* --------------------  
+
 SCSS organized by order 
 sections appear on page
 
@@ -25,6 +26,7 @@ sections appear on page
 /* --------------------
     Sass Variables
  --------------------*/
+
 $input-gray: #ced4da;
 $lt-gray: #efefef;
 $white: #fff;
@@ -78,6 +80,17 @@ ul {
 
  .fade-in{
     opacity: 0;
+}
+
+.heading, #sw-link {
+    color: $lt-taupe;
+    padding-bottom: 4rem; 
+    padding-top: 4rem;   
+    text-decoration: none;
+}
+
+#sw-link:hover {
+    opacity: 0.6;
 }
 
 .slide-left {
@@ -320,12 +333,6 @@ q:after {
 /* --------------------
     Tools section
  --------------------*/
-
-.heading {
-    color: $lt-taupe;
-    padding-bottom: 4rem; 
-    padding-top: 4rem;   
-}
 
 .more-tools {
     color: $lt-green;
@@ -608,11 +615,41 @@ input[name="submit"]:hover {
     font-weight: bold;
 }
 
+::-webkit-input-placeholder { 
+    color: $input-gray;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+:focus::-webkit-input-placeholder{
+    opacity: 0;
+}
+
+::-moz-placeholder { 
+    color: $input-gray;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+:focus::-moz-placeholder {
+    opacity: 0;
+}
+
+:-ms-input-placeholder {
+    color: $input-gray;
+    font-style: italic; 
+    letter-spacing: 2px;
+}
+
+::focus:-ms-input-placeholder {
+    opacity: 0;
+}
+
 /* --------------------
         Footer  
  --------------------*/
 
- .circle, .circle-footer {
+.circle, .circle-footer {
     background-color: $med-purple;
     border-radius: 50%;
     display: inline-block;
