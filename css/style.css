@@ -30,7 +30,9 @@ sections appear on page
  --------------------*/
 body {
   font-family: 'Raleway';
-  position: relative; }
+  position: relative;
+  margin-right: -15px;
+  padding-right: -15px; }
 
 .container-fluid {
   margin: 0;

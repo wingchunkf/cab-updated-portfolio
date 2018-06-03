@@ -57,6 +57,8 @@ $text-darker: #514f59;
  body {
     font-family :'Raleway';
     position: relative;
+    margin-right: -15px;
+    padding-right: -15px;
 }
 
 .container-fluid {
@@ -733,7 +735,7 @@ input[name="submit"]:hover {
 
     .contact-section {
         height: 8rem;
-    }    
+    }       
 }
 
 @media screen and (min-width: 992px) {
