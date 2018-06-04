@@ -455,7 +455,7 @@ h3.project-title {
     color:  $teal;
     font-style: italic;    
     line-height: 175%; 
-    text-align: center;     
+    text-align: center;    
 }
 
 .heading.castle-site {    
@@ -745,5 +745,15 @@ input[name="submit"]:hover {
 
     .nav-toggle {
         display: none;
+    }
+}
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+    .work-history {
+    text-align: center; 
+}
+
+.work-info {
+    text-align: center;
     }
 }

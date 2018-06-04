@@ -572,3 +572,9 @@ input[name="submit"]:hover {
     display: none; }
   .nav-toggle {
     display: none; } }
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+  .work-history {
+    text-align: center; }
+  .work-info {
+    text-align: center; } }
