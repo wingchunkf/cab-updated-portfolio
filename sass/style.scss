@@ -509,7 +509,8 @@ img.sw-section {
 .demo-link {
     border: 1px solid $teal;
     color: $teal;
-    text-decoration: none !important;   
+    text-decoration: none !important;  
+    min-width: 25px; 
 }
 
 .demo-link:hover {

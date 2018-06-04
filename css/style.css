@@ -388,7 +388,8 @@ img.sw-section {
 .demo-link {
   border: 1px solid #62bec1;
   color: #62bec1;
-  text-decoration: none !important; }
+  text-decoration: none !important;
+  min-width: 25px; }
 
 .demo-link:hover {
   background-color: #62bec1;
