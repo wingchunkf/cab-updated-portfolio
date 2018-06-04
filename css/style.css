@@ -229,13 +229,21 @@ i.nav {
 
 img.christine {
   animation: none;
+  box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.4);
   opacity: 0;
   margin-bottom: 1.5rem;
   width: 17rem; }
 
 .about-text {
-  line-height: 3;
+  font-weight: bolder;
+  line-height: 3.2;
   text-align: center; }
+
+span.line {
+  text-decoration: line-through; }
+
+span.italic {
+  font-style: italic; }
 
 q:before {
   content: '\201c'; }
