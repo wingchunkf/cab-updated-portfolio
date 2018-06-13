@@ -3,9 +3,9 @@
 
 <head>
 	<meta charset="utf-8">
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Merriweather:300i,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500|Playfair+Display:400,400i" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	    crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
@@ -14,6 +14,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<!-- the script tag below is the solution to a major FOUC issue in Firefox -->
+	<script>/* foo */</script>
 	<title>Portfolio</title>
 </head>
 
@@ -21,7 +23,7 @@
 
 	<!--   NAVBAR   -->
 
-	<div id="header-wrapper">
+	<header id="header-wrapper">
 		<div class="container-fluid" id="header">
 			<nav class="navbar navbar-expand-lg">
 				<a class="navbar-brand" href="#"></a>
@@ -69,21 +71,21 @@
 				</div>
 			</nav>
 		</div>
-	</div>
+	</header>
 
 	<!--   'MOVING' BACKGROUND IMAGE   -->
 
-	<div class="d-none d-lg-block">
+	<section class="d-none d-lg-block">
 		<div class="row justify-content-center mt-3">
 
 			<img src="img/portlaptopbwoverlay.jpg" id="laptop">
 
 		</div>
-	</div>
+	</section>
 
 	<!--   ABOUT SECTION   -->
 
-	<div class="col-lg pb-5 mb-3" id="about-me">
+	<section class="col-lg pb-5 mb-3" id="about-me">
 		<h1 class="py-lg-5 text-center greeting">Hi, I'm Christine.</h1>
 	</div>
 
@@ -99,9 +101,7 @@
 					and growth. Google, Stack Overflow, CSS Tricks, and MDN docs are my best friends. I'm a tenacious and determined problem-solver
 					and welcome constructive criticism of my work because it helps me improve.
 					<br> I'm a big fan of Mattias Petter Johansson (creator of the Fun Fun Function YouTube channel), as well as Sarah Drasner,
-					Wes Bos, Ben Halpern, and many other amazing developers whom I
-					<del>stalk</del>...ahem...
-					<span class="italic">follow</span> on Twitter.
+					Wes Bos, Ben Halpern, and many other amazing developers.
 				</p>
 			</div>
 		</div>
@@ -114,11 +114,11 @@
 				</p>
 			</div>
 		</div>
-	</div>
+	</section>
 
 	<!--   TOOLS SECTION   -->
 
-	<div class="tools-section mt-4" id="toolbox">
+	<section class="tools-section mt-4" id="toolbox">
 		<h2 class="heading text-center pb-lg-2 pt-lg-5">Toolbox</h2>
 		<div class="circle-border text-center pb-lg-5">
 			<div class="circle mt-3"></div>
@@ -130,9 +130,12 @@
 			<div class="circle"></div>
 		</div>
 
+		<h5 class="pb-lg-3 pt-lg-0 heading text-center fade-in" style="font-style: italic;">
+		(psssst...hover over the icons)</h5>
+
 		<!--   RESPONSIVE ICONS   -->
 
-		<div class="spinning-tools">
+		<section class="spinning-tools">
 			<div class="row d-flex justify-content-center">
 				<div class="col-3"></div>
 				<div class="col-md-2 d-flex justify-content-center">
@@ -252,10 +255,10 @@
 				</div>
 				<div class="col-lg-3"></div>
 			</div>
-		</div>
-	</div>
+		</section>
+	</section>
 
-	<div class="additional-tools">
+	<section class="additional-tools">
 		<div class="row text-center">
 			<div class="col">
 				<h3 class="heading fade-in">As well as...</h3>
@@ -278,9 +281,9 @@
 					<div class="col-lg-1">
 						<h4>SEO</h4>
 					</div>
-				</div>
+				</section>
 
-				<div class="row heading d-flex justify-content-center pt-lg-2 pt-0 slide-left">
+				<section class="row heading d-flex justify-content-center pt-lg-2 pt-0 slide-left">
 					<div class="col-lg-2">
 						<h4>Google Analytics</h4>
 					</div>
@@ -292,12 +295,12 @@
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>	
+		</section>
+	</section>	
 
 	<!--   CURRENT AND FUTURE LEARNING SECTION   -->
 
-	<div class="currently-learning pb-5 mb-5" id="learning">
+	<section class="currently-learning pb-5 mb-5" id="learning">
 		<h2 class="heading text-center pb-2">Learning</h2>
 		<div class="circle-border text-center pb-5">
 			<div class="circle mt-3"></div>
@@ -313,30 +316,30 @@
 			<div class="col-lg-4 pb-3 border mr-lg-5 studies">
 				<h4 class="heading py-4 mt-lg-4">Currently Learning</h4>
 				<hr class="pb-3">
-				<h5>Vue JS</h5>
+				<h5>Vue.js</h5>
 				<h5>BEM</h5>
 				<h5>CSS animation</h5>
 				<h5 class="pb-5">Semantic HTML</h5>
 				<p class="mx-5 pt-3 pb-5">~ I've been studying and building with Vue for a few months and am in the process of strengthening my skills. The next
-					project I build will showcase my knowledge of the Vue JS framework.</p>
+					project I build will showcase my knowledge of the Vue.js framework.</p>
 			</div>
 
 			<div class="col-lg-4 mb-3 mb-lg-0 border studies">
 				<h4 class="heading py-4 mt-4">Areas of Interest</h4>
 				<hr class="pb-3">
-				<h5>React JS</h5>
+				<h5>React.js</h5>
 				<h5>PHP</h5>
-				<h5>Node JS</h5>
+				<h5>Node.js</h5>
 				<h5>Unit testing</h5>
 				<h5 class="pb-5 mb-3">Approximately 712 other things...</h5>
 
-				<p class="pb-5 mx-3">~ I have some familiarity with React JS and PHP.</p>
+				<p class="pb-5 mx-3">~ I have some familiarity with React and PHP.</p>
 			</div>
-		</div>
+		</section>
 
 		<!--   WORK EXPERIENCE SECTION   -->
 
-		<div id="experience" class="pt-lg-5">
+		<section id="experience" class="pt-lg-5">
 			<h2 class="heading text-center pb-lg-3">Experience</h2>
 			<div class="circle-border text-center pb-lg-5 mb-3">
 				<div class="circle mt-3"></div>
@@ -354,7 +357,7 @@
 					<div class="col-lg-5 pb-2 work-history">
 
 						<h4 class="work-info pb-3">
-							<span class="bold pb-0">Junior Front-End Developer - Intern/Freelancer</span>
+							<span class="bold pb-0">Front-End Developer - Intern/Freelancer</span>
 							<br>
 							<h5 class="work-info pb-3">American Solutions, LLC
 								<br>June 2017 through April 2018</h5>
@@ -392,11 +395,11 @@
 						<p>Cory Robinson, Fullstack Developer/Former Mentor</p>
 				</div>
 			</div>
-		</div>
+		</section>
 
 		<!--   PROJECTS   -->
 
-		<div id="work">
+		<main id="work">
 			<h2 class="heading text-center pb-lg-3 mt-lg-5">Work</h2>
 			<div class="circle-border text-center pb-lg-5 mb-4">
 				<div class="circle mt-3"></div>
@@ -408,7 +411,7 @@
 				<div class="circle"></div>
 			</div>
 
-			<div class="sw-app">
+			<section class="sw-app">
 				<div class="row">
 					<div class="col-lg-5 pb-2 mx-auto">
 						<a href="///C:/Users/BERGMCJ2/Desktop/starwars-app/index.html" id="sw-link">
@@ -421,7 +424,7 @@
 					<img src="img/swmockupmed.png" class="img-fluid mb-5 pb-5 zoom fade-in">
 				</div>
 			</div>
-		</div>
+		</section>
 
 		<!--   STAR WARS TRIVIA APP   -->
 
@@ -441,7 +444,7 @@
 
 		<!--   PREMIER TRANSCRIPTION WEBSITE   -->
 
-		<div class="wrapper">
+		<section class="wrapper">
 			<div class="row d-flex justify-content-center ml-lg-5">
 				<div class="col-lg-6 pb-lg-5 ">
 					<h3 class="project-title heading premier-site slide-left">Premier Transcription Website</h3>
@@ -465,11 +468,11 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
 	<!--   CASTLE ROCK WEBSITE   -->
 
-	<div class="wrapper">
+	<section class="wrapper">
 		<div class="row d-flex justify-content-center ml-lg-5">
 			<div class="col-lg-6 pb-lg-5 ">
 				<h3 class="project-title heading castle-site slide-left">Castle Rock Construction Website</h3>
@@ -490,12 +493,12 @@
 			<div class="col-lg-6 ml-lg-5 pl-lg-5">
 				<a href="https://castlerock-construction.com"><img src="img/castlerockmock.png" class="premier-section img-fluid mb-lg-5 mt-lg-3 mt-5 skew-right fade-in" alt="Website of Premier Transcription company"></a>
 			</div>
-		</div>
-	</div>
+		</section>
+	</main>
 
 	<!--   CONTACT SECTION   -->
 
-	<div class="contact-section text-center pb-lg-5 mb-lg-3" id="contact">
+	<section class="contact-section text-center pb-lg-5 mb-lg-3" id="contact">
 		<h2 class="heading text-center pb-lg-2 ">Let's talk!</h2>
 		<div class="circle-border text-center">
 			<div class="circle mt-3"></div>
@@ -507,55 +510,6 @@
 			<div class="circle"></div>
 		</div>
 	</div>
-
-	<div class="contact-form-section">
-		<form action="contact.php" name="my-form" method="post">
-			<div class="row d-flex justify-content-center pt-lg-2 pb-lg-5">
-				<div class="col-lg-4">
-					<label class='text-center px-3 py-3'>
-						<i class="fas fa-user">&nbsp;</i>First Name</label>
-					<input type="text" class="form-control first" placeholder="First name" name="first-name">
-				</div>
-				<div class="col-lg-4">
-					<label class="text-center px-3 py-3" for='last'>
-						<i class="fas fa-user">&nbsp;</i>Last name</label>
-					<input type="text" class="form-control" placeholder="Last name" name="last-name">
-				</div>
-			</div>
-
-			<div class="row d-flex justify-content-center pb-lg-3">
-				<div class="col-lg-4">
-					<label class="text-center px-3 py-3" for='email'>
-						<i class="fas fa-envelope">&nbsp;</i>Email</label>
-					<input type="text" class="form-control" placeholder="Email address" name="email">
-				</div>
-				<div class="col-lg-4">
-					<label class="text-center px-3 py-3" for='subject'>
-						<i class="fas fa-tag">&nbsp;</i>Subject</label>
-					<input type="text" class="form-control" placeholder="Subject" name="subject">
-				</div>
-			</div>
-
-			<div class="row d-flex justify-content-center pt-lg-5 pb-lg-5">
-				<div class="col-lg text-center">
-					<h4 class="pt-4 pb-2 px-5">References available upon request.</h4>
-				</div>
-			</div>
-			<div class="row d-flex justify-content-center pb-5">
-				<div class="col-lg-8">
-					<textarea class="form-control mt-2" name="message" rows="8"></textarea>
-				</div>
-			</div>
-	</div>
-
-	<div class="row d-flex justify-content-center pb-5">
-		<div class="col-lg-8">
-			<input class="form-control" type="submit" name="submit" value="Submit">
-			<div class="clear">
-			</div>
-		</div>
-	</div>
-	</form>
 	</div>
 
 	<!--   FOOTER   -->

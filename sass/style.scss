@@ -304,12 +304,16 @@ i.nav {
     letter-spacing: 2px;  
     position: relative;
     text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-    transition: all 0.5s ease;       
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;       
 }
 
 .greeting:hover {
     padding-bottom: 40px;
-    transform: perspective(500px) translateZ(50px);   
+    transform: perspective(500px);
+    transform: translateZ(50px);   
+    -moz-transform: perspective(500px);
+    -moz-transform: translateZ(50px);
 }
 
 img.christine {
@@ -593,7 +597,7 @@ img.sw-section {
     color: $lt-taupe;
 } 
 
-input[name="first-name"], input[name="last-name"], input[name="email"], input[name="subject"], input[name="submit"] {
+input[name="firstName"], input[name="lastName"], input[name="email"], input[name="subject"], input[name="submit"] {
     border: none;
     border-bottom: 1px solid $input-gray;
     border-radius: 0;
