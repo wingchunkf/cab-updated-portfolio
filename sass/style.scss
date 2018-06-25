@@ -57,13 +57,15 @@ $text-darker: #514f59;
  body {
     font-family :'Raleway';
     position: relative;
-    margin-right: -15px;
+    margin-right: -15px;  
+    overflow-x: hidden; 
     padding-right: -15px;
 }
 
 .container-fluid {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 ul {
@@ -80,7 +82,7 @@ ul {
     Classes for JS  
  --------------------*/
 
- .fade-in{
+.fade-in {
     opacity: 0;
 }
 
@@ -298,8 +300,7 @@ i.nav {
 }
 
 .greeting {
-    color: $med-purple;  
-    font-family: 'Playfair Display', sans-serif;
+    color: $med-purple; 
     font-size: 4rem;
     letter-spacing: 2px;  
     position: relative;
@@ -318,10 +319,12 @@ i.nav {
 
 img.christine {
     animation: none; 
+    border-radius: 50%;  
     box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.4);  
+    height: 34rem;
     opacity: 0;
     margin-bottom: 1.5rem;     
-    width: 17rem;          
+    width: 21rem; 
 }
 
 .about-text {
@@ -530,28 +533,6 @@ img.sw-section {
 .demo-link:hover {
     background-color: $teal;
     color: $white;   
-}
-
-.skew-left {
-    transition: transform 0.2s;
-}
-
-.skew-left:hover {  
-    transform: perspective(50px) translateZ(10px);
-    transform: skewX(35deg); 
-    -ms-transform: skewX(35deg);
-    -webkit-transform: skewX(35deg);   
-}
-
-.skew-right {
-    transition: transform 0.2s;
-}
-
-.skew-right:hover {
-    transform: perspective(50px) translateZ(10px);
-    transform: skewX(-35deg); 
-    -ms-transform: skewX(-35deg); 
-    -webkit-transform: skewX(-35deg);    
 }
 
 .zoom {
