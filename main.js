@@ -17,10 +17,21 @@ var myNav = document.querySelector('#desktop-navbar');
     }, 3000);
 })();
 
+$('.footer-link').tooltip('show');
+
 // script that fades in elements on scroll
 
 $(document).ready(function () {
-    $(window).scroll(function () {
+
+    var workText = document.querySelector('.work-text');
+    var demo = document.querySelector('.demo-link');
+    var projects = document.querySelector('.project-text');
+    var zoom = document.querySelector('.zoom');
+    var headings = document.querySelector('.heading');
+    var learningSection = document.querySelector('.learning');
+
+    if ( $(window).width() > 768) {  
+    $(window).scroll(function () {        
         $('.fade-in').each(function (i) {
 
             var bottom_of_element = $(this).offset().top + $(this).outerHeight();
@@ -29,11 +40,23 @@ $(document).ready(function () {
             if (bottom_of_window > bottom_of_element) {
                 $(this).animate({
                     'opacity': '1'
-                }, 500);
+                }, 100);
             }
 
-        });
+        });    
     });
+
+    } else {
+        workText.classList.remove('fade-in');
+        premierDiv.classList.remove('fade-in');
+        demo.classList.remove('fade-in');
+        projects.classList.remove('fade-in');
+        zoom.classList.remove('fade-in');
+        headings.classList.remove('fade-in');
+        learningSection.classList.remove('fade-in');
+        return false;
+    }
+
 });
 
 // script that slides in elements from left on scroll
@@ -54,6 +77,10 @@ $(document).ready(function () {
         });
     });
 });
+
+
+
+
 
 
 
