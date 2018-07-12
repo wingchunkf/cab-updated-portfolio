@@ -12,14 +12,13 @@ sections appear on page
     7. Mobile nav
     8. Header
     9. Tools section
-    10. Spinning Icons
-    11. Learning section
-    12. Experience section
-    13. Work section
-    14. Testimonial
-    15. Contact section
-    16. Footer
-    17. Media queries
+    10. Spinning Icons 
+    11. Experience section
+    12. Work section
+    13. Testimonial
+    14. Contact section
+    15. Footer
+    16. Media queries
 
  --------------------*/
 
@@ -221,7 +220,7 @@ i.nav {
 
     li.nav-item:hover {
         background-color: $white;
-        box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.12);       
         transform: scale(1.2);        
     }
 
@@ -320,7 +319,7 @@ i.nav {
 img.christine {
     animation: none; 
     border-radius: 50%;  
-    box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.4);  
+    box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.12);    
     height: 34rem;
     opacity: 0;
     margin-bottom: 1.5rem;     
@@ -384,7 +383,7 @@ q:after {
 
 .diamond {
     border: 1px solid $lt-gray;
-    box-shadow: -5px -5px 5px $dk-brown;      
+    box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.12);      
 	height: 8rem;	
 	margin: 50px;   
     transition: transform 0.3s ease-in-out;
@@ -409,30 +408,6 @@ q:after {
 }
 
 /* --------------------
-    Learning Section 
- --------------------*/
-
-#learning h5 { 
-    color: $lt-purple;        
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-
-hr {
-    color: $lt-purple;
-    width: 50%;
-}
-
-.studies {
-    box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s;
-}
-
-.studies:hover {
-    transform: scale(1.12);
-}
-
-/* --------------------
     Experience Section 
  --------------------*/
 
@@ -454,7 +429,7 @@ hr {
  --------------------*/
 
 h3.project-title {
-    box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.12);
     font-size: 150%;    
     margin-top: 6rem;
     margin-bottom: 4rem;
@@ -463,8 +438,8 @@ h3.project-title {
 }
 
 .heading.premier-site, .work-info {
-    box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2);
-    color: #62bec1;    
+    box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.12);
+    color: #62bec1;       
 }
 
 .work-info {
@@ -489,7 +464,7 @@ h3.project-title {
 }
 
 .project-div {   
-    box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.12);    
     height: 26rem;    
 }
 
@@ -535,22 +510,14 @@ img.sw-section {
     color: $white;   
 }
 
-.zoom {
-    transition: transform 0.2s;
-}
-
-.zoom:hover {
-    transform: scale(1.12);
-}
-
 /* --------------------
     Testimonial 
  --------------------*/
 
  .blue-texture-bg, .teal-texture-bg {  
-	background-color: $blue;
+    background-color: $blue;    
     background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
-    box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.12);    
 	font-family: 'Raleway', sans-serif;
     font-size: 110%;   
 	padding-top: 4rem;
@@ -654,12 +621,6 @@ input[name="submit"]:hover {
     height: 15px; 
     margin-right: 30px;  
 	width: 15px;   
-}
-
-.copyright { 
-    background-color: $white;   
-    font-size: 1rem;
-    color: $lighter-purple;      
 }
 
 .footer-bg {  
