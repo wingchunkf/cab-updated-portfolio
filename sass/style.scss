@@ -47,6 +47,7 @@ $lt-taupe: #7e756d;
 $neutral-brown: #5e5a5e;
 $dk-brown: #888;
 
+$text-gray: #8C979A;
 $text-darker: #514f59;
 
 /* --------------------
@@ -169,22 +170,22 @@ Background-color classes
 a.nav-link {
     border-bottom: 1px solid transparent;
     border-top: 1px solid transparent;
-    color:  $med-purple;  
+    color:  $white;  
     font-family: 'Raleway', sans-serif;
     font-size: 1.25rem; 
     font-weight: bolder; 
     letter-spacing: 1px;     
     transition: all ease 0.5s; 
     text-align: center; 
-    text-shadow: 1px 3px 2px rgba(0,0,0,0.15); 
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.2); 
     transition: all 0.3s ease-in-out;
 }
 
 a.nav-link:hover {
-    border-bottom: 1px solid $lighter-purple;
-    border-top: 1px solid $lighter-purple;
-    color: $lighter-purple;
-    transform: scale(1.18);     
+    border-bottom: 1px solid $med-purple;
+    border-top: 1px solid $med-purple;
+    color: $med-purple;
+    transform: scale(1.3);     
 }
 
 i.nav {
@@ -274,9 +275,28 @@ i.nav {
     font-weight: bold;
 }
 
-#laptop {    
+#laptop {
+    animation: backgroundEffects 20s infinite;
     height: 400px;
     width: 100%;
+}
+
+@keyframes backgroundEffects {
+    0% {
+    opacity: 0;
+    }
+    5% {
+    opacity: 1;
+    }
+    95% {
+        animation-timing-function: ease-in;
+        opacity: 1;
+        transform: scale3d(1.5, 1.5, 1.5) translate3d(-190px, -120px, 0px);      
+    }
+    100% {
+        opacity: 0;
+        transform: scale3d(2, 2, 2) translate3d(-170px, -100px, 0px);        
+    }
 }
 
 .greeting {
@@ -297,14 +317,19 @@ i.nav {
     -moz-transform: translateZ(50px);
 }
 
-img.christine {
-    animation: none; 
+img.christine {    
     border-radius: 50%;  
     box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.12);    
-    height: 34rem;
+    height: 18rem;
     opacity: 0;
     margin-bottom: 1.5rem;     
-    width: 21rem; 
+    width: 18rem; 
+}
+
+.intro-text {
+    line-height: 2;
+    color: $text-gray;
+    text-align: center;    
 }
 
 .about-text {
@@ -327,19 +352,6 @@ q:before {
 
 q:after {
     content: '\201d';
-}
-
-/* --------------------
-    Tools section
- --------------------*/
-
-.more-tools {
-    color: $lt-green;
-    opacity: 0;  
-}
-
-.additional-tools h4 {
-    color: $lt-green;
 }
 
 /* --------------------
@@ -391,6 +403,10 @@ q:after {
 /* --------------------
     Experience Section 
  --------------------*/
+
+.project-text {
+    color: $text-gray;
+}
 
 .project-text > p > a {
     color: $teal; 
