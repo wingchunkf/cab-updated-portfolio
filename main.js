@@ -14,7 +14,7 @@ var myNav = document.querySelector('#desktop-navbar');
 (function navAppear () {
     setTimeout(function() {
         myNav.style.opacity = 1;
-    }, 3000);
+    }, 500);
 })();
 
 // script that fades in elements on scroll
