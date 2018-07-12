@@ -198,22 +198,8 @@ i.nav {
   font-weight: bold; }
 
 #laptop {
-  animation: backgroundEffects 20s infinite;
   height: 400px;
   width: 100%; }
-
-@keyframes backgroundEffects {
-  0% {
-    opacity: 0; }
-  5% {
-    opacity: 1; }
-  95% {
-    animation-timing-function: ease-in;
-    opacity: 1;
-    transform: scale3d(1.5, 1.5, 1.5) translate3d(-190px, -120px, 0px); }
-  100% {
-    opacity: 0;
-    transform: scale3d(2, 2, 2) translate3d(-170px, -100px, 0px); } }
 
 .greeting {
   color: #887eb9;
