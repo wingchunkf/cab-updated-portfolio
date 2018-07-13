@@ -29,6 +29,7 @@ sections appear on page
  --------------------*/
 body {
   font-family: 'Raleway';
+  line-height: 2.5;
   position: relative;
   margin-right: -15px;
   overflow-x: hidden;
@@ -222,13 +223,11 @@ img.christine {
   width: 18rem; }
 
 .intro-text {
-  line-height: 2;
   color: #8C979A;
   text-align: center; }
 
 .about-text {
   font-weight: bolder;
-  line-height: 3.2;
   text-align: center; }
 
 span.line {
@@ -315,7 +314,6 @@ h3.project-title {
   box-shadow: none;
   color: #62bec1;
   font-style: italic;
-  line-height: 175%;
   text-align: center; }
 
 .heading.castle-site {
@@ -350,8 +348,7 @@ img.sw-section {
   color: #7e756d; }
 
 .project-text {
-  font-size: 105%;
-  line-height: 2.75; }
+  font-size: 105%; }
 
 .demo:hover {
   background: #62bec1; }
@@ -369,15 +366,14 @@ img.sw-section {
 /* --------------------
     Testimonial 
  --------------------*/
-.blue-texture-bg, .teal-texture-bg {
-  background-color: #5ad2f4;
+.purple-texture-bg, .teal-texture-bg {
+  background-color: #55476d;
   background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.12);
   font-family: 'Raleway', sans-serif;
   font-size: 110%;
   padding-top: 4rem;
-  padding-bottom: 3rem;
-  line-height: 225%; }
+  padding-bottom: 3rem; }
 
 .lt-purple-texture {
   background-color: #aba9b5;
