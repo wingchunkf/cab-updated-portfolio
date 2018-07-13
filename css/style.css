@@ -108,8 +108,12 @@ Background-color classes
   background-color: #b0dee0; }
 
 /* --------------------
-    Color classes
+  Miscellaneous classes
  --------------------*/
+.bold {
+  font-weight: bolder;
+  letter-spacing: 0.5px; }
+
 .white {
   color: #fff; }
 
@@ -218,12 +222,12 @@ img.christine {
   border-radius: 50%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.12);
   height: 18rem;
-  opacity: 0;
   margin-bottom: 1.5rem;
   width: 18rem; }
 
 .intro-text {
-  color: #8C979A;
+  color: #fff;
+  line-height: 2.15;
   text-align: center; }
 
 .about-text {
@@ -301,7 +305,7 @@ q:after {
 h3.project-title {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.12);
   font-size: 150%;
-  margin-top: 6rem;
+  margin-top: 4rem;
   margin-bottom: 4rem;
   padding: 2rem 0;
   text-align: center; }
