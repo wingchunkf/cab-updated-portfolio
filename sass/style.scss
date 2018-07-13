@@ -441,15 +441,20 @@ img.sw-section {
 }
 
 .demo-link {
-    border: 1px solid $teal;
-    color: $teal;
+    backface-visibility: hidden;
+    border: 1px solid $lt-green;
+    color: $lt-green;    
     text-decoration: none !important;  
-    min-width: 25px; 
+    transition: transform 0.3s ease-in-out;
+    min-width: 25px;    
 }
 
 .demo-link:hover {
-    background-color: $teal;
-    color: $white;   
+    background-color: $lt-green;
+    border: 1px solid transparent;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.12); 
+    color: $white;  
+    transform: scale(1.05); 
 }
 
 /* --------------------
@@ -574,7 +579,7 @@ input[name="submit"]:hover {
 .footer-bg h2, .footer-bg a {
     color: $white;
     font-size: 120%;
-    transition: all 0.5s ease;   
+    transition: all 0.5s ease-in-out;   
 }
 
 .footer-nav a {
