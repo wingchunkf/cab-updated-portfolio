@@ -165,6 +165,11 @@ Background-color classes
     letter-spacing: 0.5px;
 }
 
+.my-hr {
+    background-color: white;    
+    width: 70%;
+}
+
 .white {
     color: $white;
 }
@@ -282,33 +287,19 @@ i.nav {
 }
 
 .greeting {
-    color: $med-purple; 
-    font-size: 4rem;
-    letter-spacing: 2px;  
-    position: relative;
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-    transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;       
-}
-
-.greeting:hover {
-    padding-bottom: 40px;
-    transform: perspective(500px);
-    transform: translateZ(50px);   
-    -moz-transform: perspective(500px);
-    -moz-transform: translateZ(50px);
+        
 }
 
 img.christine {    
     border-radius: 50%;  
     box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.12);    
     height: 18rem;
-    margin-bottom: 1.5rem;     
+    // margin-bottom: 1.5rem;     
     width: 18rem; 
 }
 
 .intro-text {    
-    color: $white;
+    color: $text-gray;
     line-height: 2.15;
     text-align: center;    
 }
@@ -413,7 +404,7 @@ h3.project-title {
 
 .heading.premier-site, .work-info {
     box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.12);
-    color: #62bec1;       
+    color: $lt-green;      
 }
 
 .work-info {
@@ -424,7 +415,7 @@ h3.project-title {
 }
 
 .heading.castle-site {    
-    color: $teal;
+    color: $lt-green;
 }
 
 .sw-app {
