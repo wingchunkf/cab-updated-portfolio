@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500|Playfair+Display:400,400i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	    crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
@@ -23,10 +24,13 @@
 <body>
 	<header id="header-wrapper">
 		<div class="container-fluid" id="header">
+			<div class="header-title">
+				<p class="pl-lg-5 slide-left">Welcome to my portfolio</p>
+			</div>
 
 			<section class="my-5">
 				<div class="row d-flex justify-content-center mt-3 h-100">
-					<div class="col-3 greeting text-center">
+					<div class="col-lg-3 greeting text-center">
 						<img src="img/mypicsquare.jpg" class="christine img-fluid my-5" alt="woman smiling">
 					</div>
 					<div class="col-4 align-self-center intro-text px-5">
@@ -80,311 +84,293 @@
 		</div>
 	</header>
 
-	<!--   PROJECTS   -->
-
-	<main id="work">
-		<h2 class="heading text-center pb-lg-3 mt-lg-5">Work</h2>
-		<div class="circle-border text-center pb-lg-5">
-			<div class="circle mt-3"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-		</div>
-
-		<!--   PREMIER TRANSCRIPTION WEBSITE   -->
-
-		<section class="wrapper">
-			<div class="row d-flex justify-content-center ml-lg-5">
-				<div class="col-lg-6 pb-lg-5 ">
-					<h3 class="project-title heading premier-site slide-left">Premier Transcription Website</h3>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-lg-6 ml-lg-5 pl-lg-5">
-					<a href="http://dev.premiertranscript.com">
-						<img src="img/premiermockup.png" class="premier-section img-fluid mb-5 fade-in" alt="Website of Premier Transcription company">
-					</a>
-				</div>
-
-				<div class="col-lg-5 project-details">
-					<p class="project-text mr-lg-5 pr-lg-5 px-5 fade-in">This site was commissioned by a former employer. Responsive web design principles were used in order to produce a mobile-friendly
-						product. I also implemented basic SEO techniques in order to boost visibility. I created the "loader" logo and all
-						written content on the site.</p>
-
-					<div class="row d-flex justify-content-center pt-5">
-						<a href="http://dev.premiertranscript.com" class="demo-link fade-in mr-3 px-4 py-3">View Site</a>
-						<a href="https://github.com/wingchunkf/premiersb-site" class="demo-link fade-in px-4 py-3">View Code</a>
-					</div>
-				</div>
-			</div>
-			</div>
-		</section>
-
-		<!--   CASTLE ROCK WEBSITE   -->
-
-		<section class="wrapper mb-5">
-			<div class="row d-flex justify-content-center ml-lg-5">
-				<div class="col-lg-6 pb-lg-5 ">
-					<h3 class="project-title heading castle-site slide-left">Castle Rock Construction Website</h3>
-				</div>
-			</div>
-
-			<div class="row d-flex">
-				<div class="col-lg-5 project-details">
-					<p class="project-text ml-lg-5 pl-lg-5 px-5 fade-in">This site was created for a local business owner. In addition to choosing and implementing a color scheme and constructing
-						a build pipeline for Sass, I also reorganized the layout of each page to suit the needs of the client, altered the
-						business logo in Photoshop, created Google Analytics custom events to track user activity, wrote custom JavaScript
-						for the business hours message in the header, and added a favicon.</p>
-					<div class="row d-flex justify-content-center pt-5">
-						<a href="https://castlerock-construction.com" class="demo-link fade-in mr-3 px-4 py-3">View Site</a>
-						<a href="https://github.com/crobinson42/crg-www" class="demo-link fade-in px-4 py-3">View Code</a>
-					</div>
-				</div>
-
-				<div class="col-lg-6 ml-lg-5 pl-lg-5">
-					<a href="https://castlerock-construction.com">
-						<img src="img/castlerockmock.png" class="premier-section img-fluid mb-lg-5 mt-lg-3 mt-5 fade-in" alt="Website of Premier Transcription company">
-					</a>
-				</div>
-		</section>
-		<!-- </main> -->
-
-		<!--   STAR WARS TRIVIA APP   -->
-
-		<section class="sw-app pt-5 mt-5">
-			<div class="row">
-				<div class="col-lg-5 pb-2 mx-auto">
-					<a href="///C:/Users/BERGMCJ2/Desktop/starwars-app/index.html" id="sw-link">
-						<h3 class="project-title star-wars heading">Star Wars Trivia App</a>
-					</h3>
-				</div>
-			</div>
-
-			<div class="row mx-auto d-flex justify-content-center">
-				<img src="img/swmockupmed.png" class="img-fluid mb-5 pb-5 zoom fade-in">
-			</div>
-			</div>
-		</section>
-
-		<div class="row">
-			<div class="col-lg-6 mx-auto">
-				<p class="project-text mt-5 px-5">
-					This app utilizes SWAPI, an API built by Paul Hallett and team. Users may choose from six different categories, Characters,
-					Species, Planets, Starships, Vehicles, and Films. Asynchronous data requests are made with the HTTP client Axios. Tools
-					used include JavaScript, jQuery, Axios, Gulp, Sass, and Bootstrap 4. The project was planned and tracked in Jira using
-					an Agile approach. This is a completely original, 100% "Solo" project.
-				</p>
-			</div>
-		</div>
-		<div class="row py-5 d-flex justify-content-center">
-			<a href="http://broad-time.surge.sh/" target="_blank" class="demo-link mr-3 px-5 py-3">Demo</a>
-			<a href="https://github.com/wingchunkf/starwars-trivia-app" class="demo-link px-4 py-3">View Code</a>
-		</div>
-	</main>
-
 	<!--   TOOLS SECTION   -->
 
-	<section class="tools-section mt-4" id="toolbox">
-		<h2 class="heading text-center pb-lg-2 pt-lg-5">Toolbox</h2>
-		<div class="circle-border text-center pb-lg-5">
-			<div class="circle mt-3"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
+	<div class="tools-section mt-5 py-3" id="toolbox">
+		<hr class="heading-hr">
+		<h2 class="heading text-center py-3">Toolbox</h2>
+		<hr class="heading-hr">
+	</div>
+
+	<!--   RESPONSIVE ICONS   -->
+
+	<section class="spinning-tools">
+		<div class="row d-flex justify-content-center">
+			<div class="col-3"></div>
+			<div class="col-md-2 d-flex justify-content-center">
+				<div class="diamond lt-purple text-center">
+					<div class="text-center icon">
+						<i class="devicon-javascript-plain"></i>
+					</div>
+
+					<div>
+						<p class="tool-name pt-2">JavaScript</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-2 d-flex justify-content-center">
+				<div class="diamond teal text-center">
+					<div class="icon">
+						<i class="devicon-sass-original"></i>
+					</div>
+
+					<div>
+						<p class="tool-name pt-2">Sass</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-2 d-flex justify-content-center">
+				<div class="diamond border neutral-brown text-center">
+					<div class="icon">
+						<i class="devicon-slack-plain"></i>
+					</div>
+
+					<div>
+						<p class="tool-name pt-2">Slack</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-3"></div>
 		</div>
 
-		<!--   RESPONSIVE ICONS   -->
+		<div class="row d-flex justify-content-center">
+			<div class="col-lg-3"></div>
+			<div class="col-md-2 d-flex justify-content-center">
+				<div class="diamond blue text-center">
+					<div class="icon">
+						<i class="devicon-jquery-plain"></i>
+					</div>
 
-		<section class="spinning-tools">
-			<div class="row d-flex justify-content-center">
-				<div class="col-3"></div>
-				<div class="col-md-2 d-flex justify-content-center">
-					<div class="diamond lt-purple text-center">
-						<div class="text-center icon">
-							<i class="devicon-javascript-plain"></i>
-						</div>
-
-						<div>
-							<p class="tool-name pt-2">JavaScript</p>
-						</div>
+					<div>
+						<p class="tool-name pt-2">jQuery</p>
 					</div>
 				</div>
-
-				<div class="col-md-2 d-flex justify-content-center">
-					<div class="diamond teal text-center">
-						<div class="icon">
-							<i class="devicon-sass-original"></i>
-						</div>
-
-						<div>
-							<p class="tool-name pt-2">Sass</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-2 d-flex justify-content-center">
-					<div class="diamond border neutral-brown text-center">
-						<div class="icon">
-							<i class="devicon-slack-plain"></i>
-						</div>
-
-						<div>
-							<p class="tool-name pt-2">Slack</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-3"></div>
 			</div>
 
-			<div class="row d-flex justify-content-center">
-				<div class="col-lg-3"></div>
-				<div class="col-md-2 d-flex justify-content-center">
-					<div class="diamond blue text-center">
-						<div class="icon">
-							<i class="devicon-jquery-plain"></i>
-						</div>
+			<div class="col-md-2 d-flex justify-content-center">
+				<div class="diamond lt-green text-center">
+					<div class="icon">
+						<i class="devicon-git-plain"></i>
+					</div>
 
-						<div>
-							<p class="tool-name pt-2">jQuery</p>
-						</div>
+					<div>
+						<p class="tool-name pt-2">Git</p>
 					</div>
 				</div>
-
-				<div class="col-md-2 d-flex justify-content-center">
-					<div class="diamond lt-green text-center">
-						<div class="icon">
-							<i class="devicon-git-plain"></i>
-						</div>
-
-						<div>
-							<p class="tool-name pt-2">Git</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-2 d-flex justify-content-center">
-					<div class="diamond pink-purple text-center">
-						<div class="icon">
-							<i class="devicon-bitbucket-plain"></i>
-						</div>
-
-						<div>
-							<p class="tool-name pt-2">Bitbucket</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3"></div>
 			</div>
 
-			<div class="row d-flex justify-content-center">
-				<div class="col-lg-3"></div>
-				<div class="col-md-2 d-flex justify-content-center">
-					<div class="diamond lighter-purple text-center">
-						<div class="icon ">
-							<i class="devicon-gulp-plain"></i>
-						</div>
+			<div class="col-md-2 d-flex justify-content-center">
+				<div class="diamond pink-purple text-center">
+					<div class="icon">
+						<i class="devicon-bitbucket-plain"></i>
+					</div>
 
-						<div>
-							<p class="tool-name pt-2 ">Gulp</p>
-						</div>
+					<div>
+						<p class="tool-name pt-2">Bitbucket</p>
 					</div>
 				</div>
-
-				<div class="col-md-2 d-flex justify-content-center">
-					<div class="diamond lt-taupe text-center">
-						<div class="text-center icon">
-							<i class="devicon-bootstrap-plain "></i>
-						</div>
-
-						<div>
-							<p class="tool-name pt-2 ">Bootstrap 4.0</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-2 d-flex justify-content-center">
-					<div class="diamond lt-teal text-center">
-						<div class="text-center icon ">
-							<i class="devicon-visualstudio-plain "></i>
-						</div>
-
-						<div>
-							<p class="tool-name pt-2 ">Visual Studio</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3"></div>
 			</div>
-		</section>
+			<div class="col-lg-3"></div>
+		</div>
+
+		<div class="row d-flex justify-content-center">
+			<div class="col-lg-3"></div>
+			<div class="col-md-2 d-flex justify-content-center">
+				<div class="diamond lighter-purple text-center">
+					<div class="icon ">
+						<i class="devicon-gulp-plain"></i>
+					</div>
+
+					<div>
+						<p class="tool-name pt-2 ">Gulp</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-2 d-flex justify-content-center">
+				<div class="diamond lt-taupe text-center">
+					<div class="text-center icon">
+						<i class="devicon-bootstrap-plain "></i>
+					</div>
+
+					<div>
+						<p class="tool-name pt-2 ">Bootstrap 4.0</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-2 d-flex justify-content-center">
+				<div class="diamond lt-teal text-center">
+					<div class="text-center icon ">
+						<i class="devicon-visualstudio-plain "></i>
+					</div>
+
+					<div>
+						<p class="tool-name pt-2 ">Visual Studio</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3"></div>
+		</div>
 	</section>
+	</section>
+
+	<!--   PROJECTS   -->
+
+	<div class="mt-5 py-3" id="work">
+		<hr class="heading-hr">
+		<h2 class="heading text-center py-3">Work</h2>
+		<hr class="heading-hr">
+	</div>
+
+	<!--   PREMIER TRANSCRIPTION WEBSITE   -->
+
+	<section class="wrapper">
+		<div class="row d-flex justify-content-center ml-lg-5">
+			<div class="col-lg-6 pb-lg-5 ">
+				<h3 class="project-title heading premier-site slide-left">Premier Transcription Website</h3>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-6 ml-lg-5 pl-lg-5">
+				<a href="http://dev.premiertranscript.com">
+					<img src="img/premiermockup.png" class="premier-section img-fluid mb-5 fade-in" alt="Website of Premier Transcription company">
+				</a>
+			</div>
+
+			<div class="col-lg-5 project-details">
+				<p class="project-text mr-lg-5 pr-lg-5 px-5 fade-in">This site was commissioned by a former employer. Responsive web design principles were used in order to produce a mobile-friendly
+					product. I also implemented basic SEO techniques in order to boost visibility. I created the "loader" logo and all written
+					content on the site.</p>
+
+				<div class="row d-flex justify-content-center pt-5">
+					<a href="http://dev.premiertranscript.com" class="demo-link fade-in mr-3 px-4 py-3">View Site</a>
+					<a href="https://github.com/wingchunkf/premiersb-site" class="demo-link fade-in px-4 py-3">View Code</a>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+
+	<!--   CASTLE ROCK WEBSITE   -->
+
+	<section class="wrapper mb-5">
+		<div class="row d-flex justify-content-center ml-lg-5">
+			<div class="col-lg-6 pb-lg-5 ">
+				<h3 class="project-title heading castle-site slide-left">Castle Rock Construction Website</h3>
+			</div>
+		</div>
+
+		<div class="row d-flex">
+			<div class="col-lg-5 project-details">
+				<p class="project-text ml-lg-5 pl-lg-5 px-5 fade-in">This site was created for a local business owner. In addition to choosing and implementing a color scheme and constructing
+					a build pipeline for Sass, I also reorganized the layout of each page to suit the needs of the client, altered the business
+					logo in Photoshop, created Google Analytics custom events to track user activity, wrote custom JavaScript for the business
+					hours message in the header, and added a favicon.</p>
+				<div class="row d-flex justify-content-center pt-5">
+					<a href="https://castlerock-construction.com" class="demo-link fade-in mr-3 px-4 py-3">View Site</a>
+					<a href="https://github.com/crobinson42/crg-www" class="demo-link fade-in px-4 py-3">View Code</a>
+				</div>
+			</div>
+
+			<div class="col-lg-6 ml-lg-5 pl-lg-5">
+				<a href="https://castlerock-construction.com">
+					<img src="img/castlerockmock.png" class="premier-section img-fluid mb-lg-5 mt-lg-3 mt-5 fade-in" alt="Website of Premier Transcription company">
+				</a>
+			</div>
+	</section>
+
+
+	<!--   STAR WARS TRIVIA APP   -->
+
+	<section class="sw-app pt-5 mt-5">
+		<div class="row">
+			<div class="col-lg-5 pb-2 mx-auto">
+				<a href="///C:/Users/BERGMCJ2/Desktop/starwars-app/index.html" id="sw-link">
+					<h3 class="project-title star-wars heading">Star Wars Trivia App</a>
+				</h3>
+			</div>
+		</div>
+
+		<div class="row mx-auto d-flex justify-content-center">
+			<img src="img/swmockupmed.png" class="img-fluid mb-5 pb-5 zoom fade-in">
+		</div>
+		</div>
+	</section>
+
+	<div class="row">
+		<div class="col-lg-6 mx-auto">
+			<p class="project-text mt-5 px-5">
+				This app utilizes SWAPI, an API built by Paul Hallett and team. Users may choose from six different categories, Characters,
+				Species, Planets, Starships, Vehicles, and Films. Asynchronous data requests are made with the HTTP client Axios. Tools
+				used include JavaScript, jQuery, Axios, Gulp, Sass, and Bootstrap 4. The project was planned and tracked in Jira using
+				an Agile approach. This is a completely original, 100% "Solo" project.
+			</p>
+		</div>
+	</div>
+	<div class="row py-5 d-flex justify-content-center">
+		<a href="http://broad-time.surge.sh/" target="_blank" class="demo-link mr-3 px-5 py-3">App</a>
+		<a href="https://github.com/wingchunkf/starwars-trivia-app" class="demo-link px-4 py-3">View Code</a>
+	</div>
+	</main>
 
 	<!--   WORK EXPERIENCE SECTION   -->
 
-	<section id="experience" class="pt-lg-5">
-		<h2 class="heading text-center pb-lg-3">Experience</h2>
-		<div class="circle-border text-center pb-lg-5 mb-3">
-			<div class="circle mt-3"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-		</div>
+	<div class="mt-2 py-3" id="experience">
+		<hr class="heading-hr">
+		<h2 class="heading text-center py-3">Experience</h2>
+		<hr class="heading-hr">
+	</div>
 
-		<div class="pb-3">
-			<div class="row d-flex justify-content-center">
 
-				<div class="col-lg-5 pb-2 work-history">
+	<div class="pb-3 pt-5">
+		<div class="row d-flex justify-content-center">
 
-					<h4 class="work-info pb-3">
-						<span class="bold pb-0">Frontend Developer</span>
-						<br>
-						<h5 class="work-info pb-3">American Software & Solutions, LLC
-							<br>June 2017 through April 2018</h5>
-					</h4>
-				</div>
+			<div class="col-lg-5 pb-2 work-history">
 
-				<div class="col-8 project-text">
-					<p class="fade-in">Working under a mentor, I was involved in two major projects. Project number one is a local business website that is
-						described in detail below. For the second project, which was much larger in scope, I was responsible for rebuilding
-						the website accompanying a security company management app. At that time, the app was being offered free of charge
-						and was utilized by approximately 500 users per day. The goal of this project was to revamp the website and app for
-						monetizing purposes. Working from basic Justinmind prototypes, I coded the HTML, styled the six-page site, and used
-						JavaScript, Vue, and jQuery to add functionality and interactivity.</p>
-					<p class="fade-in">I was also tasked with cross-browser compatibility testing, testing the site on various devices and operating systems,
-						and finding and eliminating bugs throughout the entire process. In addition, I implemented Google Analytics for the
-						project and completed many SEO-related tasks. Multiple tools and frameworks were used for this effort, including Bootstrap
-						4, Sass, Gulp, Vue JS, Photoshop, Git, Visual Studio Code, the Git Bash CLI, JavaScript, and jQuery. The project was
-						managed in Jira, stored in a Bitbucket repository, and developed in two-week sprints using an Agile approach. Over
-						the course of both projects, I gained a plethora of technical skills and also experienced the software development
-						lifecycle as a member of a development team.</p>
-				</div>
+				<h4 class="pb-3 work-info">
+					<span class="bold subheading pb-0">Frontend Developer</span>
+					<br>
+					<h5 class="work-info pb-3">American Software & Solutions, LLC
+						<br>June 2017 through April 2018</h5>
+				</h4>
+			</div>
+
+			<div class="col-8 project-text">
+				<p class="fade-in">Working under a mentor, I was involved in two major projects. Project number one is a local business website that is
+					described in detail below. For the second project, which was much larger in scope, I was responsible for rebuilding
+					the website accompanying a security company management app. At that time, the app was being offered free of charge and
+					was utilized by approximately 500 users per day. The goal of this project was to revamp the website and app for monetizing
+					purposes. Working from basic Justinmind prototypes, I coded the HTML, styled the six-page site, and used JavaScript,
+					Vue, and jQuery to add functionality and interactivity.</p>
+				<p class="fade-in">I was also tasked with cross-browser compatibility testing, testing the site on various devices and operating systems,
+					and finding and eliminating bugs throughout the entire process. In addition, I implemented Google Analytics for the
+					project and completed many SEO-related tasks. Multiple tools and frameworks were used for this effort, including Bootstrap
+					4, Sass, Gulp, Vue JS, Photoshop, Git, Visual Studio Code, the Git Bash CLI, JavaScript, and jQuery. The project was
+					managed in Jira, stored in a Bitbucket repository, and developed in two-week sprints using an Agile approach. Over the
+					course of both projects, I gained a plethora of technical skills and also experienced the software development lifecycle
+					as a member of a development team.</p>
 			</div>
 		</div>
+	</div>
 
-		<!--   MENTOR TESTIMONIAL   -->
+	<!--   MENTOR TESTIMONIAL   -->
 
-		<div class="row mt-5 mb-3 text-white">
-			<div class="col-lg-6 mx-auto text-center purple-texture-bg bold">
-				<p class="ml-lg-5 mx-5">
-					<i class="fas fa-quote-left fa-lg" style="margin-bottom: 15px; margin-right: 15px;"></i>&nbspWorking with Christine was both a valuable and rewarding experience. Christine is an articulate and talented
-					web developer. I've had the pleasure of working with her on multiple projects and truly appreciate her ability to move
-					through tasks quickly as well as adding her touch of creativity. I would highly recommend Christine to anyone in the
-					market for web development or web services!&nbsp
-					<i class="fas fa-quote-right fa-lg" style="margin-bottom: 15px; margin-left: 15px;"></i>
-					<p>Cory Robinson, Fullstack Developer/Former Mentor
-						<br> Owner, American Software & Solutions</p>
-			</div>
+	<div class="row mt-5 mb-3 text-white">
+		<div class="col-lg-6 mx-auto text-center purple-texture-bg bold">
+			<p class="ml-lg-5 mx-5">
+				<i class="fas fa-quote-left fa-lg" style="margin-bottom: 15px; margin-right: 15px;"></i>&nbspWorking with Christine was both a valuable and rewarding experience. Christine is an articulate and talented
+				web developer. I've had the pleasure of working with her on multiple projects and truly appreciate her ability to move
+				through tasks quickly as well as adding her touch of creativity. I would highly recommend Christine to anyone in the
+				market for web development or web services!&nbsp
+				<i class="fas fa-quote-right fa-lg" style="margin-bottom: 15px; margin-left: 15px;"></i>
+				<p>Cory Robinson, Fullstack Developer/Former Mentor
+					<br> Owner, American Software & Solutions</p>
 		</div>
-	</section>
+	</div>
 
 	<!--   CONTACT SECTION   -->
 

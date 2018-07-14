@@ -11,10 +11,24 @@ var castleChevron = document.querySelector('.left-chevron-castle');
 
 var myNav = document.querySelector('#desktop-navbar');
 
-(function navAppear () {
-    setTimeout(function() {
+(function navAppear() {
+    setTimeout(function () {
         myNav.style.opacity = 1;
     }, 500);
+})();
+
+// function that slides in greeting from left
+
+(function titleSlideIn() {
+    $('.slide-left').each(function (i) {
+
+        var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+        $(this).animate({
+            'margin-left': '0px'
+        }, 1500);
+    });
 })();
 
 // script that fades in elements on scroll
@@ -54,10 +68,3 @@ $(document).ready(function () {
         });
     });
 });
-
-
-
-
-
-
-

@@ -165,9 +165,12 @@ Background-color classes
     letter-spacing: 0.5px;
 }
 
-.my-hr {
-    background-color: white;    
+.my-hr {       
     width: 70%;
+}
+
+.heading-hr {
+    width: 30%;
 }
 
 .white {
@@ -274,6 +277,18 @@ i.nav {
     z-index: 999;   
 }
 
+.header-title {
+    border-bottom: 10px solid $lighter-purple;     
+    height: 7rem;   
+    width: 100%;
+}
+
+.header-title p {
+    color: $med-purple;
+    font-family: 'Alice', sans-serif;  
+    font-size: 350%;
+}
+
 #desktop-navbar {
     opacity: 0;   
     transition: opacity 0.9s ease-in;    
@@ -325,8 +340,7 @@ q:after {
 }
 
 .diamond {
-    border: 1px solid $lt-gray;
-         
+    border: 1px solid $lt-gray;         
 	height: 8rem;	
 	margin: 50px;   
     transition: transform 0.3s ease-in-out;
@@ -350,6 +364,9 @@ q:after {
 /* --------------------
     Experience Section 
  --------------------*/
+span, .work-info {
+    color: $lt-green;
+}
 
 .project-text {
     color: $text-gray;
@@ -381,14 +398,17 @@ h3.project-title {
     text-align: center;    
 }
 
+.heading, .subheading {
+    font-family: 'Alice', sans-serif;
+}
+
 .heading.premier-site, .work-info {
     box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.12);
     color: $lt-green;      
 }
 
 .work-info {
-    box-shadow: none;
-    color:  $teal;
+    box-shadow: none;    
     font-style: italic;     
     text-align: center;    
 }
@@ -560,14 +580,14 @@ input[name="submit"]:hover {
         Footer  
  --------------------*/
 
-.circle, .circle-footer {
-    background-color: $med-purple;
-    border-radius: 50%;
-    display: inline-block;
-    height: 15px; 
-    margin-right: 30px;  
-	width: 15px;   
-}
+// .circle, .circle-footer {
+//     background-color: $lt-taupe;
+//     border-radius: 50%;
+//     display: inline-block;
+//     height: 15px; 
+//     margin-right: 30px;  
+// 	width: 15px;   
+// }
 
 .footer-bg {  
 	background-color: $olive-green;
@@ -626,11 +646,7 @@ input[name="submit"]:hover {
 
     img.zoom.fade-in {
         height: 15rem;
-    }
-
-    h1.greeting {
-        font-size: 225%;
-    }
+    }  
 
     .circle {
         display: none;
