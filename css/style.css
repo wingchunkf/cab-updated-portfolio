@@ -55,7 +55,7 @@ ul {
   opacity: 0; }
 
 .heading, #sw-link {
-  color: #7e756d;
+  color: #869889;
   padding-bottom: 4rem;
   padding-top: 4rem;
   text-decoration: none; }
@@ -292,6 +292,7 @@ span, .work-info {
  --------------------*/
 h3.project-title {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.12);
+  font-family: 'Raleway', sans-serif;
   font-size: 150%;
   margin-top: 4rem;
   margin-bottom: 4rem;
@@ -299,6 +300,7 @@ h3.project-title {
   text-align: center; }
 
 .heading, .subheading {
+  color: #7e756d;
   font-family: 'Alice', sans-serif; }
 
 .heading.premier-site, .work-info {
@@ -327,10 +329,6 @@ h3.project-title {
 img.sw-section {
   height: 35rem;
   width: 42rem; }
-
-.left-chevron-castle, .left-chevron-premier {
-  color: #5ad2f4;
-  display: none; }
 
 .btn-group-lg > .btn, .btn-lg {
   background-color: #5ad2f4;
@@ -453,18 +451,30 @@ input[name="submit"]:hover {
   font-size: 110%;
   line-height: 225%; }
 
-.footer-bg h2, .footer-bg a {
+.footer-hr {
+  background-color: white;
+  width: 30%; }
+
+.fas.fa-envelope {
+  opacity: 1;
+  transition: all 0.3s ease-in-out; }
+
+.fas.fa-envelope:hover {
+  opacity: 0.7;
+  transform: scale(1.15); }
+
+.footer-bg a {
   color: #fff;
   font-size: 120%;
   transition: all 0.5s ease-in-out; }
 
 .footer-nav a {
-  opacity: 0.7;
+  opacity: 1;
   transition: all ease-in; }
 
 .footer-nav a:hover {
   font-weight: bold;
-  opacity: 1;
+  opacity: 0.7;
   text-decoration: none;
   transform: scale(1.2); }
 
@@ -475,6 +485,9 @@ input[name="submit"]:hover {
 .social-media:hover {
   opacity: 0.8;
   transform: scale(1.2); }
+
+.about {
+  height: 10rem; }
 
 /* --------------------
     Media Queries  
