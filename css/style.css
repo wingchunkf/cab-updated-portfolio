@@ -299,9 +299,12 @@ h3.project-title {
   padding: 2rem 0;
   text-align: center; }
 
-.heading, .subheading {
+.heading, .subheading, .contact-heading {
   color: #7e756d;
   font-family: 'Alice', sans-serif; }
+
+.contact-heading {
+  color: #fff; }
 
 .heading.premier-site, .work-info {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.12);
@@ -347,17 +350,19 @@ img.sw-section {
 
 .demo-link {
   backface-visibility: hidden;
-  border: 1px solid #869889;
-  color: #869889;
+  background-color: #869889;
+  border: 1px solid #fff;
+  color: #fff;
   text-decoration: none !important;
   transition: transform 0.3s ease-in-out;
   min-width: 25px; }
 
 .demo-link:hover {
-  background-color: #869889;
+  background-color: #fff;
   border: 1px solid transparent;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.12);
-  color: #fff;
+  color: #869889;
+  font-weight: bolder;
   transform: scale(1.05); }
 
 /* --------------------

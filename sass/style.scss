@@ -399,9 +399,13 @@ h3.project-title {
     text-align: center;    
 }
 
-.heading, .subheading {
+.heading, .subheading, .contact-heading {
     color: $lt-taupe;
     font-family: 'Alice', sans-serif;
+}
+
+.contact-heading {
+    color: $white;
 }
 
 .heading.premier-site, .work-info {
@@ -459,18 +463,20 @@ img.sw-section {
 
 .demo-link {
     backface-visibility: hidden;
-    border: 1px solid $lt-green;
-    color: $lt-green;    
+    background-color: $lt-green;
+    border: 1px solid $white;
+    color: $white;    
     text-decoration: none !important;  
     transition: transform 0.3s ease-in-out;
     min-width: 25px;    
 }
 
 .demo-link:hover {
-    background-color: $lt-green;
+    background-color: $white;
     border: 1px solid transparent;
     box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.12); 
-    color: $white;  
+    color: $lt-green;  
+    font-weight: bolder;
     transform: scale(1.05); 
 }
 
