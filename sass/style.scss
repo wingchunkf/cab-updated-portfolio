@@ -54,29 +54,17 @@ $text-darker: #514f59;
     General SCSS
  --------------------*/
 
- body {
+ body, html {
     font-family :'Raleway';
     line-height: 2.5;
+    margin-left: -15px;
+    margin-right: -15px;    
     position: relative;
-    margin-right: -15px;  
-    overflow-x: hidden; 
-    padding-right: -15px;
-}
-
-.container-fluid {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;     
 }
 
 ul {
     list-style-type: none;   
-}
-
-.vertical-center {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 /* --------------------
@@ -128,10 +116,6 @@ Background-color classes
     background-color: $lt-green;
 }
 
-.purple {
-    background-color: $purple;
-}
-
 .lt-purple {
     background-color: $lt-purple;
 }
@@ -180,14 +164,17 @@ Background-color classes
 /* --------------------
         Navbar
  --------------------*/
+nav {
+    background-color: $lt-purple;      
+}
 
- a.nav-link {
+a.nav-link {
     border-bottom: 1px solid transparent;
     border-top: 1px solid transparent;
     color:  $white;  
     font-family: 'Raleway', sans-serif;
     font-size: 1.25rem;   
-    letter-spacing: 1px;       
+    letter-spacing: 1px;  
     transition: all ease 0.5s; 
     text-align: center;     
     transition: all 0.3s ease-in-out;
@@ -196,15 +183,11 @@ Background-color classes
 a.nav-link:hover {
     border-bottom: 1px solid $white;
     border-top: 1px solid $white;     
-    transform: scale(1.3);     
+    transform: scale(1.2);     
 }
 
 i.nav {
     padding-right: 10px;
-}
-
-.hamburger {
-    color: $blue;
 }
 
 /* --------------------
@@ -217,45 +200,40 @@ i.nav {
         font-size: 1.75rem;       
     }
 
-    li.nav-item.home-link {
-        box-shadow: none;
-        display: none;     
-    }
+    nav {
+        background-color: $white;
+    } 
 
     li.nav-item {
         background-color: $med-purple;
-        background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
-        height: 6rem;
-        margin-bottom: 1rem;       
-        transition: all 0.3s ease-in-out;
+        background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");     
     }   
 
     li.nav-item:hover {
         background-color: $white;
+        background-image: none;
         box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.12);       
-        transform: scale(1.2);        
     }
 
     a.nav-link {
-        transition: all 0.3s ease-in-out;        
+        border-bottom: 1px solid $med-purple;
+        border-top: 1px solid $med-purple;
     }
 
     a.nav-link:hover {  
-        background-color: $white;        
-        transform: scale(1.2);                          
+        background-color: $white;  
+        color: $lt-purple;   
+        transform: scale(1.12);
     }   
 
-    li.nav-item.active {      
-        background-color: $white;
-        box-shadow: none;
-        display: none;
-        transition: none;       
+    li.nav-item.active {
+        display: none;     
     }
 
     ul#desktop-navbar {     
         margin-bottom: 1.5rem;       
         margin-left: -15px;   
-        margin-right: -15px; 
+        margin-right: 15px; 
         opacity: 1; 
     }    
 }
@@ -263,19 +241,6 @@ i.nav {
 /* --------------------
     Header
  --------------------*/
-
-#header-wrapper {     
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
-    position: relative;
-    z-index: 1;  
-}
-
-#header {
-    position: relative;
-    z-index: 999;   
-}
 
 .header-title {
     border-bottom: 10px solid $lighter-purple;     
@@ -309,14 +274,6 @@ img.christine {
     color: $text-gray;
     line-height: 2.15;
     text-align: center;    
-}
-
-q:before {
-    content: '\201c';    
-}
-
-q:after {
-    content: '\201d';
 }
 
 /* --------------------
@@ -364,8 +321,13 @@ q:after {
 /* --------------------
     Experience Section 
  --------------------*/
+
 span, .work-info {
     color: $lt-green;
+}
+
+.fa-ul {
+    padding: 0 1.5rem;
 }
 
 .project-text {
@@ -442,33 +404,18 @@ img.sw-section {
     width: 42rem;
 }
 
-.btn-group-lg > .btn, .btn-lg {
-    background-color: $blue;
-    border-radius: 0 !important;    
-    color: $white;     
-}
-
-.btn-group-lg:hover > .btn:hover, .btn-lg:hover {
-    background-color: $lt-blue;
-    color: $lt-taupe;
-}
-
 .project-text {   
     font-size: 105%;       
-}
-
-.demo:hover {
-    background: $teal;  
 }
 
 .demo-link {
     backface-visibility: hidden;
     background-color: $lt-green;
     border: 1px solid $white;
-    color: $white;    
+    color: $white; 
+    min-width: 25px;     
     text-decoration: none !important;  
-    transition: transform 0.3s ease-in-out;
-    min-width: 25px;    
+    transition: transform 0.3s ease-in-out;      
 }
 
 .demo-link:hover {
@@ -508,75 +455,6 @@ img.sw-section {
 .contact-section {
     height: 16rem;
     padding-top: 2rem;   
-}
-
-.contact-form-section h4, .contact-form-section h3 {        
-    color: $lt-taupe;
-} 
-
-input[name="firstName"], input[name="lastName"], input[name="email"], input[name="subject"], input[name="submit"] {
-    border: none;
-    border-bottom: 1px solid $input-gray;
-    border-radius: 0;
-    height: 3.5rem;  
-    outline: none;    
-}
-
-label {
-    background-color: $white;
-    border: 1px solid $blue;
-    color: $blue;
-    width: 160px;   
-}
-
-textarea[name="message"] {
-    border-radius: 0;
-    outline: none;
-}
-
-input[name="submit"] {    
-    background: $med-purple;
-    color: $white;
-    font-size: 130%;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-input[name="submit"]:hover {
-    background-color: $white;
-    border: 2px solid $med-purple;
-    color: $med-purple;   
-    font-weight: bold;
-}
-
-::-webkit-input-placeholder { 
-    color: $input-gray;
-    font-style: italic;
-    letter-spacing: 2px;
-}
-
-:focus::-webkit-input-placeholder{
-    opacity: 0;
-}
-
-::-moz-placeholder { 
-    color: $input-gray;
-    font-style: italic;
-    letter-spacing: 2px;
-}
-
-:focus::-moz-placeholder {
-    opacity: 0;
-}
-
-:-ms-input-placeholder {
-    color: $input-gray;
-    font-style: italic; 
-    letter-spacing: 2px;
-}
-
-::focus:-ms-input-placeholder {
-    opacity: 0;
 }
 
 /* --------------------
@@ -643,14 +521,32 @@ input[name="submit"]:hover {
 
 @media screen and (max-width: 768px) {  
 
+    .fade-in {
+        opacity: 1;
+    }
+
+    .header-title p {
+        font-size: 1.75rem;
+        padding-left: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+    
     .heading {
         padding-bottom: 1rem;
         padding-top: 1rem;
     } 
 
-    label {
-        width: 100%;
-        margin-bottom: 1rem;
+    nav {
+        background-color: $white;
+        margin-top: 0;
+        position: absolute;
+    }   
+    
+    a.nav-link:hover {
+        border-bottom: 1px solid $lighter-purple;
+        border-top: 1px solid $lt-purple;    
+        color: $lt-purple;          
     }
 
     h3.project-title {        
@@ -659,15 +555,17 @@ input[name="submit"]:hover {
 
     img.zoom.fade-in {
         height: 15rem;
-    }  
-
-    .circle {
-        display: none;
-    }
+    }   
 
     .contact-section {
         height: 8rem;
     }       
+}
+
+@media screen and (min-width: 475px) and (max-width: 1024px) {
+    img.premier-section {
+        margin-left: 5rem;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -681,11 +579,7 @@ input[name="submit"]:hover {
 }
 
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
-    .work-history {
+    .work-history, .work-info {
     text-align: center; 
-}
-
-    .work-info {
-    text-align: center;
-    }
+    } 
 }

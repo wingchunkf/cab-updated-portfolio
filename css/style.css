@@ -27,26 +27,16 @@ sections appear on page
 /* --------------------
     General SCSS
  --------------------*/
-body {
+body, html {
   font-family: 'Raleway';
   line-height: 2.5;
-  position: relative;
+  margin-left: -15px;
   margin-right: -15px;
-  overflow-x: hidden;
-  padding-right: -15px; }
-
-.container-fluid {
-  margin: 0;
-  padding: 0;
-  overflow: hidden; }
+  position: relative;
+  overflow-x: hidden; }
 
 ul {
   list-style-type: none; }
-
-.vertical-center {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%); }
 
 /* --------------------
     Classes for JS  
@@ -86,9 +76,6 @@ Background-color classes
 .lt-green {
   background-color: #869889; }
 
-.purple {
-  background-color: #31004a; }
-
 .lt-purple {
   background-color: #55476d; }
 
@@ -126,6 +113,9 @@ Background-color classes
 /* --------------------
         Navbar
  --------------------*/
+nav {
+  background-color: #55476d; }
+
 a.nav-link {
   border-bottom: 1px solid transparent;
   border-top: 1px solid transparent;
@@ -140,13 +130,10 @@ a.nav-link {
 a.nav-link:hover {
   border-bottom: 1px solid #fff;
   border-top: 1px solid #fff;
-  transform: scale(1.3); }
+  transform: scale(1.2); }
 
 i.nav {
   padding-right: 10px; }
-
-.hamburger {
-  color: #5ad2f4; }
 
 /* --------------------
     Mobile nav
@@ -155,49 +142,33 @@ i.nav {
   i.hamburger {
     color: #887eb9;
     font-size: 1.75rem; }
-  li.nav-item.home-link {
-    box-shadow: none;
-    display: none; }
+  nav {
+    background-color: #fff; }
   li.nav-item {
     background-color: #887eb9;
-    background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
-    height: 6rem;
-    margin-bottom: 1rem;
-    transition: all 0.3s ease-in-out; }
+    background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png"); }
   li.nav-item:hover {
     background-color: #fff;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.12);
-    transform: scale(1.2); }
+    background-image: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.12); }
   a.nav-link {
-    transition: all 0.3s ease-in-out; }
+    border-bottom: 1px solid #887eb9;
+    border-top: 1px solid #887eb9; }
   a.nav-link:hover {
     background-color: #fff;
-    transform: scale(1.2); }
+    color: #55476d;
+    transform: scale(1.12); }
   li.nav-item.active {
-    background-color: #fff;
-    box-shadow: none;
-    display: none;
-    transition: none; }
+    display: none; }
   ul#desktop-navbar {
     margin-bottom: 1.5rem;
     margin-left: -15px;
-    margin-right: -15px;
+    margin-right: 15px;
     opacity: 1; } }
 
 /* --------------------
     Header
  --------------------*/
-#header-wrapper {
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-  position: relative;
-  z-index: 1; }
-
-#header {
-  position: relative;
-  z-index: 999; }
-
 .header-title {
   border-bottom: 10px solid #aba9b5;
   height: 7rem;
@@ -225,12 +196,6 @@ img.christine {
   color: #8C979A;
   line-height: 2.15;
   text-align: center; }
-
-q:before {
-  content: '\201c'; }
-
-q:after {
-  content: '\201d'; }
 
 /* --------------------
     Tool Icons
@@ -272,6 +237,9 @@ q:after {
  --------------------*/
 span, .work-info {
   color: #869889; }
+
+.fa-ul {
+  padding: 0 1.5rem; }
 
 .project-text {
   color: #8C979A; }
@@ -333,29 +301,17 @@ img.sw-section {
   height: 35rem;
   width: 42rem; }
 
-.btn-group-lg > .btn, .btn-lg {
-  background-color: #5ad2f4;
-  border-radius: 0 !important;
-  color: #fff; }
-
-.btn-group-lg:hover > .btn:hover, .btn-lg:hover {
-  background-color: #bdedfa;
-  color: #7e756d; }
-
 .project-text {
   font-size: 105%; }
-
-.demo:hover {
-  background: #62bec1; }
 
 .demo-link {
   backface-visibility: hidden;
   background-color: #869889;
   border: 1px solid #fff;
   color: #fff;
+  min-width: 25px;
   text-decoration: none !important;
-  transition: transform 0.3s ease-in-out;
-  min-width: 25px; }
+  transition: transform 0.3s ease-in-out; }
 
 .demo-link:hover {
   background-color: #fff;
@@ -389,63 +345,6 @@ img.sw-section {
 .contact-section {
   height: 16rem;
   padding-top: 2rem; }
-
-.contact-form-section h4, .contact-form-section h3 {
-  color: #7e756d; }
-
-input[name="firstName"], input[name="lastName"], input[name="email"], input[name="subject"], input[name="submit"] {
-  border: none;
-  border-bottom: 1px solid #ced4da;
-  border-radius: 0;
-  height: 3.5rem;
-  outline: none; }
-
-label {
-  background-color: #fff;
-  border: 1px solid #5ad2f4;
-  color: #5ad2f4;
-  width: 160px; }
-
-textarea[name="message"] {
-  border-radius: 0;
-  outline: none; }
-
-input[name="submit"] {
-  background: #887eb9;
-  color: #fff;
-  font-size: 130%;
-  font-weight: bold;
-  transition: all 0.3s ease; }
-
-input[name="submit"]:hover {
-  background-color: #fff;
-  border: 2px solid #887eb9;
-  color: #887eb9;
-  font-weight: bold; }
-
-::-webkit-input-placeholder {
-  color: #ced4da;
-  font-style: italic;
-  letter-spacing: 2px; }
-
-:focus::-webkit-input-placeholder {
-  opacity: 0; }
-
-::-moz-placeholder {
-  color: #ced4da;
-  font-style: italic;
-  letter-spacing: 2px; }
-
-:focus::-moz-placeholder {
-  opacity: 0; }
-
-:-ms-input-placeholder {
-  color: #ced4da;
-  font-style: italic;
-  letter-spacing: 2px; }
-
-::focus:-ms-input-placeholder {
-  opacity: 0; }
 
 /* --------------------
         Footer  
@@ -498,20 +397,34 @@ input[name="submit"]:hover {
     Media Queries  
  --------------------*/
 @media screen and (max-width: 768px) {
+  .fade-in {
+    opacity: 1; }
+  .header-title p {
+    font-size: 1.75rem;
+    padding-left: 0;
+    margin-left: 0;
+    text-align: center; }
   .heading {
     padding-bottom: 1rem;
     padding-top: 1rem; }
-  label {
-    width: 100%;
-    margin-bottom: 1rem; }
+  nav {
+    background-color: #fff;
+    margin-top: 0;
+    position: absolute; }
+  a.nav-link:hover {
+    border-bottom: 1px solid #aba9b5;
+    border-top: 1px solid #55476d;
+    color: #55476d; }
   h3.project-title {
     margin-top: -0.75rem; }
   img.zoom.fade-in {
     height: 15rem; }
-  .circle {
-    display: none; }
   .contact-section {
     height: 8rem; } }
+
+@media screen and (min-width: 475px) and (max-width: 1024px) {
+  img.premier-section {
+    margin-left: 5rem; } }
 
 @media screen and (min-width: 992px) {
   #mobile-menu {
@@ -520,7 +433,5 @@ input[name="submit"]:hover {
     display: none; } }
 
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
-  .work-history {
-    text-align: center; }
-  .work-info {
+  .work-history, .work-info {
     text-align: center; } }

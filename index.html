@@ -14,47 +14,44 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
-	<!-- the script tag below is the solution to a major FOUC issue in Firefox -->
-	<script>
-		/* foo */
-	</script>
 	<title>Portfolio</title>
 </head>
 
 <body>
-	<header id="header-wrapper">
-		<div class="container-fluid" id="header">
-			<div class="header-title">
+	<header id="header">
+		<main class="container-fluid mr-0 pr-0">
+			<section class="header-title d-none d-lg-block">
 				<p class="pl-lg-5 slide-left">Welcome to my portfolio</p>
-			</div>
+			</section>
 
-			<section class="my-5">
+			<section class="my-5 d-none d-lg-block">
 				<div class="row d-flex justify-content-center mt-3 h-100">
 					<div class="col-lg-3 greeting text-center">
 						<img src="img/mypicsquare.jpg" class="christine img-fluid my-5" alt="woman smiling">
 					</div>
-					<div class="col-4 align-self-center intro-text px-5">
+					<div class="col-lg-4 align-self-center intro-text px-5">
 						<hr class="my-hr">
 						<h5 class="intro-text bold py-5">I'm Christine, an enterprising frontend developer who can turn your ideas into attractive, responsive, and user-friendly
 							websites or apps.</h5>
 						<hr class="my-hr">
 					</div>
 				</div>
+
 			</section>
 
-			<!--   NAVBAR   -->
+			<!--   NAV   -->
 
-			<nav class="navbar navbar-expand-lg lt-purple">
+			<nav class="navbar navbar-expand-lg pr-0 mr-0" id="header-nav">
 				<a class="navbar-brand" href="#"></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent"
 				    aria-expanded="false" aria-label="Toggle navigation">
 					<i class="fas fa-bars hamburger"></i>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<div class="collapse navbar-collapse mr-0 pr-0" id="navbarSupportedContent">
 
 					<ul class="navbar-nav mx-auto text-center" id="desktop-navbar">
 						<li class="nav-item active">
-							<a class="border-0" href="#header">
+							<a class="border-0">
 								<span class="sr-only">(current)</span>
 							</a>
 						</li>
@@ -67,12 +64,12 @@
 								<i class="fas fa-wrench nav"></i>Toolbox</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link py-2 my-4 mx-4" href="#work">
-								<i class="fas fa-code-branch nav"></i>Work</a>
-						</li>
-						<li class="nav-item">
 							<a class="nav-link py-2 my-4 mx-4" href="#experience">
 								<i class="fas fa-laptop nav"></i>Experience</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link py-2 my-4 mx-4" href="#work">
+								<i class="fas fa-code-branch nav"></i>Work</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link py-2 my-4 mx-4" href="#contact">
@@ -81,20 +78,29 @@
 					</ul>
 				</div>
 			</nav>
-		</div>
+
+			<!-- END NAV -->
+
+			</div>
 	</header>
+
+	<!-- greeting - displays mobile view only -->
+
+	<section class="header-title d-block d-lg-none">
+		<p class="pl-lg-5 slide-left">Welcome to my portfolio</p>
+	</section>
 
 	<!--   TOOLS SECTION   -->
 
-	<div class="tools-section mt-5 py-3" id="toolbox">
+	<section class="tools-section mt-5 py-3" id="toolbox">
 		<hr class="heading-hr">
 		<h2 class="heading text-center py-3">Toolbox</h2>
 		<hr class="heading-hr">
-	</div>
+	</section>
 
 	<!--   RESPONSIVE ICONS   -->
 
-	<section class="spinning-tools">
+	<section class="spinning-tools mb-5 pb-3">
 		<div class="row d-flex justify-content-center">
 			<div class="col-3"></div>
 			<div class="col-md-2 d-flex justify-content-center">
@@ -215,38 +221,90 @@
 			<div class="col-lg-3"></div>
 		</div>
 	</section>
+
+	<!--   WORK EXPERIENCE SECTION   -->
+
+	<section class="mt-2 pt-3" id="experience">
+		<hr class="heading-hr">
+		<h2 class="heading text-center py-3">Experience</h2>
+		<hr class="heading-hr">
+	</section>
+
+	<div class="row d-flex justify-content-center">
+		<div class="col-lg-5 work-history">
+			<div class="pb-3 work-info">
+				<h3 class="bold subheading pb-0">Frontend Developer</h3>
+				<h5 class="work-info pb-5">American Software & Solutions, LLC
+					<br>June 2017 through April 2018</h5>
+			</div>
+		</div>
+
+		<div class="col-lg-8 project-text">
+			<p class="mx-5 px-3">In my role as a frontend developer at American Software & Solutions, I experienced the full software development cycle
+				by developing and assisting in the deployment of multiple projects in collaboration with a senior fullstack developer.
+
+			</p>
+			<div class="col-lg-8 mx-auto">
+				<ul class="fa-ul">
+					<li>
+						<i class="fa-li fa fa-square"></i>Configured build pipelines (Gulp and Grunt)</li>
+					<li>
+						<i class="fa-li fa fa-square"></i>Pushed all code to repositories using Git version control and the Git BASH CLI</li>
+					<li>
+						<i class="fa-li fa fa-square"></i>Created, reviewed, and approved pull requests</li>
+					<li>
+						<i class="fa-li fa fa-square"></i>Added functionality and interactivity to sites with JavaScript, Vue.js, and jQuery</li>
+					<li>
+						<i class="fa-li fa fa-square"></i>Implemented Google Tags and Google Analytics with custom event tracking</li>
+					<li>
+						<i class="fa-li fa fa-square"></i>Increased site visibility by composing descriptive title and meta tags</li>
+					<li>
+						<i class="fa-li fa fa-square"></i>Performed cross-browser compatibility testing and debugging</li>
+					<li>
+						<i class="fa-li fa fa-square"></i>Tracked project progress, created issues, and reported bugs in Jira</li>
+					<li>
+						<i class="fa-li fa fa-square"></i>Participated in bimonthly sprint planning meetings</li>
+					<li>
+						<i class="fa-li fa fa-square"></i>Converted Justinmind prototypes into HTML markup for multipage website</li>
+					<li>
+						<i class="fa-li fa fa-square"></i>Communicated daily via Slack and Google Hangouts</li>
+					<li>
+						<i class="fa-li fa fa-square"></i>Created custom Bootstrap theme to easily facilitate style changes</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 	</section>
 
 	<!--   PROJECTS   -->
 
-	<div class="mt-5 py-3" id="work">
+	<section class="mt-5 py-3" id="work">
 		<hr class="heading-hr">
 		<h2 class="heading text-center py-3">Work</h2>
 		<hr class="heading-hr">
-	</div>
+	</section>
 
 	<!--   PREMIER TRANSCRIPTION WEBSITE   -->
 
 	<section class="wrapper">
-		<div class="row d-flex justify-content-center ml-lg-5">
-			<div class="col-lg-6 pb-lg-5 ">
+		<div class="row d-flex justify-content-center">
+			<div class="col-lg-6 pb-lg-3 ">
 				<h3 class="project-title heading premier-site slide-left">Premier Transcription Website</h3>
 			</div>
 		</div>
 
-		<div class="row">
-			<div class="col-lg-6 ml-lg-5 pl-lg-5">
+		<div class="row d-flex justify-content-center">
+			<div class="col-lg-6">
 				<a href="http://dev.premiertranscript.com">
-					<img src="img/premiermockup.png" class="premier-section img-fluid mb-5 fade-in" alt="Website of Premier Transcription company">
+					<img src="img/premiermockup.jpg" class="premier-section img-fluid mb-5 ml-lg-5 pl-lg-5 pl-3 fade-in" alt="screenshot of Premier Transcription website">
 				</a>
 			</div>
 
 			<div class="col-lg-5 project-details">
-				<p class="project-text mr-lg-5 pr-lg-5 px-5 fade-in">Responsive web design principles were used to produce an attractive and mobile-friendly
-					small business website. I utilized SEO techniques to boost visibility and created the custom "loader" logo and all text
-					content on the site.</p>
+				<p class="project-text mr-lg-5 px-5 fade-in">Responsive web design principles were used to produce an attractive and mobile-friendly small business website. I utilized
+					SEO techniques to boost visibility and created the custom "loader" logo and all text content on the site.</p>
 
-				<div class="row d-flex justify-content-center pt-5">
+				<div class="row d-flex justify-content-center pt-5 pb-5">
 					<a href="http://dev.premiertranscript.com" class="demo-link fade-in mr-3 px-4 py-3">View Site</a>
 					<a href="https://github.com/wingchunkf/premiersb-site" class="demo-link fade-in px-4 py-3">View Code</a>
 				</div>
@@ -258,31 +316,30 @@
 	<!--   CASTLE ROCK WEBSITE   -->
 
 	<section class="wrapper mb-5">
-		<div class="row d-flex justify-content-center ml-lg-5">
-			<div class="col-lg-6 pb-lg-5 ">
+		<div class="row d-flex justify-content-center">
+			<div class="col-lg-6 pb-lg-3">
 				<h3 class="project-title heading castle-site slide-left">Castle Rock Construction Website</h3>
 			</div>
 		</div>
 
-		<div class="row d-flex">
-			<div class="col-lg-5 project-details">
-				<p class="project-text ml-lg-5 pl-lg-5 px-5 fade-in">Created for a local business owner, I chose and implemented a color scheme and constructed
-					a build pipeline for Sass. I also reorganized the layout of each page to suit the needs of the client, altered the business
-					logo in Photoshop, created Google Analytics custom events to track user activity, and wrote custom JavaScript for the business
-					hours message in the header.</p>
+		<div class="row d-flex justify-content-center">
+			<div class="col-lg-6 project-details">
+				<p class="project-text ml-5 px-5 fade-in">Created for a local business owner, I chose and implemented a color scheme and constructed a build pipeline for Sass.
+					I also reorganized the layout of each page to suit the needs of the client, altered the business logo in Photoshop,
+					created Google Analytics custom events to track user activity, and wrote custom JavaScript for the business hours message
+					in the header.</p>
 				<div class="row d-flex justify-content-center pt-5">
 					<a href="https://castlerock-construction.com" class="demo-link fade-in mr-3 px-4 py-3">View Site</a>
 					<a href="https://github.com/crobinson42/crg-www" class="demo-link fade-in px-4 py-3">View Code</a>
 				</div>
 			</div>
 
-			<div class="col-lg-6 ml-lg-5 pl-lg-5">
+			<div class="col-lg-6">
 				<a href="https://castlerock-construction.com">
-					<img src="img/castlerockmock.png" class="premier-section img-fluid mb-lg-5 mt-lg-3 mt-5 fade-in" alt="Website of Premier Transcription company">
+					<img src="img/castlerockmock.jpg" class="premier-section img-fluid mb-lg-5 mt-lg-3 pl-3 mt-5 fade-in" alt="Website of Premier Transcription company">
 				</a>
 			</div>
 	</section>
-
 
 	<!--   STAR WARS TRIVIA APP   -->
 
@@ -296,77 +353,30 @@
 		</div>
 
 		<div class="row mx-auto d-flex justify-content-center">
-			<img src="img/swmockupmed.png" class="img-fluid mb-5 pb-5 zoom fade-in">
+			<img src="img/swmockupmed.jpg" class="img-fluid mb-5 pb-5 zoom fade-in">
 		</div>
 		</div>
 	</section>
 
-	<div class="row">
+	<section class="row">
 		<div class="col-lg-6 mx-auto">
 			<p class="project-text mt-5 px-5">
-				This app utilizes SWAPI, an API built by Paul Hallett and team. Users may choose from six different categories, Characters,
+				This app works in conjunction with a Star Wars-based API (SWAPI). Users may choose from six different categories; Characters,
 				Species, Planets, Starships, Vehicles, and Films. Asynchronous data requests are made with the HTTP client Axios. Tools
 				used include JavaScript, jQuery, Axios, Gulp, Sass, and Bootstrap 4. The project was planned and tracked in Jira using
 				an Agile approach. This is a completely original, 100% "Solo" project.
 			</p>
 		</div>
-	</div>
-	<div class="row py-5 d-flex justify-content-center">
+	</section>
+	<section class="row py-5 d-flex justify-content-center">
 		<a href="http://broad-time.surge.sh/" target="_blank" class="demo-link mr-3 px-5 py-3">App</a>
 		<a href="https://github.com/wingchunkf/starwars-trivia-app" class="demo-link px-4 py-3">View Code</a>
-	</div>
-	</main>
-
-	<!--   WORK EXPERIENCE SECTION   -->
-
-	<div class="mt-2 py-3" id="experience">
-		<hr class="heading-hr">
-		<h2 class="heading text-center py-3">Experience</h2>
-		<hr class="heading-hr">
-	</div>
-
-
-	<div class="py-5">
-		<div class="row d-flex justify-content-center">
-
-			<div class="col-lg-5 work-history">
-
-				<h4 class="pb-3 work-info">
-					<span class="bold subheading pb-0"><h3>Frontend Developer</h3></span>
-					
-					<h5 class="work-info pb-5">American Software & Solutions, LLC
-						<br>June 2017 through April 2018</h5>
-				</h4>
-			</div>
-
-			<div class="col-lg-8 project-text">
-				<p class="mx-5 px-3">In my role as a frontend developer at American Software & Solutions, I experienced the full software development
-					 cycle by developing and assisting in the deployment of multiple projects in collaboration with a senior fullstack developer.
-				
-				</p>
-				<div class="col-lg-8 mx-auto">
-					<ul class="fa-ul">
-						<li><i class="fa-li fa fa-square"></i>Configured build pipelines (Gulp and Grunt)</li>
-						<li><i class="fa-li fa fa-square"></i>Pushed all code to repositories using Git version control and the Git BASH CLI</li>
-						<li><i class="fa-li fa fa-square"></i>Created, reviewed, and approved pull requests</li>
-						<li><i class="fa-li fa fa-square"></i>Added functionality and interactivity to sites with JavaScript, Vue.js, and jQuery</li>					
-						<li><i class="fa-li fa fa-square"></i>Implemented Google Tags and Google Analytics with custom event tracking</li>
-						<li><i class="fa-li fa fa-square"></i>Increased site visibility by composing descriptive title and meta tags</li>
-						<li><i class="fa-li fa fa-square"></i>Performed cross-browser compatibility testing and debugging</li>
-						<li><i class="fa-li fa fa-square"></i>Tracked project progress, created issues, and reported bugs in Jira</li>
-						<li><i class="fa-li fa fa-square"></i>Participated in bimonthly sprint planning meetings</li>
-						<li><i class="fa-li fa fa-square"></i>Converted Justinmind prototypes into HTML markup for multipage website</li>
-						<li><i class="fa-li fa fa-square"></i>Communicated daily via Slack and Google Hangouts</li>
-						<li><i class="fa-li fa fa-square"></i>Created custom bootstrap theme to facilitate changes in CSS styles and color palettes</li>				
-					</ul>
-				</div>			
-			</div>
-		</div>
-	</div>
+	</section>
+	</section>
 
 	<!--   MENTOR TESTIMONIAL   -->
 
-	<div class="row mt-4 mb-5 pb-5 text-white">
+	<section class="row mt-4 mb-5 pb-5 text-white">
 		<div class="col-lg-6 mx-auto text-center purple-texture-bg bold">
 			<p class="ml-lg-5 mx-5">
 				<i class="fas fa-quote-left fa-lg" style="margin-bottom: 15px; margin-right: 15px;"></i>&nbspWorking with Christine was both a valuable and rewarding experience. Christine is an articulate and talented
@@ -377,7 +387,7 @@
 				<p>Cory Robinson, Fullstack Developer/Former Mentor
 					<br> Owner, American Software & Solutions</p>
 		</div>
-	</div>
+	</section>
 
 	<!--   FOOTER   -->
 
@@ -385,22 +395,23 @@
 
 		<!--   CONTACT SECTION   -->
 
-		<div class="mt-3 py-3" id="contact">
+		<section class="mt-3 py-3" id="contact">
 			<hr class="footer-hr mt-5">
 			<h2 class="contact-heading text-center py-3">Let's talk!</h2>
 			<hr class="footer-hr">
+		</section>
 
-		</div>
-		<div class="row d-flex justify-content-center">
-			<h4 class="white text-center">Send me an email, I'd love to hear from you</h4>
-		</div>
-		<div class="row d-flex justify-content-center">
+		<section class="row d-flex justify-content-center">
+			<h4 class="white text-center px-4">Send me an email, I'd love to hear from you</h4>
+		</section>
+
+		<section class="row d-flex justify-content-center">
 			<a class="py-2 my-4 mx-4" href="mailto:bergmcj12@gmail.com" target="_top">
 				<i class="fas fa-envelope fa-4x"></i>
 			</a>
-		</div>
+		</section>
 
-		<div class="row d-flex justify-content-center text-center mt-3 mb-2">
+		<section class="row d-flex justify-content-center text-center mt-3 mb-2">
 			<div class="col-lg-1 py-1 footer-link">
 				<a href="https://twitter.com/bergmcj?lang=en">
 					<i class="fab fa-twitter-square fa-2x social-media"></i>
@@ -418,11 +429,10 @@
 					<i class="fab fa-linkedin fa-2x social-media"></i>
 				</a>
 			</div>
-		</div>
-		</div>
+		</section>
 
-		<div class="row d-flex justify-content-center text-center pb-5 mb-2 footer-nav">
-			<div class="col-lg-1"></div>
+		<section class="row d-flex justify-content-center text-center pb-5 footer-nav">
+			<section class="col-lg-1"></section>
 			<div class="col-lg-1">
 				<a href="#header">
 					Home
@@ -436,14 +446,14 @@
 			</div>
 
 			<div class="col-lg-1">
-				<a href="#work">
-					Work
+				<a href="#experience">
+					Experience
 				</a>
 			</div>
 
 			<div class="col-lg-1">
-				<a href="#experience">
-					Experience
+				<a href="#work">
+					Work
 				</a>
 			</div>
 
@@ -453,13 +463,13 @@
 				</a>
 			</div>
 			<div class="col-lg-1"></div>
-		</div>
-		</div>
+		</section>
+		</section>
 	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q
-				    " crossorigin="anonymous "></script>
+	" crossorigin="anonymous "></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl
-				    " crossorigin="anonymous "></script>
+	" crossorigin="anonymous "></script>
 	<script src="main.js "></script>

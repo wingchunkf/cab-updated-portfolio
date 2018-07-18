@@ -4,8 +4,6 @@ var premierButton = document.querySelector('.premier');
 var castleButton = document.querySelector('.castle-rock');
 var premierDetails = document.querySelector('.premier-details');
 var castleDetails = document.querySelector('.castle-details');
-var premierChevron = document.querySelector('.left-chevron-premier');
-var castleChevron = document.querySelector('.left-chevron-castle');
 
 // iife that fades in navbar on desktop view
 
